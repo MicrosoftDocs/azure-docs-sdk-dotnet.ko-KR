@@ -72,7 +72,7 @@ sections:
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
             title: Cosmos DB로 .NET 앱 빌드
-            href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+            href: 'https://docs.microsoft.com/en-us/azure/cosmos-db/create-documentdb-dotnet'
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Service Fabric으로 .NET 마이크로 서비스 앱 만들기
@@ -115,4 +115,4 @@ sections:
           - html: '<a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes 및 Windows 컨테이너 시작</a>'
           - html: '<a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database에 연결 및 쿼리</a>'
           - html: '<a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL에 연결 및 쿼리</a>'
-          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">CosmosDB DocumentDB API 시작</a>'
+          - html: '<a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">.NET Core에서 CosmosDB DocumentDB API 시작</a>'
