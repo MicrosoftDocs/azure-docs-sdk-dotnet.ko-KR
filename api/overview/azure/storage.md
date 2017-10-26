@@ -4,18 +4,19 @@ description: ".NET용 Azure Storage 라이브러리에 대한 참조"
 keywords: "Azure, .NET, SDK, API, 저장소, Blob"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/17/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 4e494952b48bfbf3b10f9af9936648634353db78
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: storage
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: f9928736fa024258bcf19ba5ad91f0a328aa05a8
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-storage-apis-for-net"></a>.NET용 Azure Storage API
 
@@ -118,4 +119,4 @@ IStorageAccount storage = azure.StorageAccounts.Define(storageAccountName)
 Azure Storage 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=storage)을 봅니다.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

@@ -2,20 +2,21 @@
 title: ".NET용 Azure 청구 라이브러리"
 description: ".NET용 Azure 청구 라이브러리에 대한 참조"
 keywords: "Azure, .NET, SDK, API, 청구"
-author: spboyer
+author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/07/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.openlocfilehash: 0a401bf9ccc345d3c6e99a010c74f9c7f6f5914e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 8df15d55a80991f29b694f4af06a20514bf20b32
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-billing-libraries-for-net"></a>.NET용 Azure 청구 라이브러리
 
@@ -67,4 +68,4 @@ billingClient.Invoices.List();
 * [다중 테넌트 웹 응용 프로그램](https://github.com/Azure-Samples/billing-dotnet-webapp-multitenant)
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

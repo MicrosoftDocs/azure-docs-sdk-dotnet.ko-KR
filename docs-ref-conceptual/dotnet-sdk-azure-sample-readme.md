@@ -4,19 +4,19 @@ description: ".NET용 Azure 관리 라이브러리를 사용하여 리소스를 
 keywords: "Azure, .NET, SDK, API, 샘플, 예제"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: ffda7cca724962e6f953432c5cab04485ddabb03
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: cf5195bbc64ae39917355e3b775afa0c46604c4a
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-management-libraries-for-net-sample-instructions"></a>.NET용 Azure 관리 라이브러리 샘플 지침
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/28/2017
 * [Visual Studio 2017](https://www.visualstudio.com/vs/) 또는 [.NET Core SDK](https://www.microsoft.com/net/download/core)
 * [Microsoft Azure 구독](https://azure.microsoft.com/free/)
 * [Git 명령줄 클라이언트](https://git-scm.com/)
-* [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps)
+* [Azure PowerShell](/powershell/azure/install-azurerm-ps)
 
 ## <a name="authentication-for-all-samples"></a>모든 샘플에 대한 인증
 

@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 1defed888972ae2f9d60d57bc34c518df9b5867c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-net-for-azure-developers"></a>Azure 개발자용 .NET 시작
 
@@ -74,7 +74,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. **F5** 키를 눌러 프로젝트의 NuGet 패키지를 복원하고, 프로젝트를 빌드하고, 로컬로 실행합니다.
 
-웹 응용 프로그램은 브라우저에서 로컬로 실행해야 합니다.  이제 **새로 만들기**를 클릭하여 할 일 목록에 새 항목을 추가할 수 있습니다.  응용 프로그램에 입력하는 데이터는 CosmosDB 계정에 저장됩니다.  [Azure Portal에서 데이터를 볼](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-view-json-document-explorer) 수 있습니다.
+웹 응용 프로그램은 브라우저에서 로컬로 실행해야 합니다.  이제 **새로 만들기**를 클릭하여 할 일 목록에 새 항목을 추가할 수 있습니다.  응용 프로그램에 입력하는 데이터는 CosmosDB 계정에 저장됩니다.  [Azure Portal에서 데이터를 볼](/azure/documentdb/documentdb-view-json-document-explorer) 수 있습니다.
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Azure 웹앱으로 응용 프로그램 배포
 

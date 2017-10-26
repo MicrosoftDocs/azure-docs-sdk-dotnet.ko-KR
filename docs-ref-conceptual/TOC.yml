@@ -11,7 +11,7 @@
         - name: SQL 데이터베이스
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: CosmosDB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnet-application'
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: 서비스 패브릭
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
     - name: .NET 시작

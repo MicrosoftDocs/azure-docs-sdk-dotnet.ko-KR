@@ -3,18 +3,20 @@ title: "Azure .NET 개발자용 도구"
 description: "Windows, Linux 또는 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다."
 keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
 author: camsoper
-manager: douge
 ms.author: casoper
-ms.date: 07/14/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: 1018a09c43df85f8eb0b5a8f5583f9eb7dd5a15e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: f1d066a4db0085030e34a57a368808a659bb8942
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tools-for-net-azure-developers"></a>Azure .NET 개발자용 도구
 

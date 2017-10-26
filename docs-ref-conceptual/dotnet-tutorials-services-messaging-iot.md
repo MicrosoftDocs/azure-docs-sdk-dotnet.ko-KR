@@ -2,19 +2,20 @@
 title: "Azure에서 .NET을 사용하는 메시지 및 IoT에 대한 자습서 | Microsoft Docs"
 description: ".NET 및 Azure 서비스를 사용하여 클라우드 응용 프로그램 간 및 장치와 클라우드 간에 메시지를 보냅니다."
 author: camsoper
-manager: douge
-ms.assetid: 2ce6ea06-7b0b-45e6-8ca0-44e4e4030b82
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 4/10/2017
 ms.author: casoper
-ms.openlocfilehash: 0c3e81231ac88b2418778b83ecabcbb553608e24
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: d733a7e76585e95b7618ad3defd4712a31192c2d
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>엔터프라이즈 메시지 및 IoT(사물 인터넷)에 대한 .NET 자습서
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 08/28/2017
 
 | | |
 |---|---|
-| **Service Bus** | |
+| **서비스 버스** | |
 | [Service Bus 큐를 사용하는 방법][1] | 큐를 만들고, 메시지를 보내고 받고, 큐를 삭제합니다. | 
 | [Service Bus 토픽 및 구독을 사용하는 방법][2] | Service Bus를 통해 통신 모델 게시/구독을 사용하는 방법을 알아봅니다.
 | [AMQP 1.0을 사용하여 .NET에서 Service Bus 사용][3] | Service Bus 응용 프로그램에서 AMQP를 사용하는 방법을 알아봅니다.

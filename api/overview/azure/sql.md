@@ -4,18 +4,19 @@ description: ".NET용 Azure SQL Database 라이브러리에 대한 참조"
 keywords: "Azure, .NET, SDK, API, SQL, 데이터베이스"
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/31/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql
-ms.openlocfilehash: 110b7e554666a4fa6386d6715919684e121441a3
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 61b98b3096123b509b5c9f08bfc654aa37cf2149
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-sql-database-apis-for-net"></a>.NET용 Azure SQL Database API
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 08/28/2017
 
 .NET SQL 클라이언트 라이브러리를 사용하여 데이터베이스에 연결하여 인증하고 임시 T-SQL 문과 저장 프로 시저를 실행합니다.
 
-Visual Studio [패키지 관리자 콘솔](https://docs.microsoft.com/nuget/tools/package-manager-console) 또는 [.NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package)를 사용하여 [NuGet 패키지]( https://www.nuget.org/packages/System.Data.SqlClient)를 직접 설치합니다.
+Visual Studio [패키지 관리자 콘솔](https://docs.microsoft.com/nuget/tools/package-manager-console) 또는 [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package)를 사용하여 [NuGet 패키지]( https://www.nuget.org/packages/System.Data.SqlClient)를 직접 설치합니다.
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
 

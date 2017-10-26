@@ -3,18 +3,20 @@ title: Azure Tools for Visual Studio 2015
 description: "Visual Studio 2015에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다."
 keywords: Azure .NET SDK, VS2015, Visual Studio 2015
 author: camsoper
-manager: douge
 ms.author: casoper
-ms.date: 07/25/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: bee09801efd4f7291981bc85cd9c6a5d0b795b6e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 05241c8044e5826675afbd2d6d9bb69d48d15c65
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>Azure Tools for Visual Studio 2015
 
@@ -30,7 +32,7 @@ ms.lasthandoff: 08/28/2017
 
 3. 다음 화면에서 **동의**를 클릭합니다.  Web API에서 선택한 구성 요소의 다운로드 및 설치를 시작합니다.
 
-4. 설치가 완료되면 확인 화면이 표시됩니다.  **Finish**를 클릭합니다.  이제 웹 플랫폼 설치 관리자를 닫을 수 있습니다.
+4. 설치가 완료되면 확인 화면이 표시됩니다.  **마침**을 클릭합니다.  이제 웹 플랫폼 설치 관리자를 닫을 수 있습니다.
 
 ## <a name="verifying-the-installation"></a>설치 확인
 

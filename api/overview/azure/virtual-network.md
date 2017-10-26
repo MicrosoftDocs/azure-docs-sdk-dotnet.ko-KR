@@ -4,23 +4,24 @@ description: ".NET용 Azure Virtual Network 라이브러리에 대한 참조"
 keywords: Azure, .NET, SDK, API, Virtual Network
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 08/01/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: ea605dbd632ef4deb9c97c8de3474246dd4be30d
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: virtual-network
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: b67415344ef9cbf8af598a1fd43b6b47023bb071
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-virtual-network-libraries-for-net"></a>.NET용 Azure Virtual Network 라이브러리
 
 ## <a name="overview"></a>개요
-[Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) 서비스를 사용하면 Azure 리소스와 가상 네트워크(VNet)를 서로 안전하게 연결할 수 있습니다. VNet은 클라우드의 사용자 네트워크를 나타내는 표현입니다. VNet을 서로 연결하여 VNet에 연결된 리소스가 서로 통신하도록 할 수 있습니다. 
+[Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) 서비스를 사용하면 Azure 리소스와 가상 네트워크(VNet)를 서로 안전하게 연결할 수 있습니다. VNet은 클라우드에 있는 사용자의 네트워크를 나타내며, VNet을 서로 연결하여 VNet에 연결된 리소스가 서로 통신하도록 할 수 있습니다. 
 
 ## <a name="management-library"></a>관리 라이브러리
 

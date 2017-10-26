@@ -43,7 +43,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_download-install.svg'
             title: SDK &amp; 도구
-          - href: 'https://docs.microsoft.com/en-us/dotnet/api/overview/azure/?view=azure-dotnet'
+          - href: 'https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet'
             html: <p>.NET NuGet 패키지</p>
             image:
               src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
@@ -72,7 +72,7 @@ sections:
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg'
             title: Cosmos DB로 .NET 앱 빌드
-            href: 'https://docs.microsoft.com/en-us/azure/cosmos-db/create-documentdb-dotnet'
+            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
           - image:
               src: 'https://docs.microsoft.com/en-us/azure/media/index/fabric.svg'
             title: Service Fabric으로 .NET 마이크로 서비스 앱 만들기

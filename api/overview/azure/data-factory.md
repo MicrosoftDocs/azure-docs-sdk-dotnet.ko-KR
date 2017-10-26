@@ -4,19 +4,19 @@ description: ".NET용 Azure Data Factory 라이브러리에 대한 참조"
 keywords: Azure, .NET, SDK, API, Data Factory
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 09/22/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-factory
-ms.custom: devcenter
-ms.openlocfilehash: 6f1a1cf9ac8189af59ff4e3f42dc1d8fb9620ea2
-ms.sourcegitcommit: f35939d37f67485b3667739b02621e317db3e391
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 20e94fa687a3008ac7112d1a6511f8cec92b544c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-data-factory-libraries-for-net"></a>.NET용 Azure Data Factory 라이브러리
 
