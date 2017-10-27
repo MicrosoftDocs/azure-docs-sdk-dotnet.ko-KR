@@ -1,24 +1,28 @@
 ---
-title: ".NET용 Azure Recovery Services 라이브러리"
-description: ".NET용 Azure Recovery Services 라이브러리에 대한 참조"
-keywords: Azure, .NET, SDK, API, Recovery Services
+title: "Azure Recovery Services 및 .NET용백업 라이브러리"
+description: "Azure Recovery Services 및 .NET용백업 라이브러리에 대한 참조"
+keywords: Azure, .NET, SDK, API, Recovery Services, Backup
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/14/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: f77d8e783690b86b28d98494bb398c3f38914ce5
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: recovery-services
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 3b399827f187fc2cb59c8698a555e63d08cee6c7
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
-# <a name="azure-recovery-services-libraries-for-net"></a>.NET용 Azure Recovery Services 라이브러리
+# <a name="azure-recovery-services-and-backup-libraries-for-net"></a>Azure Recovery Services 및 .NET용백업 라이브러리
 
+## <a name="overview"></a>개요
+
+Azure Recovery Services는 [Azure Backup](/azure/backup/) 및 [Azure Site Recovery](/azure/site-recovery/)를 포함한 데이터 복구를 위한 서비스 도구 모음입니다.
 
 ## <a name="management-library"></a>관리 라이브러리
 
@@ -28,16 +32,31 @@ Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI
 
 ```powershell
 Install-Package Microsoft.Azure.Management.RecoveryServices
+Install-Package Microsoft.Azure.Management.RecoveryServices.Backup
 ```
+
+#### <a name="net-core-cli"></a>.NET Core CLI
 
 ```bash
 dotnet add package Microsoft.Azure.Management.RecoveryServices
+dotnet add package Microsoft.Azure.Management.RecoveryServices.Backup
 ```
 
 > [!div class="nextstepaction"]
 > [관리 API 탐색](/dotnet/api/overview/azure/recoveryservices/management)
 
 
+## <a name="code-example"></a>코드 예제
+
+다음 코드에서는 관리 라이브러리를 사용하여 백업을 트리거합니다.
+
+```csharp
+RecoveryServicesBackupManagementClient client = new RecoveryServicesBackupManagementClient(credentials);
+TriggerBackupRequest triggerBackupRequest = new TriggerBackupRequest();
+BaseRecoveryServicesJobResponse resp =
+    await client.Backups.TriggerBackupAsync(resourceGroupName, resourceName, null,
+        fabricName, containerName, protectedItemName, triggerBackupRequest);
+```
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
