@@ -1,6 +1,6 @@
 ---
-title: "Azure 개발자용 .NET"
-description: "Azure 개발자용 .NET"
+title: "Visual Studio에서 Azure에 배포"
+description: "이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다."
 keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
 author: camsoper
 manager: douge
@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 0f8e3e5ea1ef5cde239b2d8ebbc9fe75dd978cb1
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-for-azure-developers"></a>Azure 개발자용 .NET 시작
+# <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio에서 Azure에 배포
 
 이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure CosmosDB를 사용하여 데이터를 저장합니다.
 

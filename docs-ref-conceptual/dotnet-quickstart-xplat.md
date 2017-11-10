@@ -1,6 +1,6 @@
 ---
-title: "Azure 개발자용 .NET"
-description: "Azure 개발자용 .NET"
+title: ".NET Core를 사용하여 명령줄에서 Azure에 배포"
+description: "이 문서에서는 명령줄 도구를 사용하여 Azure App Service에 ASP.NET Core 응용 프로그램을 배포하는 방법을 설명합니다."
 keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
 author: camsoper
 manager: douge
@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 14374182ee0511e942940797465858b94ec08876
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: 2ed69bfed7310c9e6b2f3f8fedb906ce33d87c3c
+ms.sourcegitcommit: c630918c9e17f5e3c6d4f28fe740c041f60b1e66
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="get-started-with-net-cli-tools-for-azure-developers"></a>Azure 개발자용 .NET CLI 도구 시작
+# <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>.NET Core를 사용하여 명령줄에서 Azure에 배포
 
-이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure Web App으로 호스팅되고, Azure CosmosDB를 사용하여 데이터를 저장합니다.
+이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure CosmosDB를 사용하여 데이터를 저장합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -132,7 +132,7 @@ az webapp show -n $webappname -g DotNetAzureTutorial --query defaultHostName -o 
 
 ## <a name="clean-up"></a>정리
 
-앱을 테스트하고 코드 및 리소스를 검사한 후에는 리소스 그룹을 삭제하여 Web App 및 CosmosDB 계정을 삭제할 수 있습니다.
+앱을 테스트하고 코드 및 리소스를 검사한 후에는 리소스 그룹을 삭제하여 웹앱 및 CosmosDB 계정을 삭제할 수 있습니다.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
@@ -141,7 +141,7 @@ az group delete -n DotNetAzureTutorial
 ## <a name="next-steps"></a>다음 단계
 
 * [Azure Active Directory를 사용하여 ASP.NET 웹 응용 프로그램에서 인증](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet)
-* [Azure SQL Database를 사용하여 Azure Web App 빌드](/azure/app-service-web/web-sites-dotnet-get-started)
+* [Azure SQL Database를 사용하여 Azure 웹앱 빌드](/azure/app-service-web/web-sites-dotnet-get-started)
 * [Azure Storage를 통해 .NET 샘플 응용 프로그램 사용해보기](/azure/storage/storage-samples-dotnet)
 
 
