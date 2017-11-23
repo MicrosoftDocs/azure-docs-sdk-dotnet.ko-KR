@@ -4,11 +4,11 @@
     - name: .NET 빠른 시작
       expanded: true
       items:
-        - name: 웹앱
+        - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
         - name: 서버를 사용하지 않는 함수
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
-        - name: SQL 데이터베이스
+        - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: CosmosDB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
@@ -35,16 +35,28 @@
           href: /azure/postgresql/connect-csharp
         - name: CosmosDB DocumentDB API 시작
           href: /azure/cosmos-db/documentdb-dotnetcore-get-started
-    - name: 방법 문서
+    - name: 방법
       items:
+        - name: 마이그레이션
+          items:
+            - name: 올바른 Azure 호스팅 옵션 선택
+              href: dotnet-howto-choose-migration.md
+            - name: Azure App Service로 ASP.NET 앱 마이그레이션
+              href: dotnet-howto-migrate-app-service.md
+            - name: Azure VM으로 ASP.NET 앱 마이그레이션
+              href: dotnet-howto-migrate-to-vm.md
+            - name: Azure로 SQL Server 데이터베이스 마이그레이션
+              href: dotnet-howto-migrate-sql.md
         - name: 인증
           href: dotnet-sdk-azure-authenticate.md
-        - name: Fluent API
+        - name: Fluent API 사용
           href: dotnet-sdk-azure-concepts.md
-        - name: Visual Studio를 사용하여 배포
-          href: dotnet-quickstart-vs.md
-        - name: 명령줄 도구를 사용하여 배포
-          href: dotnet-quickstart-xplat.md
+        - name: 배포
+          items:
+            - name: Visual Studio를 사용하여 배포
+              href: dotnet-quickstart-vs.md
+            - name: 명령줄 도구를 사용하여 배포
+              href: dotnet-quickstart-xplat.md
         - name: 데이터베이스
           href: dotnet-tutorials-services-databases.md
         - name: 저장소
@@ -53,7 +65,7 @@
           href: dotnet-tutorials-services-containers.md
         - name: 메시징 + IoT
           href: dotnet-tutorials-services-messaging-iot.md
-        - name: AI + Cognitive Services 사용
+        - name: AI + Cognitive Services
           href: dotnet-tutorials-services-ai-cognitive.md
         - name: 데이터 + 분석
           href: dotnet-tutorials-services-analytics.md
@@ -65,7 +77,7 @@
           href: dotnet-tutorials-services-monitoring.md
     - name: .NET 코드 샘플
       items:
-        - name: 웹앱
+        - name: Web Apps
           href: dotnet-sdk-azure-web-apps-samples.md
         - name: 데이터베이스
           href: dotnet-sdk-azure-sql-database-samples.md
