@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, CosmosDB
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 11/17/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 890c00caeca06bf863425c7159d7833c4db8df38
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 9f29e53e7f202e48ade12e28f08487bbacd2833c
+ms.sourcegitcommit: 9cc5f8da9e9a15ba07fd67fe8b9a2d4ee6b57c73
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="azure-cosmosdb-libraries-for-net"></a>.NET용 Azure CosmosDB 라이브러리
 
@@ -24,9 +24,11 @@ ms.lasthandoff: 10/26/2017
 
 [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction)는 여러 유형의 데이터베이스를 지원하는 확장성 있는 분산 데이터 저장소입니다.
 
+[CosmosDB 시작](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet).
+
 ## <a name="client-library"></a>클라이언트 라이브러리
 
-CosmosDB .NET 클라이언트 라이브러리를 사용하여 CosmosDB 데이터 저장소에 액세스하고 데이터를 저장합니다.
+CosmosDB .NET 클라이언트 라이브러리를 사용하여 기존 CosmosDB 데이터 저장소에 액세스하고 데이터를 저장합니다.  새 CosmosDB 계정 만들기를 자동화하려면 Azure Portal, CLI 또는 PowerShell을 사용합니다.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)를 직접 설치합니다.
 
@@ -44,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>코드 예제
 
-이 예제에서는 기존 CosmosDB DocumentDB API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `Item` 개체로 deserialize합니다.
+이 예제에서는 기존 CosmosDB DocumentDB API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `Item` 개체로 deserialize합니다.   
 
 ```csharp
 /* Include this "using" directive...
@@ -53,8 +55,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-// "Item" is a class defined elsewhere...
-Item item = client.ReadDocumentAsync<Item>(documentUri).ToString()).Result;
+SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString()).Result;
 ```
 
 > [!div class="nextstepaction"]
