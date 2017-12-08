@@ -78,7 +78,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 
 <span data-ttu-id="8ef5d-112">다른 라이브러리에서는 권한이 부여된 자격 증명을 사용하여 응용 프로그램 실행 권한을 부여하는 [서비스 사용자](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)를 통해 응용 프로그램을 실행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="8ef5d-112">Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials.</span></span> <span data-ttu-id="8ef5d-113">이 구성은 아래에서 나열하는 관리 라이브러리에 대한 개체 기반 인증 단계와 비슷합니다.</span><span class="sxs-lookup"><span data-stu-id="8ef5d-113">This configuration is similar to the object-based authentication steps for the management library listed below.</span></span>
 
-## <span data-ttu-id="8ef5d-114"><a name="mgmt-auth"></a>.NET 인증에 대한 Azure 관리 라이브러리</span><span class="sxs-lookup"><span data-stu-id="8ef5d-114"><a name="mgmt-auth"></a>Azure management libraries for .NET authentication</span></span>
+## <a name="mgmt-auth"></a><span data-ttu-id="8ef5d-114">.NET 인증에 대한 Azure 관리 라이브러리</span><span class="sxs-lookup"><span data-stu-id="8ef5d-114">Azure management libraries for .NET authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
@@ -116,7 +116,7 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
-### <span data-ttu-id="8ef5d-124"><a name="mgmt-file"></a>파일 기반 인증</span><span class="sxs-lookup"><span data-stu-id="8ef5d-124"><a name="mgmt-file"></a>File-based authentication</span></span>
+### <a name="mgmt-file"></a><span data-ttu-id="8ef5d-124">파일 기반 인증</span><span class="sxs-lookup"><span data-stu-id="8ef5d-124">File-based authentication</span></span>
 
 <span data-ttu-id="8ef5d-125">파일 기반 인증을 사용하면 서비스 사용자 자격 증명을 일반 텍스트 파일에 저장하고 파일 시스템 내에서 보호할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="8ef5d-125">File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.</span></span>
 
