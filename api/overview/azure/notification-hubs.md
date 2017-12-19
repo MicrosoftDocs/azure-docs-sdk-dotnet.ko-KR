@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: notification-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 6fe4e3f25aa420322478dc7c10aecd055a70f5c8
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 9fd49ccc8d02eff09a8a53e6f1b9baa6a7a59082
+ms.sourcegitcommit: 33732307162ddf6f272b0e9cc7f74eb8e6fdda1b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>.NET용 Azure Notification Hubs 라이브러리
 
@@ -25,6 +25,9 @@ Azure Notification Hubs는 사용하기 쉬운 다중 플랫폼의 확장된 푸
 ## <a name="client-library"></a>클라이언트 라이브러리
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs)를 직접 설치합니다.
+
+> [!NOTE]
+> [NuGet 패키지의 새 미리 보기 버전](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1)은 .NET Standard를 지원하며 Notifications Hubs의 백 엔드 용도로 .NET Core를 사용할 수 있습니다.
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
 

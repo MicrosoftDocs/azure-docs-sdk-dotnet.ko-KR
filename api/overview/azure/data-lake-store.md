@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2b1c51575872b12a94eb44c7c082996bb879bcc9
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>.NET용 Azure Data Lake Store 라이브러리
 
@@ -25,6 +25,39 @@ ms.lasthandoff: 10/26/2017
 Azure 데이터 레이크 저장소는 빅 데이터 분석 작업을 위한 엔터프라이즈 수준 하이퍼 스케일 리포지토리입니다. Azure 데이터 레이크를 사용하면 작동 및 예비 분석에 대해 한 곳에서 모든 크기, 형식 및 수집 속도의 데이터를 캡처할 수 있습니다.
 
 자세히 알아보려면 [Azure Data Lake Store의 개요](/azure/data-lake-store/data-lake-store-overview)를 참조하세요.
+
+## <a name="client-library"></a>클라이언트 라이브러리
+
+클라이언트 라이브러리를 사용하여 Data Lake Store 계정에 폴더를 만들고, 파일을 업로드하며, 파일을 다운로드하는 등 Data Lake Store에서 파일 시스템 작업을 수행합니다.  .NET에서 Data Lake Store를 사용하는 방법에 대한 자세한 자습서는 [.NET SDK를 사용한 Azure Data Lake Store에서의 파일 시스템 작업](/azure/data-lake-store/data-lake-store-data-operations-net-sdk)을 참조하세요.
+
+Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store)를 직접 설치합니다.
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
+
+```powershell
+Install-Package Microsoft.Azure.DataLake.Store
+```
+
+```bash
+dotnet add package Microsoft.Azure.DataLake.Store
+```
+### <a name="authentication"></a>인증
+
+* 응용 프로그램에 대한 최종 사용자 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 최종 사용자 인증](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)을 참조하세요.
+* 응용 프로그램에 대한 서비스 간 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 서비스 간 인증](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)을 참조하세요.
+
+### <a name="code-example"></a>코드 예제
+
+다음 코드 조각은 이는 서비스에 요청을 발급하는 데 사용되는 Data Lake Store 파일 시스템 클라이언트 개체를 만듭니다.
+
+```csharp
+// Create client objects
+AdlsClient client = AdlsClient.CreateClient(_adlsAccountName, adlCreds);
+```
+
+> [!div class="nextstepaction"]
+> [클라이언트 API 탐색](/dotnet/api/overview/azure/datalakestore/client)
+
 
 ## <a name="management-library"></a>관리 라이브러리
 
@@ -42,30 +75,9 @@ Install-Package Microsoft.Azure.Management.DataLake.Store
 dotnet add package Microsoft.Azure.Management.DataLake.Store
 ```
 
-### <a name="code-example"></a>코드 예제
-
-이 예제에서는 분석 계정 및 저장소를 인증하고 관리에 필요한 클라이언트를 만듭니다.
-
-```csharp
-/*
-using AdlClient
-using AdlClient.Models 
-*/
-
-// Setup authentication 
-Authentication auth = new Authentication("microsoft.onmicrosoft.com"); // change this to YOUR tenant
-auth.Authenticate();
-
-// Identify the accounts
-StoreAccountRef adls_account = new StoreAccountRef(subscriptionId, resourceGroup, userName);
-
-// Create the clients
-AzureClient az = new AzureClient(auth);
-StoreClient adls = new StoreClient(auth, adls_account);
-```
-
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/dotnet/api/overview/azure/datalakestore/management)
+> [클라이언트 API 탐색](/dotnet/api/overview/azure/datalakestore/management)
+
 
 ## <a name="samples"></a>샘플
 

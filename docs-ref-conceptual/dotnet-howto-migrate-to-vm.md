@@ -6,20 +6,34 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 718d91b98180a7584f78a2383d430c4700743306
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Azure Virtual Machine으로 ASP.NET 웹 응용 프로그램 마이그레이션
 
 이 문서에서는 ASP.NET 웹 응용 프로그램을 온-프레미스에서 Azure Virtual Machine으로 마이그레이션하는 방법에 대한 개요를 제공합니다.
+
+## <a name="quickstart"></a>빠른 시작
+
+가상 머신을 만들고 앱을 게시하는 방법에 대해 알아봅니다.
+
+<div class="ico48Case">
+    <div class="ico48Link">
+        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
+            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+            <span>Azure VM에 게시</span>
+        </a>
+    </div>
+</div>
 
 ## <a name="get-started"></a>시작
 
@@ -73,7 +87,7 @@ Azure Virtual Network를 사용하여 다음을 수행할 수 있습니다.
 
 ### <a name="high-availability-and-scalability"></a>고가용성 및 확장성 
 
-#### <a name="virtual-machine-scale-sets"></a>가상 컴퓨터 확장 집합
+#### <a name="virtual-machine-scale-sets"></a>Virtual Machine Scale Sets
 응용 프로그램의 가용성이 높은지 그리고 확장할 수 있는지 확인하고 VM 이미지를 Azure Virtual Machine Scale Set로 마이그레이션하여 응용 프로그램의 가용성과 확장성을 높일 수 있습니다.  VM Scale Sets는 이미 구성한 기존 VM을 사용하거나 응용 프로그램으로 이미지를 빌드하기 위해 빌드 파이프라인을 설정하는 기능을 제공합니다.  
 
 시작하려면 [가상 머신 확장 집합에 응용 프로그램 배포](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)를 참조하세요.
