@@ -6,14 +6,16 @@
       items:
         - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
-        - name: 서버를 사용하지 않는 함수
+        - name: 서버리스 Functions
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
         - name: CosmosDB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
-        - name: 서비스 패브릭
+        - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+        - name: Blob 저장소
+          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
     - name: .NET 시작
       href: dotnet-sdk-azure-get-started.md
     - name: 도구
@@ -59,7 +61,7 @@
               href: dotnet-quickstart-xplat.md
         - name: 데이터베이스
           href: dotnet-tutorials-services-databases.md
-        - name: 저장소
+        - name: Storage
           href: dotnet-tutorials-services-storage.md
         - name: 컨테이너
           href: dotnet-tutorials-services-containers.md
@@ -81,7 +83,7 @@
           href: dotnet-sdk-azure-web-apps-samples.md
         - name: 데이터베이스
           href: dotnet-sdk-azure-sql-database-samples.md
-        - name: 가상 컴퓨터
+        - name: 가상 머신
           href: dotnet-sdk-azure-virtual-machine-samples.md
         - name: 모든 .NET 샘플
           href: 'https://azure.microsoft.com/resources/samples/?platform=dotnet'
