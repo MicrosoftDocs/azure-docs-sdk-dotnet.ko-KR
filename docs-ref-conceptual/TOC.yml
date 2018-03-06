@@ -10,8 +10,8 @@
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
-        - name: CosmosDB
-          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
+        - name: Cosmos DB
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
         - name: Blob 저장소
@@ -25,7 +25,7 @@
       items:
         - name: Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-        - name: CosmosDB를 사용하여 ASP.NET 웹앱 만들기
+        - name: Cosmos DB를 사용하여 ASP.NET 웹앱 만들기
           href: /azure/documentdb/documentdb-dotnet-application
         - name: Web API 만들기 및 배포
           href: /azure/app-service-api/app-service-api-dotnet-get-started
@@ -35,8 +35,8 @@
           href: /azure/sql-database/sql-database-connect-query-dotnet
         - name: PostgreSQL에 연결 및 쿼리
           href: /azure/postgresql/connect-csharp
-        - name: CosmosDB DocumentDB API 시작
-          href: /azure/cosmos-db/documentdb-dotnetcore-get-started
+        - name: Cosmos DB SQL API 시작
+          href: /azure/cosmos-db/sql-api-get-started
     - name: 방법
       items:
         - name: 마이그레이션
