@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 972c4ac0987bcd0d2fd132292f6d5fd25f68e378
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 0a78559541f1bc4c94f94d991c44aee2cbf56fc3
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-working-with-storage-in-your-net-apps-on-azure"></a>Azure의 .NET 앱에서 저장소 사용에 대한 자습서입니다.
 
@@ -25,7 +24,7 @@ ms.lasthandoff: 10/23/2017
 
 | | |
 |---|---|
-| **Azure 저장소** ||
+| **Azure Storage** ||
 | [.NET에서 Blob 저장소 사용][1] | Blob을 업로드, 나열, 다운로드 및 삭제합니다. |
 | [.NET에서 파일 저장소 사용][4] | 공유에서 파일 및 디렉터리를 만들고, 수정 및 삭제합니다. | 
 | [.NET에서 테이블 저장소 사용][3] | 테이블 및 엔터티를 만들고, 수정하고 삭제합니다. |

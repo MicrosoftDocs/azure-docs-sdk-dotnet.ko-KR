@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 6b1160e20f44b822791deb1ad467ed984a80438b
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 31023bc25b73c0d02f768aeb357d7c7b5ccf88d0
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Azure 데이터베이스와 함께 .NET 사용에 대한 자습서
 
@@ -25,7 +24,7 @@ ms.lasthandoff: 10/23/2017
 
 | | |
 |---|---|
-| **SQL 데이터베이스** ||
+| **SQL Database** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][1] | ADO.NET을 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][2] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 

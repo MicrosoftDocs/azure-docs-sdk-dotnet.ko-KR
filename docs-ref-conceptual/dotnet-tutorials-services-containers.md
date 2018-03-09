@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 3aba76da46418d4c741280b1b97dee0ccbcf546c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 10ad25f84a17da241ab09d442862e307a02ae9e8
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="container-deployment-tutorials-with-net-on-azure"></a>Azure에서 .NET을 사용한 컨테이너 배포 자습서
 
@@ -27,7 +26,7 @@ ms.lasthandoff: 10/23/2017
 |---|---|
 | **Azure Container Service** ||
 | [Kubernetes 및 Windows 컨테이너 시작][1] | IIS 컨테이너를 사용하여 Azure Container Service에서 Kubernetes 클러스터를 만듭니다.
-|**서비스 패브릭**| |
+|**Service Fabric**| |
 | [Azure Service Fabric 앱 만들기][2] | Azure Service Fabric 및 Visual Studio를 사용하여 앱을 만듭니다. | 
 | [Linux에서 Azure Service Fabric 앱 만들기][3] | Linux에서 Azure Service Fabric 및 .NET Core를 사용하여 앱을 만듭니다. | 
 | [컨테이너에서 .NET 앱 배포][4] | Visual Studio 2017을 사용하여 Windows 컨테이너에 기존 ASP.NET 응용 프로그램을 배포합니다.  |

@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: d733a7e76585e95b7618ad3defd4712a31192c2d
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: a6c50af1678c785c6a3fcd3f4f3689171069b2ee
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>엔터프라이즈 메시지 및 IoT(사물 인터넷)에 대한 .NET 자습서
 
@@ -26,7 +25,7 @@ ms.lasthandoff: 10/23/2017
 
 | | |
 |---|---|
-| **서비스 버스** | |
+| **Service Bus** | |
 | [Service Bus 큐를 사용하는 방법][1] | 큐를 만들고, 메시지를 보내고 받고, 큐를 삭제합니다. | 
 | [Service Bus 토픽 및 구독을 사용하는 방법][2] | Service Bus를 통해 통신 모델 게시/구독을 사용하는 방법을 알아봅니다.
 | [AMQP 1.0을 사용하여 .NET에서 Service Bus 사용][3] | Service Bus 응용 프로그램에서 AMQP를 사용하는 방법을 알아봅니다.

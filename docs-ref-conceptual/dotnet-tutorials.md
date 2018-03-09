@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 9d07d84275593e405656471dd4fd7c1234eb6906
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: bb2aff01c8c6a07c6a5a05cd07bc3c3f4eb0688b
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>Azure에서 .NET 앱 빌드에 대한 자습서
 
@@ -27,11 +26,11 @@ ms.lasthandoff: 10/23/2017
 |---|---|
 | **Web Apps**||
 | [Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기][1] | Azure SQL Database에 데이터를 저장하는 간단한 웹 응용 프로그램을 만듭니다. | 
-| **API 앱**||
+| **API Apps**||
 | [Web API 만들기 및 배포][3] | Swagger를 사용하여 .NET Web API를 만들고 배포합니다. | 
 | **Azure Container Service** ||
 | [Kubernetes 및 Windows 컨테이너 시작][4] | IIS 컨테이너를 사용하여 Azure Container Service에서 Kubernetes 클러스터를 만듭니다.
-| **SQL 데이터베이스** ||
+| **SQL Database** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][5] | ADO.NET을 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][6] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 

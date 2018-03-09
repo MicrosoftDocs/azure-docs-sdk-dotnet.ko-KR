@@ -7,20 +7,19 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 80f796493362a84474f5913a26ad6802f68a4906
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="get-started-with-the-azure-net-apis"></a>Azure .NET API 시작
 
-이 자습서에서는 [.NET용 Azure API](/dotnet/api/overview/azure/)에 대한 몇 가지 사용 방법을 보여 줍니다.  인증을 설정하고, Azure Storage 계정을 만들어 사용하고, Azure SQL Database를 만들어 사용하고, 일부 가상 컴퓨터를 배포하고, GitHub에서 Azure App Service Web App을 배포합니다.
+이 자습서에서는 [.NET용 Azure API](/dotnet/api/overview/azure/)에 대한 몇 가지 사용 방법을 보여 줍니다.  인증을 설정하고, Azure Storage 계정을 만들어 사용하고, Azure SQL Database를 만들어 사용하고, 일부 가상 머신을 배포하고, GitHub에서 Azure App Service Web App을 배포합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -69,9 +68,9 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using System.Data.SqlClient;
 ```
 
-## <a name="create-a-virtual-machine"></a>가상 컴퓨터 만들기
+## <a name="create-a-virtual-machine"></a>가상 머신 만들기
 
-이 예제에서는 가상 컴퓨터를 배포합니다. 
+이 예제에서는 가상 머신을 배포합니다. 
 
 `Main` 메서드를 다음 예제로 바꿉니다.  가상 컴퓨터에 실제 `username` 및 `password`를 제공해야 합니다.
 
@@ -117,7 +116,7 @@ static void Main(string[] args)
 
 **F5** 키를 눌러 샘플을 실행합니다.
 
-몇 분 후에 프로그램이 완료되면 Enter 키를 누르라는 메시지가 표시됩니다. Enter 키를 누른 후에 PowerShell을 사용하여 구독 중인 가상 컴퓨터를 확인합니다.
+몇 분 후에 프로그램이 완료되면 Enter 키를 누르라는 메시지가 표시됩니다. Enter 키를 누른 후에 PowerShell을 사용하여 구독 중인 가상 머신을 확인합니다.
 
 ```powershell
 Get-AzureRmVm -ResourceGroupName sampleResourceGroup
@@ -319,9 +318,9 @@ Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
 ## <a name="explore-more-samples"></a>더 많은 샘플 탐색
 
-.NET용 Azure 라이브러리를 사용하여 리소스를 관리하고 작업을 자동화하는 방법에 대한 자세한 내용은 [가상 컴퓨터](dotnet-sdk-azure-virtual-machine-samples.md), [웹앱](dotnet-sdk-azure-web-apps-samples.md) 및 [SQL 데이터베이스](dotnet-sdk-azure-sql-database-samples.md)에 대한 샘플 코드를 참조하세요.
+.NET용 Azure 라이브러리를 사용하여 리소스를 관리하고 작업을 자동화하는 방법에 대한 자세한 내용은 [가상 머신](dotnet-sdk-azure-virtual-machine-samples.md), [웹앱](dotnet-sdk-azure-web-apps-samples.md) 및 [SQL 데이터베이스](dotnet-sdk-azure-sql-database-samples.md)에 대한 샘플 코드를 참조하세요.
 
-## <a name="reference"></a>참조
+## <a name="reference"></a>참고 자료
 
 [참조](http://docs.microsoft.com/dotnet/api)는 모든 패키지에서 사용할 수 있습니다.
 

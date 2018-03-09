@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b817216e114e5ab3ff22c1c5adb0f892c7874147
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>.NET 흐름 개념에 대한 Azure 관리 라이브러리
 
@@ -81,7 +80,7 @@ foreach(var vm in vmList)
 >[!NOTE]
 > `Define()` 및 `Update()`는 동사이지만 `Create()` 또는 `Apply()`가 뒤에 나오지 않으면 차단하지 않습니다.
  
-일부 리소스 개체에는 Azure에서 리소스의 상태를 변경하는 동사가 있습니다. 예:
+일부 리소스 개체에는 Azure에서 리소스의 상태를 변경하는 동사가 있습니다. 예: 
 
 ```csharp
 var vmToRestart = azure.VirtualMachines.GetById(id);
@@ -96,7 +95,7 @@ Task restartTask = azure.VirtualMachines.GetById(id).RestartAsync();
 
 ## <a name="lazy-resource-creation"></a>지연 리소스 만들기
 
-Azure 리소스를 만들 때 새 리소스가 아직 존재하지 않는 다른 리소스에 종속되면 문제가 발생합니다. 한 예로, 새 가상 컴퓨터를 만들 때 공용 IP 주소를 예약하고 디스크를 설정합니다. 주소 예약 또는 디스크 만들기를 확인하지 않으려는 경우 이러한 리소스로 가상 컴퓨터를 구성하기만 하면 됩니다.
+Azure 리소스를 만들 때 새 리소스가 아직 존재하지 않는 다른 리소스에 종속되면 문제가 발생합니다. 한 예로, 새 가상 머신을 만들 때 공용 IP 주소를 예약하고 디스크를 설정합니다. 주소 예약 또는 디스크 만들기를 확인하지 않으려는 경우 이러한 리소스로 가상 머신을 구성하기만 하면 됩니다.
 
 만들 수 있는(Creatable) 개체를 사용하여 코드에서 사용할 Azure 리소스를 정의하지만 Azure에서 필요할 때만 만듭니다. 만들 수 있는 개체로 작성된 코드는 Azure 환경의 리소스 만들기를 관리 API로 오프로드하여 성능을 향상시킵니다. 
 
@@ -126,7 +125,7 @@ var vmCreatable = azure.VirtualMachines.Define("creatableVM")
 var virtualMachine = azure.VirtualMachines.Create(vmCreatable);
 ```
 
-만들 수 있는 개체를 `Create()`에 전달하면 단일 리소스 개체 대신 `ICreatedResources` 개체가 반환됩니다.  `CreatedRelatedResource` 개체를 사용하면 리소스 컬렉션의 형식 외에도 `Create()` 호출로 만든 모든 리소스에 액세스할 수 있습니다. 위의 예제에서 만든 가상 컴퓨터에 대해 Azure에서 만든 공용 IP 주소에 액세스하려면 다음을 수행합니다.
+만들 수 있는 개체를 `Create()`에 전달하면 단일 리소스 개체 대신 `ICreatedResources` 개체가 반환됩니다.  `CreatedRelatedResource` 개체를 사용하면 리소스 컬렉션의 형식 외에도 `Create()` 호출로 만든 모든 리소스에 액세스할 수 있습니다. 위의 예제에서 만든 가상 머신에 대해 Azure에서 만든 공용 IP 주소에 액세스하려면 다음을 수행합니다.
 
 ```csharp
 var pip = virtualMachine.CreatedRelatedResource(publicIPAddressCreatable.Key()) as PublicIPAddress;;

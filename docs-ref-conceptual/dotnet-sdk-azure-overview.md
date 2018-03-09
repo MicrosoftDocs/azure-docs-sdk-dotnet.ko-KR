@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: cd0f8d6e0572fc9211af637e60d1a4f19e1ee1e8
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 26360a516220ca9d3e8901e60cb23ecbd02863cd
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-net-apis"></a>Azure .NET API
 
@@ -52,9 +51,9 @@ var windowsVM = azure.VirtualMachines.Define(windowsVmName)
 
 다음 샘플에서는 .NET용 Azure 라이브러리를 사용하는 일반적인 자동화 작업에 대해 설명합니다.
 
-- [가상 컴퓨터](dotnet-sdk-azure-virtual-machine-samples.md)
+- [가상 머신](dotnet-sdk-azure-virtual-machine-samples.md)
 - [웹앱](dotnet-sdk-azure-web-apps-samples.md)
-- [SQL 데이터베이스](dotnet-sdk-azure-sql-database-samples.md)
+- [SQL Database](dotnet-sdk-azure-sql-database-samples.md)
 
 통합된 [참조](/dotnet/api/overview/azure/?view=azure-dotnet)는 서비스 라이브러리와 관리 라이브러리 둘 다의 모든 패키지에서 사용할 수 있습니다. 새 기능, 주요 변경 내용 및 마이그레이션 지침은 [릴리스 정보](dotnet-sdk-azure-release-notes.md)에서 사용할 수 있습니다.
 

@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 714bd05653c6b41b21b95581b1115b0bfa1956ed
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 19008714ee38ae00195b08c05fee5bf943da759f
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>릴리스 정보 
 
@@ -28,22 +27,22 @@ ms.lasthandoff: 10/23/2017
     <th align="left">서비스 | 기능</th>
     <th align="left">GA로 사용 가능</th>
     <th align="left">미리 보기로 사용 가능</th>
-    <th align="left">곧 출시됩니다</th>
+    <th align="left">서비스 예정</th>
   </tr>
   <tr>
-    <td>계산</td>
-    <td>가상 컴퓨터 및 VM 확장<br>가상 컴퓨터 확장 집합<br>관리 디스크</td>
+    <td>컴퓨팅</td>
+    <td>가상 머신 및 VM 확장<br>가상 머신 크기 집합<br>관리 디스크</td>
     <td></td>
     <td valign="top">Azure Container Service<br>Azure Container Registry</td>
   </tr>
   <tr>
-    <td>저장소</td>
-    <td>저장소 계정</td>
+    <td>Storage</td>
+    <td>Storage 계정</td>
     <td></td>
     <td>암호화</td>
   </tr>
   <tr>
-    <td>SQL 데이터베이스</td>
+    <td>SQL Database</td>
     <td>데이터베이스<br>방화벽<br>탄력적 풀</td>
     <td></td>
     <td valign="top"></td>
@@ -56,9 +55,9 @@ ms.lasthandoff: 10/23/2017
   </tr>
   <tr>
     <td>더 많은 서비스</td>
-    <td>리소스 관리자<br>키 자격 증명 모음<br>Redis<br>CDN<br>배치</td>
-    <td valign="top">App Service - Web Apps<br>함수<br>Service Bus</td>
-    <td valign="top">모니터<br>Graph RBAC<br>DocumentDB<br>스케줄러</td>
+    <td>리소스 관리자<br>Key Vault<br>Redis<br>CDN<br>Batch</td>
+    <td valign="top">App Service - Web Apps<br>Functions<br>Service Bus</td>
+    <td valign="top">모니터<br>Graph RBAC<br>DocumentDB<br>Scheduler</td>
   </tr>
   <tr>
     <td>기본 사항</td>
