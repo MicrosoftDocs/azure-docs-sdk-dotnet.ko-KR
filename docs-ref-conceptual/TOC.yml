@@ -79,6 +79,8 @@
           href: dotnet-tutorials-services-monitoring.md
     - name: .NET 코드 샘플
       items:
+        - name: 포토 갤러리 - Web Apps 및 Storage
+          href: 'https://azure.microsoft.com/resources/samples/storage-blobs-dotnet-webapp/'
         - name: Web Apps
           href: dotnet-sdk-azure-web-apps-samples.md
         - name: 데이터베이스
