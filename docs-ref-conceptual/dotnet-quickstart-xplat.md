@@ -1,7 +1,7 @@
 ---
-title: ".NET Core를 사용하여 명령줄에서 Azure에 배포"
-description: "이 문서에서는 명령줄 도구를 사용하여 Azure App Service에 ASP.NET Core 응용 프로그램을 배포하는 방법을 설명합니다."
-keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
+title: .NET Core를 사용하여 명령줄에서 Azure에 배포
+description: 이 문서에서는 명령줄 도구를 사용하여 Azure App Service에 ASP.NET Core 응용 프로그램을 배포하는 방법을 설명합니다.
+keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
 author: camsoper
 manager: douge
 ms.author: casoper

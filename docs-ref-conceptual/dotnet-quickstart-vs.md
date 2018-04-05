@@ -1,7 +1,7 @@
 ---
-title: "Visual Studio에서 Azure에 배포"
-description: "이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다."
-keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
+title: Visual Studio에서 Azure에 배포
+description: 이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.
+keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
 author: camsoper
 manager: douge
 ms.author: casoper

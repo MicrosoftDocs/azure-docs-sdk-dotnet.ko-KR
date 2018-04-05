@@ -1,6 +1,6 @@
 ---
-title: "Azure의 AI 및 Cognitive Services에 대한 .NET 자습서 | Microsoft Docs"
-description: "Microsoft Azure 서비스를 사용하여 .NET 앱에 AI 및 Cognitive Services를 추가합니다."
+title: Azure의 AI 및 Cognitive Services에 대한 .NET 자습서 | Microsoft Docs
+description: Microsoft Azure 서비스를 사용하여 .NET 앱에 AI 및 Cognitive Services를 추가합니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

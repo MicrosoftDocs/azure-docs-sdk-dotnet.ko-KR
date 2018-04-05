@@ -1,6 +1,6 @@
 ---
-title: "Azure 데이터베이스 사용에 대한 .NET 자습서"
-description: ".NET 응용 프로그램에서 Azure 데이터베이스를 연결하고 사용하는 자습서입니다."
+title: Azure 데이터베이스 사용에 대한 .NET 자습서
+description: .NET 응용 프로그램에서 Azure 데이터베이스를 연결하고 사용하는 자습서입니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

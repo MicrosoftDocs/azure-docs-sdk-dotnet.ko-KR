@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure 관리 라이브러리 릴리스 정보 | Microsoft Docs"
-description: ".NET용 Azure 관리 라이브러리에 대한 새 기능과 주요 변경 내용을 확인합니다."
-keywords: "Azure, .NET, API, 참조, 정보, 업데이트, 사용 중단"
+title: .NET용 Azure 관리 라이브러리 릴리스 정보 | Microsoft Docs
+description: .NET용 Azure 관리 라이브러리에 대한 새 기능과 주요 변경 내용을 확인합니다.
+keywords: Azure, .NET, API, 참조, 정보, 업데이트, 사용 중단
 author: camsoper
 ms.author: casoper
 manager: wpickett

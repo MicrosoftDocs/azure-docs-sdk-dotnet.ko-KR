@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure 라이브러리를 사용하여 인증"
-description: ".NET용 Azure 라이브러리에 대한 인증"
-keywords: "Azure, .NET, SDK, API, 인증, Active Directory, 서비스 사용자"
+title: .NET용 Azure 라이브러리를 사용하여 인증
+description: .NET용 Azure 라이브러리에 대한 인증
+keywords: Azure, .NET, SDK, API, 인증, Active Directory, 서비스 사용자
 author: camsoper
 ms.author: casoper
 manager: wpickett

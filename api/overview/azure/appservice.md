@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure App Service 라이브러리"
-description: ".NET용 Azure App Service 라이브러리에 대한 참조"
-keywords: "Azure, .NET, SDK, API, Web Apps, App Service, 모바일, ASP.NET"
+title: .NET용 Azure App Service 라이브러리
+description: .NET용 Azure App Service 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, Web Apps, App Service, 모바일, ASP.NET
 author: camsoper
 ms.author: casoper
 manager: wpickett

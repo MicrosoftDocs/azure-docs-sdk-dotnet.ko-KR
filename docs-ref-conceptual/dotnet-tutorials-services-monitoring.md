@@ -1,6 +1,6 @@
 ---
-title: "Azure에서 .NET 앱 관리 및 모니터링에 대한 자습서"
-description: "Azure에서 실행되는 .NET 응용 프로그램의 상태 및 성능을 모니터링하고 원격 분석을 계측하여 사용자의 앱 사용 방식에 대한 정보를 저장합니다."
+title: Azure에서 .NET 앱 관리 및 모니터링에 대한 자습서
+description: Azure에서 실행되는 .NET 응용 프로그램의 상태 및 성능을 모니터링하고 원격 분석을 계측하여 사용자의 앱 사용 방식에 대한 정보를 저장합니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

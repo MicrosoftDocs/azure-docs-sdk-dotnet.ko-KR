@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure 계산 라이브러리"
-description: ".NET용 Azure 계산 라이브러리에 대한 참조"
-keywords: "Azure, .NET, SDK, API, VM, 가상 머신, 계산"
+title: .NET용 Azure 계산 라이브러리
+description: .NET용 Azure 계산 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, VM, 가상 머신, 계산
 author: camsoper
 ms.author: casoper
 manager: wpickett

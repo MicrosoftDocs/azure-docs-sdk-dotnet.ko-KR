@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET 저장소 API"
-description: ".NET용 Azure Storage 라이브러리에 대한 참조"
-keywords: "Azure, .NET, SDK, API, 저장소, Blob"
+title: Azure .NET 저장소 API
+description: .NET용 Azure Storage 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, 저장소, Blob
 author: camsoper
 ms.author: casoper
 manager: wpickett

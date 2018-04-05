@@ -1,7 +1,7 @@
 ---
 title: Azure .NET API
-description: ".NET용 Azure API 개요"
-keywords: "Azure, .NET, SDK, API, NuGet, 라이브러리, 패키지"
+description: .NET용 Azure API 개요
+keywords: Azure, .NET, SDK, API, NuGet, 라이브러리, 패키지
 author: camsoper
 ms.author: casoper
 manager: wpickett
