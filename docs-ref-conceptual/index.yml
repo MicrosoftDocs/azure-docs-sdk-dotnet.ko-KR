@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: ".NET 개발자용 Azure"
+title: .NET 개발자용 Azure
 metadata:
   document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
-  title: ".NET 개발자용 Azure - 자습서, API 참조"
-  description: ".NET 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다."
+  title: .NET 개발자용 Azure - 자습서, API 참조
+  description: .NET 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
   keywords: Azure, .NET, SDK, API, NuGet
   author: camsoper
   ms.author: casoper
@@ -24,7 +24,8 @@ metadata:
 sections:
 - items:
   - type: markdown
-    text: ".NET 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.\n"
+    text: >
+      .NET 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
 - items:
   - type: list
     style: cards
@@ -32,29 +33,29 @@ sections:
     columns: 2
     items:
     - href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
-      html: "<p>Azure에 첫 번째 .NET 앱 배포</p>"
+      html: <p>Azure에 첫 번째 .NET 앱 배포</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: "시작"
+      title: 시작
     - href: https://azure.microsoft.com/resources/samples/?platform=dotnet&view=azure-dotnet
-      html: "<p>.NET을 사용하는 Azure 샘플 코드</p>"
+      html: <p>.NET을 사용하는 Azure 샘플 코드</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_code-samples.svg
-      title: "코드 샘플"
+      title: 코드 샘플
     - href: https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet
-      html: "<p>개발자 도구</p>"
+      html: <p>개발자 도구</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_download-install.svg
-      title: "SDK &amp; 도구"
+      title: SDK &amp; 도구
     - href: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet
-      html: "<p>.NET NuGet 패키지</p>"
+      html: <p>.NET NuGet 패키지</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_api-reference.svg
-      title: "API 참조"
-- title: "5분 빠른 시작"
+      title: API 참조
+- title: 5분 빠른 시작
   items:
   - type: paragraph
-    text: "Azure 서비스를 사용하여 .NET 앱을 빌드하는 방법을 알아봅니다."
+    text: Azure 서비스를 사용하여 .NET 앱을 빌드하는 방법을 알아봅니다.
   - type: list
     style: cards
     className: cardsM
@@ -62,33 +63,33 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: "Azure에 첫 번째 .NET 앱 배포"
+      title: Azure에 첫 번째 .NET 앱 배포
       href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
-      title: ".NET 서버를 사용하지 않는 함수 만들기"
+      title: .NET 서버를 사용하지 않는 함수 만들기
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
-      title: ".NET 앱을 Azure SQL Database에 연결"
+      title: .NET 앱을 Azure SQL Database에 연결
       href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
-      title: "Cosmos DB로 .NET 앱 빌드"
+      title: Cosmos DB로 .NET 앱 빌드
       href: https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
-      title: "Service Fabric으로 .NET 마이크로 서비스 앱 만들기"
+      title: Service Fabric으로 .NET 마이크로 서비스 앱 만들기
       href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
     - image:
         src: https://docs.microsoft.com/media/logos/logo_vs-team-services.svg
-      title: ".NET용 CI/CD 파이프라인 만들기"
+      title: .NET용 CI/CD 파이프라인 만들기
       href: https://docs.microsoft.com/vsts/build-release/apps/cd/azure/azure-devops-project-aspnetcore
-- title: "Azure에서 .NET 시작"
+- title: Azure에서 .NET 시작
   items:
   - type: markdown
     text: <iframe src="https://channel9.msdn.com/Shows/Azure-for-NET-Developers/Welcome-to-the-Azure-for-NET-Developer-Center/player" width="640" height="360" allowFullScreen="true" frameBorder="0"></iframe>
-- title: "Pluralsight에서 .NET 및 Azure 비디오 체험 교육"
+- title: Pluralsight에서 .NET 및 Azure 비디오 체험 교육
   items:
   - type: list
     style: cards
@@ -98,28 +99,28 @@ sections:
     - href: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg
-      title: "Azure에서 .NET으로 개발"
-- title: "샘플"
+      title: Azure에서 .NET으로 개발
+- title: 샘플
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/\">Cosmos DB 및 Mongo DB API를 사용하여 .NET 앱 개발</a>"
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/\">.NET에서 Azure 클라이언트 쪽 암호화 시작</a>"
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ \">.NET에서 Azure Table Storage 시작</a>"
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/\">Azure Blob Storage 및 .NET</a>"
-    - html: "<a href=\"https://azure.microsoft.com/resources/samples/redis-cache-getting-started/\">Azure Redis Cache 시작</a>"
-- title: "단계별 자습서"
+    - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/">Cosmos DB 및 Mongo DB API를 사용하여 .NET 앱 개발</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/">.NET에서 Azure 클라이언트 쪽 암호화 시작</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/ ">.NET에서 Azure Table Storage 시작</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/">Azure Blob Storage 및 .NET</a>
+    - html: <a href="https://azure.microsoft.com/resources/samples/redis-cache-getting-started/">Azure Redis Cache 시작</a>
+- title: 단계별 자습서
   items:
   - type: paragraph
-    text: ".NET 앱에서 Azure 서비스 및 도구를 사용하는 방법에 대해 알아봅니다."
+    text: .NET 앱에서 Azure 서비스 및 도구를 사용하는 방법에 대해 알아봅니다.
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase\">Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application\">CosmosDB를 사용하여 ASP.NET 웹앱 만들기</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started\">Azure에 Web API 만들기 및 배포</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough\">Kubernetes 및 Windows 컨테이너 시작</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet\">Azure SQL Database에 연결 및 쿼리</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/postgresql/connect-csharp\">Azure Database for PostgreSQL에 연결 및 쿼리</a>"
-    - html: "<a href=\"https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started\">.NET Core에서 CosmosDB DocumentDB API 시작</a>"
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기</a>
+    - html: <a href="https://docs.microsoft.com/azure/documentdb/documentdb-dotnet-application">CosmosDB를 사용하여 ASP.NET 웹앱 만들기</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Azure에 Web API 만들기 및 배포</a>
+    - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes 및 Windows 컨테이너 시작</a>
+    - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database에 연결 및 쿼리</a>
+    - html: <a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL에 연결 및 쿼리</a>
+    - html: <a href="https://docs.microsoft.com/azure/cosmos-db/documentdb-dotnetcore-get-started">.NET Core에서 CosmosDB DocumentDB API 시작</a>

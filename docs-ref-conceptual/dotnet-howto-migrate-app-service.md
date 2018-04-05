@@ -1,7 +1,7 @@
 ---
-title: "Azure App Service로 ASP.NET 웹 응용 프로그램 마이그레이션"
-description: "ASP.NET 웹 응용 프로그램을 온-프레미스에서 Azure App Service로 마이그레이션하는 방법에 대해 알아봅니다."
-keywords: "Azure.NET, ASP.NET, App Service, Web App, 마이그레이션, 마이그레이션"
+title: Azure App Service로 ASP.NET 웹 응용 프로그램 마이그레이션
+description: ASP.NET 웹 응용 프로그램을 온-프레미스에서 Azure App Service로 마이그레이션하는 방법에 대해 알아봅니다.
+keywords: Azure.NET, ASP.NET, App Service, Web App, 마이그레이션, 마이그레이션
 author: camsoper
 manager: wpickett
 ms.author: casoper

@@ -1,7 +1,7 @@
 ---
-title: ".NET 사용 개념 및 패턴에 대한 Azure 관리 라이브러리"
-description: 
-keywords: "Azure, .NET, SDK, API, 패턴, 개념, 흐름, 로깅"
+title: .NET 사용 개념 및 패턴에 대한 Azure 관리 라이브러리
+description: ''
+keywords: Azure, .NET, SDK, API, 패턴, 개념, 흐름, 로깅
 author: camsoper
 ms.author: casoper
 manager: wpickett

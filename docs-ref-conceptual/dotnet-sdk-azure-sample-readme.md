@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure 관리 라이브러리 샘플 지침"
-description: ".NET용 Azure 관리 라이브러리를 사용하여 리소스를 만들고 업데이트하는 샘플 코드를 가져옵니다."
-keywords: "Azure, .NET, SDK, API, 샘플, 예제"
+title: .NET용 Azure 관리 라이브러리 샘플 지침
+description: .NET용 Azure 관리 라이브러리를 사용하여 리소스를 만들고 업데이트하는 샘플 코드를 가져옵니다.
+keywords: Azure, .NET, SDK, API, 샘플, 예제
 author: camsoper
 ms.author: casoper
 manager: wpickett

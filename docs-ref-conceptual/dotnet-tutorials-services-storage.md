@@ -1,6 +1,6 @@
 ---
-title: "Azure의 .NET 앱에서 저장소 사용에 대한 자습서"
-description: "Azure에서 실행 중인 .NET 응용 프로그램에서 개체 저장 및 파일 사용"
+title: Azure의 .NET 앱에서 저장소 사용에 대한 자습서
+description: Azure에서 실행 중인 .NET 응용 프로그램에서 개체 저장 및 파일 사용
 author: camsoper
 ms.author: casoper
 manager: wpickett

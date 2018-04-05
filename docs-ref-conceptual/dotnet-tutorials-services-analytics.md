@@ -1,6 +1,6 @@
 ---
-title: "Azure의 데이터 분석에 대한 .NET 자습서 | Microsoft Docs"
-description: "Microsoft Azure 서비스를 사용하여 데이터 분석 응용 프로그램을 개발합니다."
+title: Azure의 데이터 분석에 대한 .NET 자습서 | Microsoft Docs
+description: Microsoft Azure 서비스를 사용하여 데이터 분석 응용 프로그램을 개발합니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

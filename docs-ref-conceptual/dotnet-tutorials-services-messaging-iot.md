@@ -1,6 +1,6 @@
 ---
-title: "Azure에서 .NET을 사용하는 메시지 및 IoT에 대한 자습서 | Microsoft Docs"
-description: ".NET 및 Azure 서비스를 사용하여 클라우드 응용 프로그램 간 및 장치와 클라우드 간에 메시지를 보냅니다."
+title: Azure에서 .NET을 사용하는 메시지 및 IoT에 대한 자습서 | Microsoft Docs
+description: .NET 및 Azure 서비스를 사용하여 클라우드 응용 프로그램 간 및 장치와 클라우드 간에 메시지를 보냅니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

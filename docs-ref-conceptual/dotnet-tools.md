@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET 개발자용 도구"
-description: "Windows, Linux 또는 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다."
-keywords: "Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리"
+title: Azure .NET 개발자용 도구
+description: Windows, Linux 또는 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
+keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
 author: camsoper
 ms.author: casoper
 manager: wpickett

@@ -1,7 +1,7 @@
 ---
-title: ".NET을 사용하여 Azure 웹 및 모바일 앱을 빌드하는 샘플 코드"
-description: "Azure Web Apps .NET을 만들고 업데이트하는 샘플 코드를 가져옵니다."
-keywords: "Azure, .NET, SDK, API, SQL, 데이터베이스"
+title: .NET을 사용하여 Azure 웹 및 모바일 앱을 빌드하는 샘플 코드
+description: Azure Web Apps .NET을 만들고 업데이트하는 샘플 코드를 가져옵니다.
+keywords: Azure, .NET, SDK, API, SQL, 데이터베이스
 author: camsoper
 ms.author: casoper
 manager: wpickett

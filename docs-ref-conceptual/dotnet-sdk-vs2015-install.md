@@ -1,6 +1,6 @@
 ---
 title: Azure Tools for Visual Studio 2015
-description: "Visual Studio 2015에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다."
+description: Visual Studio 2015에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
 keywords: Azure .NET SDK, VS2015, Visual Studio 2015
 author: camsoper
 ms.author: casoper

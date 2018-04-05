@@ -1,6 +1,6 @@
 ---
-title: "Azure에서 컨테이너 배포를 위한 .NET 자습서"
-description: "Azure에서 Docker 컨테이너에 .NET 응용 프로그램을 배포하고 DC/OS, Mesos 또는 Kubernetes를 사용하여 크기를 조정합니다."
+title: Azure에서 컨테이너 배포를 위한 .NET 자습서
+description: Azure에서 Docker 컨테이너에 .NET 응용 프로그램을 배포하고 DC/OS, Mesos 또는 Kubernetes를 사용하여 크기를 조정합니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

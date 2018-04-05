@@ -1,6 +1,6 @@
 ---
-title: "Azure 앱 보안에 대 한 .NET 자습서"
-description: "Azure에서 실행되는 .NET 앱에서 응용 프로그램 보안 및 ID 관리에 대한 자습서입니다."
+title: Azure 앱 보안에 대 한 .NET 자습서
+description: Azure에서 실행되는 .NET 앱에서 응용 프로그램 보안 및 ID 관리에 대한 자습서입니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

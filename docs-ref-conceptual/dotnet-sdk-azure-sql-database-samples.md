@@ -1,7 +1,7 @@
 ---
-title: ".NET으로 Azure 데이터베이스를 사용하는 샘플 코드"
-description: ".NET으로 Azure 데이터베이스를 사용하여 응용 프로그램을 만들기 위한 샘플 코드 얻기"
-keywords: "Azure, .NET, SDK, API, SQL, 데이터베이스"
+title: .NET으로 Azure 데이터베이스를 사용하는 샘플 코드
+description: .NET으로 Azure 데이터베이스를 사용하여 응용 프로그램을 만들기 위한 샘플 코드 얻기
+keywords: Azure, .NET, SDK, API, SQL, 데이터베이스
 author: camsoper
 ms.author: casoper
 manager: wpickett

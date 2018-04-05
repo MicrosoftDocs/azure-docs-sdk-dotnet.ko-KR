@@ -1,6 +1,6 @@
 ---
-title: "Azure에서 웹 및 모바일 .NET 앱 빌드에 대한 자습서"
-description: "Azure 서비스를 사용하여 웹 및 모바일 .NET 앱에 기능을 빌드하고 추가하는 자습서입니다."
+title: Azure에서 웹 및 모바일 .NET 앱 빌드에 대한 자습서
+description: Azure 서비스를 사용하여 웹 및 모바일 .NET 앱에 기능을 빌드하고 추가하는 자습서입니다.
 author: camsoper
 ms.author: casoper
 manager: wpickett

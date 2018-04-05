@@ -1,7 +1,7 @@
 ---
-title: "Azure .NET API 시작"
-description: "Azure 구독을 사용하여 .NET용 Azure 라이브러리의 기본적인 사용을 시작합니다."
-keywords: "Azure, .NET, SDK, API, 인증, 시작"
+title: Azure .NET API 시작
+description: Azure 구독을 사용하여 .NET용 Azure 라이브러리의 기본적인 사용을 시작합니다.
+keywords: Azure, .NET, SDK, API, 인증, 시작
 author: camsoper
 ms.author: casoper
 manager: wpickett
