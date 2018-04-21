@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure Service Bus 라이브러리"
-description: ".NET용 Azure Service Bus 라이브러리에 대한 참조"
+title: .NET용 Azure Service Bus 라이브러리
+description: .NET용 Azure Service Bus 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, Service Bus
 author: camsoper
 ms.author: casoper
@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>.NET용 Azure Service Bus 라이브러리
 
@@ -26,12 +26,12 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 
-Visual Studio [패키지 관리자 콘솔][PackageManager]에서 [NuGet 패키지](https://www.nuget.org/packages/WindowsAzure.ServiceBus)를 직접 설치합니다.
+Visual Studio [패키지 관리자 콘솔][PackageManager]에서 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus)를 직접 설치합니다.
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
 ### <a name="code-example"></a>코드 예제
@@ -39,11 +39,13 @@ Install-Package WindowsAzure.ServiceBus
 이 예제에서는 Service Bus 큐로 메시지를 보냅니다.
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]
