@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: d5c34dfc7e649e00e8ef458537f3f76410db61d4
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio에서 Azure에 배포
 
-이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure CosmosDB를 사용하여 데이터를 저장합니다.
+이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure Cosmos DB를 사용하여 데이터를 저장합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
 * [Visual Studio 2017](https://www.visualstudio.com/downloads/)
 * [Microsoft Azure 구독](https://azure.microsoft.com/free/)
 
-## <a name="create-a-cosmosdb-account"></a>CosmosDB 계정 만들기
+## <a name="create-an-azure-cosmos-db-account"></a>Azure Cosmos DB 계정 만들기
 
-CosmosDB는 이 자습서의 데이터 저장에 사용되므로 계정을 만들어야 합니다.  이 스크립트를 로컬 또는 Cloud Shell에서 실행하여 Azure CosmosDB DocumentDB API 계정을 만듭니다.  아래 코드 블록에서 **실습** 단추를 클릭하여 [Azure Cloud Shell](/azure/cloud-shell/)을 시작하고 스크립트 블록을 셸로 복사/붙여넣습니다.
+Azure Cosmos DB는 이 자습서의 데이터 저장에 사용되므로 계정을 만들어야 합니다.  이 스크립트를 로컬 또는 Cloud Shell에서 실행하여 Azure Cosmos DB SQL API 계정을 만듭니다.  아래 코드 블록에서 **실습** 단추를 클릭하여 [Azure Cloud Shell](/azure/cloud-shell/)을 시작하고 스크립트 블록을 셸로 복사/붙여넣습니다.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -37,7 +37,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -53,7 +53,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ## <a name="downloading-and-running-the-application"></a>응용 프로그램 다운로드 및 실행
 
-이 연습에 대한 샘플 코드를 다운로드하고 CosmosDB 계정을 살펴보겠습니다.
+이 연습에 대한 샘플 코드를 다운로드하고 Azure Cosmos DB 계정을 살펴보겠습니다.
 
 1. 샘플 코드를 다운로드합니다.  [GitHub에서 가져](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)오거나 [git 명령줄 클라이언트](https://git-scm.com/)가 있는 경우 다음 명령을 사용하여 로컬 컴퓨터에 복제합니다.
 
@@ -73,16 +73,16 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 4. **F5** 키를 눌러 프로젝트의 NuGet 패키지를 복원하고, 프로젝트를 빌드하고, 로컬로 실행합니다.
 
-웹 응용 프로그램은 브라우저에서 로컬로 실행해야 합니다.  이제 **새로 만들기**를 클릭하여 할 일 목록에 새 항목을 추가할 수 있습니다.  응용 프로그램에 입력하는 데이터는 CosmosDB 계정에 저장됩니다.  [Azure Portal에서 데이터를 볼](/azure/documentdb/documentdb-view-json-document-explorer) 수 있습니다.
+웹 응용 프로그램은 브라우저에서 로컬로 실행해야 합니다.  이제 **새로 만들기**를 클릭하여 할 일 목록에 새 항목을 추가할 수 있습니다.  응용 프로그램에 입력하는 데이터는 Azure Cosmos DB 계정에 저장됩니다.  왼쪽 메뉴에서 Azure Cosmos DB를 선택하고 계정을 선택한 다음 **데이터 탐색기**를 선택하여 [Azure Portal](https://portal.azure.com)에서 데이터를 볼 수 있습니다.
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Azure 웹앱으로 응용 프로그램 배포
 
-DocumentDB와 같은 Azure 서비스를 사용하는 응용 프로그램을 성공적으로 빌드했습니다.  다음으로, 웹 응용 프로그램을 클라우드에 배포합니다.
+Azure Cosmos DB와 같은 Azure 서비스를 사용하는 응용 프로그램을 성공적으로 빌드했습니다.  다음으로, 웹 응용 프로그램을 클라우드에 배포합니다.
 
 > [!IMPORTANT]
 > Azure 구독이 연결된 동일한 계정으로 Visual Studio에 로그인해야 합니다.
 
-1. Visual Studio 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시...**를 선택합니다.
+1. Visual Studio 솔루션 탐색기에서 프로젝트 이름을 마우스 오른쪽 단추로 클릭하고 **게시...** 를 선택합니다.
 
 2. 게시 대화 상자를 사용하여 **Microsoft Azure App Service**, **새로 만들기**를 차례로 선택한 다음 **게시**를 클릭합니다.
 
@@ -99,7 +99,7 @@ DocumentDB와 같은 Azure 서비스를 사용하는 응용 프로그램을 성�
 
 ## <a name="clean-up"></a>정리
 
-앱을 테스트하고 코드 및 리소스를 검사한 후에는 리소스 그룹을 삭제하여 웹앱 및 CosmosDB 계정을 삭제할 수 있습니다. Cloud Shell에서
+앱을 테스트하고 코드 및 리소스를 검사한 후에는 Cloud Shell에서 리소스 그룹을 삭제하여 웹앱 및 Azure Cosmos DB 계정을 삭제할 수 있습니다.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial

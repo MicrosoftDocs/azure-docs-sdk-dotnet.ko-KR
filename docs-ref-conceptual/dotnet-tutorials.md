@@ -10,11 +10,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: bb2aff01c8c6a07c6a5a05cd07bc3c3f4eb0688b
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: ad5a600f6d84c0bae7f4d0dd3f74910d980a9272
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>Azure에서 .NET 앱 빌드에 대한 자습서
 
@@ -34,15 +34,15 @@ ms.lasthandoff: 03/05/2018
 | [.NET을 사용하여 데이터 연결 및 쿼리][5] | ADO.NET을 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][6] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
-| **Cosmos DB** ||
-| [DocumentDB API 시작][7] | DocumentDB API를 사용하여 간단한 콘솔 응용 프로그램을 만듭니다. | 
-| [CosmosDB를 사용하여 ASP .NET 웹앱 만들기][8] | CosmosDB의 DocumentDB NoSQL 데이터베이스를 사용하여 웹 응용 프로그램을 만듭니다. | 
+| **Azure Cosmos DB** ||
+| [Azure Cosmos DB SQL API 시작하기][7] | Azure Cosmos DB SQL API를 사용하여 간단한 콘솔 응용 프로그램을 만듭니다. | 
+| [Azure Cosmos DB SQL API를 사용하여 ASP.NET 웹앱 만들기][8] | Azure Cosmos DB SQL API와 웹 응용 프로그램을 만듭니다. | 
 
 [1]: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-[2]: /azure/documentdb/documentdb-dotnet-application
+[2]: /azure/cosmos-db/sql-api-dotnet-application
 [3]: /azure/app-service-api/app-service-api-dotnet-get-started
 [4]: /azure/container-service/container-service-kubernetes-windows-walkthrough
 [5]: /azure/sql-database/sql-database-connect-query-dotnet
 [6]: /azure/postgresql/connect-csharp
-[7]: /azure/cosmos-db/documentdb-dotnetcore-get-started
-[8]: /azure/cosmos-db/documentdb-dotnet-application
+[7]: /azure/cosmos-db/sql-api-get-started
+[8]: /azure/cosmos-db/sql-api-dotnet-application

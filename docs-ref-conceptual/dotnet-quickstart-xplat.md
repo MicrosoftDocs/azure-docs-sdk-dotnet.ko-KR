@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.openlocfilehash: bb5d4958fb4398192d8427391695da1a7b8cc3c8
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>.NET Core를 사용하여 명령줄에서 Azure에 배포
 
-이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure CosmosDB를 사용하여 데이터를 저장합니다.
+이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure Cosmos DB를 사용하여 데이터를 저장합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 03/05/2018
 
 [Azure Cloud Shell](/azure/cloud-shell/)에는 이 자습서에 대한 선택적 필수 구성 요소가 모두 사전 설치되어 있습니다.  자습서를 로컬로 실행하려면 위의 선택적 구성 요소만 설치하면 됩니다.  Cloud Shell을 빠르게 시작하려면 아래 코드 블록의 오른쪽 위에 있는 **사용해 보세요** 단추를 클릭합니다.
 
-## <a name="create-a-cosmosdb-account"></a>CosmosDB 계정 만들기
+## <a name="create-an-azure-cosmos-db-account"></a>Azure Cosmos DB 계정 만들기
 
-CosmosDB는 이 자습서의 데이터 저장에 사용되므로 계정을 만들어야 합니다.  이 스크립트를 로컬 또는 Cloud Shell에서 실행하여 Azure CosmosDB DocumentDB API 계정을 만듭니다.
+Azure Cosmos DB는 이 자습서의 데이터 저장에 사용되므로 계정을 만들어야 합니다.  이 스크립트를 로컬 또는 Cloud Shell에서 실행하여 Azure Cosmos DB SQL API 계정을 만듭니다.
 
 ```azurecli-interactive
 # Create the DotNetAzureTutorial resource group
@@ -41,7 +41,7 @@ az group create --name DotNetAzureTutorial --location EastUS
 let randomNum=$RANDOM*$RANDOM
 cosmosdbname=dotnettutorial$randomNum
 
-# Create the CosmosDB account
+# Create the Azure Cosmos DB account
 az cosmosdb create --name $cosmosdbname --resource-group DotNetAzureTutorial
 
 # Retrieve the endpoint and key (you'll need these later)
@@ -52,7 +52,7 @@ cosmosAuthKey=$(az cosmosdb list-keys -n $cosmosdbname -g DotNetAzureTutorial --
 
 ## <a name="download-and-configure-the-application"></a>응용 프로그램 다운로드 및 구성
 
-배포하려는 응용 프로그램은 CosmosDB 클라이언트 라이브러리를 사용하는 ASP.NET MVC Core를 사용하여 작성된 [간단한 할 일 앱(영문)](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)입니다.  이제 이 자습서의 코드를 가져오고 CosmosDB 정보로 이 코드를 구성합니다.
+배포하려는 응용 프로그램은 Azure Cosmos DB 클라이언트 라이브러리를 사용하는 ASP.NET MVC Core를 사용하여 작성된 [간단한 할 일 앱(영문)](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)입니다.  이제 이 자습서의 코드를 가져오고 Azure Cosmos DB 정보로 이 코드를 구성합니다.
 
 ```azurecli-interactive
 # Get the code from GitHub
@@ -131,7 +131,7 @@ az webapp show -n $webappname -g DotNetAzureTutorial --query defaultHostName -o 
 
 ## <a name="clean-up"></a>정리
 
-앱을 테스트하고 코드 및 리소스를 검사한 후에는 리소스 그룹을 삭제하여 웹앱 및 CosmosDB 계정을 삭제할 수 있습니다.
+앱을 테스트하고 코드 및 리소스를 검사한 후에는 리소스 그룹을 삭제하여 웹앱 및 Azure Cosmos DB 계정을 삭제할 수 있습니다.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial

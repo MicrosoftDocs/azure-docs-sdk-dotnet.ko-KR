@@ -1,7 +1,7 @@
 ---
-title: .NET용 Azure CosmosDB 라이브러리
-description: .NET용 Azure CosmosDB 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, CosmosDB
+title: .NET용 Azure Cosmos DB 라이브러리
+description: .NET용 Azure Cosmos DB 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, Cosmos DB
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -12,23 +12,23 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4791e00c18d00fbed13bdf2c626a24fed2ff2863
-ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
+ms.openlocfilehash: fa9bc7497ac189f18ee0ba14d72d4cdb23a05f0b
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/14/2018
 ---
-# <a name="azure-cosmosdb-libraries-for-net"></a>.NET용 Azure CosmosDB 라이브러리
+# <a name="azure-cosmos-db-libraries-for-net"></a>.NET용 Azure Cosmos DB 라이브러리
 
 ## <a name="overview"></a>개요
 
-[Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction)는 여러 유형의 데이터베이스를 지원하는 확장성 있는 분산 데이터 저장소입니다.
+[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)는 여러 유형의 데이터베이스를 지원하는 확장성 있는 분산 데이터 저장소입니다.
 
-[CosmosDB 시작](https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet).
+[Cosmos DB 시작](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 
-CosmosDB .NET 클라이언트 라이브러리를 사용하여 기존 CosmosDB 데이터 저장소에 액세스하고 데이터를 저장합니다.  새 CosmosDB 계정 만들기를 자동화하려면 Azure Portal, CLI 또는 PowerShell을 사용합니다.
+Azure Cosmos DB .NET 클라이언트 라이브러리를 사용하여 기존 Azure Cosmos DB 데이터 저장소에 액세스하고 데이터를 저장합니다.  새 Azure Cosmos DB 계정 만들기를 자동화하려면 Azure Portal, CLI 또는 PowerShell을 사용합니다.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core)를 직접 설치합니다.
 
@@ -46,7 +46,7 @@ dotnet add package Microsoft.Azure.DocumentDB.Core
 
 ### <a name="code-example"></a>코드 예제
 
-이 예제에서는 기존 CosmosDB DocumentDB API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `Item` 개체로 deserialize합니다.   
+이 예제에서는 기존 Azure Cosmos DB SQL API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `Item` 개체로 deserialize합니다.   
 
 ```csharp
 /* Include this "using" directive...
