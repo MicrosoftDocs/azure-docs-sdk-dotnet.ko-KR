@@ -1,1 +1,0 @@
-# <a name="index-test-file-for-open-publishing"></a>개방형 게시를 위한 인덱스 테스트 파일
