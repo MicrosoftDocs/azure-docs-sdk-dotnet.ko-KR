@@ -35,7 +35,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="verifying-the-installation"></a>설치 확인
 
-1. Visual Studio 2015에서 **도구** 메뉴를 클릭한 다음 **확장 및 업데이트...**를 클릭합니다.
+1. Visual Studio 2015에서 **도구** 메뉴를 클릭한 다음 **확장 및 업데이트...** 를 클릭합니다.
 
 2. 표시된 목록에는 **Microsoft Azure App Service 도구**, **Microsoft Azure Storage 연결 서비스** 및 **Service Fabric 도구**와 같은 여러 Azure 도구가 포함되어 있습니다.
 

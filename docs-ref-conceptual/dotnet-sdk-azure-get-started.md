@@ -34,7 +34,7 @@ ms.lasthandoff: 03/05/2018
 
 ## <a name="create-a-new-project"></a>새 프로젝트 만들기 
 
-새 콘솔 응용 프로그램 프로젝트를 만듭니다.  이렇게 하려면 Visual Studio에서 **파일**, **새로 만들기**, **프로젝트...**를 차례로 클릭합니다.  Visual C# 템플릿 아래에서 **콘솔 앱(.NET Core)**을 선택하고, 프로젝트 이름을 지정한 다음, **확인**을 클릭합니다.
+새 콘솔 응용 프로그램 프로젝트를 만듭니다.  이렇게 하려면 Visual Studio에서 **파일**, **새로 만들기**, **프로젝트...** 를 차례로 클릭합니다.  Visual C# 템플릿 아래에서 **콘솔 앱(.NET Core)** 을 선택하고, 프로젝트 이름을 지정한 다음, **확인**을 클릭합니다.
 
 ![새 프로젝트 대화 상자](media/dotnet-sdk-azure-get-started/new-project.png)
 
