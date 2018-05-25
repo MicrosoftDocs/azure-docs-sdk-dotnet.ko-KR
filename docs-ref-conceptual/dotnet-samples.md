@@ -1,6 +1,6 @@
 ---
-title: .NET용 Azure 코드 샘플
-description: .NET 및 Azure용 코드 샘플입니다.
+title: .NET용 Azure C# 코드 샘플
+description: .NET 및 Azure용 C# 코드 샘플입니다.
 layout: LandingPage
 ms.topic: reference
 author: camsoper
@@ -11,14 +11,15 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 85d792859a345cd4e4101aa88a2dcce68bc791b0
-ms.sourcegitcommit: 7b6128836d7657af2be53dcf40c1841cd8fda957
+ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
+ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
-# <a name="azure-code-samples-for-net"></a>.NET용 Azure 코드 샘플
-다음은 .NET을 사용하여 Azure를 시작하고자 할 때 권장하는 최고의 샘플, 자습서 및 예제입니다.
+# <a name="azure-c-code-samples-for-net"></a>.NET용 Azure C# 코드 샘플
+
+다음은 C# 및 .NET을 사용하여 Azure를 시작하고자 할 때 권장하는 최고의 샘플, 자습서 및 예제입니다.
 
 <div id="main" class="v2">
     <div class="container">
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>기본 웹 사이트</h3>
-                                    <p>SQL 백엔드에 정보를 저장할 수 있는 간단한 웹 사이트를 만드는 방법을 보여줍니다.</p>
+                                    <p>SQL 백엔드에 정보를 저장하는 간단한 ASP.NET Core 웹 사이트를 만드는 방법을 알아봅니다.</p>
                                 </div>
                             </div>
                         </a>
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/azure/azure-functions/functions-create-github-webhook-triggered-function">
+                        <a href="https://github.com/JeremyLikness/ShortLink">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -53,8 +54,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>GitHub에서 이벤트 트리거</h3>
-                                    <p>Azure Functions 및 웹후크를 사용하여 GitHub 작업을 기반으로 이벤트를 트리거하는 방법을 보여줍니다.</p>
+                                    <h3>URL Shortener</h3>
+                                    <p>서버가 없는 Azure Functions를 사용하여 작업을 트리거하는 방법을 알아봅니다.</p>
                                 </div>
                             </div>
                         </a>
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>사진 갤러리</h3>
-                                    <p>사용자가 Azure Web Apps 및 Azure Blob Storage를 사용하여 클라우드로 사진을 업로드할 수 있는 웹 페이지를 만드는 방법을 보여줍니다.</p>
+                                    <p>Azure Blob Storage를 사용하여 클라우드에서 이미지 파일을 업로드, 다운로드하고 액세스하는 방법을 알아봅니다.</p>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +84,7 @@ ms.lasthandoff: 04/26/2018
             <li>
                 <div class="cardSize">
                     <div class="cardPadding">
-                        <a href="https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app">
+                        <a href="https://github.com/Azure-Samples/service-fabric-dotnet-quickstart">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/26/2018
                                 </div>
                                 <div class="cardText">
                                     <h3>Voting 앱</h3>
-                                    <p>Kubernetes 및 Docker 컨테이너를 사용하여 간단한 투표 응용 프로그램을 만드는 방법을 보여줍니다.</p>
+                                    <p>Azure Service Fabric을 사용하여 배포된 앱에 안정적인 마이크로 서비스를 만드는 방법을 알아봅니다.</p>
                                 </div>
                             </div>
                         </a>
@@ -129,8 +130,8 @@ ms.lasthandoff: 04/26/2018
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Cosmos DB 살펴보기</h3>
-                                    <p>.NET Core와 Mongo로 CosmosDB의 기본 내용을 보여줍니다.</p>
+                                    <h3>클라우드 데이터베이스</h3>
+                                    <p>Cosmos DB를 사용하는 최신 클라우드 데이터베이스에서 기본 검색, 작성 및 편집 작업을 수행하는 방법을 알아봅니다.</p>
                                 </div>
                             </div>
                         </a>
