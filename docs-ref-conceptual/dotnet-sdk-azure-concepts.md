@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752865"
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>.NET 흐름 개념에 대한 Azure 관리 라이브러리
 

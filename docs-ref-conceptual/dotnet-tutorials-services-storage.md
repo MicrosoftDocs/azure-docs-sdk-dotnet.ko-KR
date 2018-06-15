@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752735"
 ---
 # <a name="tutorials-for-working-with-storage-in-your-net-apps-on-azure"></a>Azure의 .NET 앱에서 저장소 사용에 대한 자습서입니다.
 

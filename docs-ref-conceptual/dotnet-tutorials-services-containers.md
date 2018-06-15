@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752835"
 ---
 # <a name="container-deployment-tutorials-with-net-on-azure"></a>Azure에서 .NET을 사용한 컨테이너 배포 자습서
 
