@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752476"
 ---
 # <a name="azure-management-libraries-for-net-sample-instructions"></a><span data-ttu-id="94e6b-104">.NET용 Azure 관리 라이브러리 샘플 지침</span><span class="sxs-lookup"><span data-stu-id="94e6b-104">Azure management libraries for .NET sample instructions</span></span>
 

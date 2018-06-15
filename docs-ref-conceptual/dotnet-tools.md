@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752680"
 ---
 # <a name="tools-for-net-azure-developers"></a><span data-ttu-id="ad8a5-104">Azure .NET 개발자용 도구</span><span class="sxs-lookup"><span data-stu-id="ad8a5-104">Tools for .NET Azure developers</span></span>
 

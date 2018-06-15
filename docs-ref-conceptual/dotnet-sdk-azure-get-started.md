@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752875"
 ---
 # <a name="get-started-with-the-azure-net-apis"></a><span data-ttu-id="eb9d6-104">Azure .NET API 시작</span><span class="sxs-lookup"><span data-stu-id="eb9d6-104">Get started with the Azure .NET APIs</span></span>
 

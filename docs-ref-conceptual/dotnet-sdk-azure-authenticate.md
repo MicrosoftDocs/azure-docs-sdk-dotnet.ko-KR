@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752775"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a><span data-ttu-id="712e0-104">.NET용 Azure 라이브러리를 사용하여 인증</span><span class="sxs-lookup"><span data-stu-id="712e0-104">Authenticate with the Azure Libraries for .NET</span></span>
 
