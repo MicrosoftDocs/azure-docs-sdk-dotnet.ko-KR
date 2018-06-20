@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure SQL Database API"
-description: ".NET용 Azure SQL Database 라이브러리에 대한 참조"
-keywords: "Azure, .NET, SDK, API, SQL, SQL 데이터베이스"
+title: .NET용 Azure SQL Database API
+description: .NET용 Azure SQL Database 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, SQL, SQL 데이터베이스
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/15/2017
+ms.locfileid: "24533108"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>.NET용 Azure SQL Database API
 

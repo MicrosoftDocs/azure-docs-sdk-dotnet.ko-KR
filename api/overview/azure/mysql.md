@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure Database for MySQL 라이브러리"
-description: ".NET용 Azure Database for MySQL 클라이언트 라이브러리에 대한 참조 설명서"
-keywords: "Azure, .NET, SDK, API, SQL, 데이터베이스, MySQL"
+title: .NET용 Azure Database for MySQL 라이브러리
+description: .NET용 Azure Database for MySQL 클라이언트 라이브러리에 대한 참조 설명서
+keywords: Azure, .NET, SDK, API, SQL, 데이터베이스, MySQL
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566054"
 ---
 # <a name="azure-database-for-mysql-libraries-for-net"></a>.NET용 Azure Database for MySQL 라이브러리
 

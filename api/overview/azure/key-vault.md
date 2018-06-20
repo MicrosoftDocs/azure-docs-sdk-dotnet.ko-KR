@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure Key Vault 라이브러리"
-description: ".NET용 Azure Key Vault 라이브러리에 대한 참조"
+title: .NET용 Azure Key Vault 라이브러리
+description: .NET용 Azure Key Vault 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, Key Vault
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/24/2017
+ms.locfileid: "23489187"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>.NET용 Azure Key Vault 라이브러리
 

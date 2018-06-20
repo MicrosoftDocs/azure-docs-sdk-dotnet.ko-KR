@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005750"
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Azure 데이터베이스와 함께 .NET 사용에 대한 자습서
 

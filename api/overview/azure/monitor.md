@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure Monitor 라이브러리"
-description: ".NET용 Azure Monitor 라이브러리에 대한 참조"
+title: .NET용 Azure Monitor 라이브러리
+description: .NET용 Azure Monitor 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, Monitor
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639641"
 ---
 # <a name="azure-monitor-libraries-for-net"></a>.NET용 Azure Monitor 라이브러리
 

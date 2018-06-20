@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure DNS 라이브러리"
-description: ".NET용 Azure DNS 라이브러리에 대한 참조"
+title: .NET용 Azure DNS 라이브러리
+description: .NET용 Azure DNS 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, DNS
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487056"
 ---
 # <a name="azure-dns-libraries-for-net"></a>.NET용 Azure DNS 라이브러리
 
