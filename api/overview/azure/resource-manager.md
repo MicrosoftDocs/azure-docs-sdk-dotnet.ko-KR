@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure Resource Manager 라이브러리"
-description: ".NET용 Azure Resource Manager 라이브러리에 대한 참조"
-keywords: "Azure, .NET, SDK, API, 리소스 관리자"
+title: .NET용 Azure Resource Manager 라이브러리
+description: .NET용 Azure Resource Manager 라이브러리에 대한 참조
+keywords: Azure, .NET, SDK, API, 리소스 관리자
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566374"
 ---
 # <a name="azure-resource-manager-libraries-for-net"></a><span data-ttu-id="d6e3c-104">.NET용 Azure Resource Manager 라이브러리</span><span class="sxs-lookup"><span data-stu-id="d6e3c-104">Azure Resource Manager libraries for .NET</span></span>
 

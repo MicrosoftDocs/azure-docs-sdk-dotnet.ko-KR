@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure StorSimple 라이브러리"
-description: ".NET용 Azure StorSimple 라이브러리에 대한 참조"
+title: .NET용 Azure StorSimple 라이브러리
+description: .NET용 Azure StorSimple 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, StorSimple
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 64c9e16e42894e8db8ed088487e55c5e0edd6861
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2017
+ms.locfileid: "23639651"
 ---
 # <a name="azure-storsimple-libraries-for-net"></a><span data-ttu-id="82cda-104">.NET용 Azure StorSimple 라이브러리</span><span class="sxs-lookup"><span data-stu-id="82cda-104">Azure StorSimple libraries for .NET</span></span>
 

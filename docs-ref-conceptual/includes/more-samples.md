@@ -1,3 +1,3 @@
-## <a name="more-samples"></a>추가 샘플
+## <a name="more-samples"></a><span data-ttu-id="16183-101">추가 샘플</span><span class="sxs-lookup"><span data-stu-id="16183-101">More samples</span></span>
 
-.NET용 Azure 관리 라이브러리 샘플의 전체 컬렉션은 [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code)에서 확인할 수 있습니다.
+<span data-ttu-id="16183-102">.NET용 Azure 관리 라이브러리 샘플의 전체 컬렉션은 [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code)에서 확인할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="16183-102">The full collection of samples for the Azure Management Libraries for .NET can be found on [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span></span>

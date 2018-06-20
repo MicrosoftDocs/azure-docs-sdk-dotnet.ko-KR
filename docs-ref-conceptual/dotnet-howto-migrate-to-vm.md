@@ -1,7 +1,7 @@
 ---
-title: "Azure Virtual Machine으로 ASP.NET 웹 응용 프로그램 마이그레이션"
-description: "ASP.NET 웹 응용 프로그램을 온-프레미스에서 Azure Virtual Machine으로 마이그레이션하는 방법에 대해 알아봅니다."
-keywords: "Azure.NET, ASP.NET, VM, 가상 머신, 마이그레이션, 마이그레이션"
+title: Azure Virtual Machine으로 ASP.NET 웹 응용 프로그램 마이그레이션
+description: ASP.NET 웹 응용 프로그램을 온-프레미스에서 Azure Virtual Machine으로 마이그레이션하는 방법에 대해 알아봅니다.
+keywords: Azure.NET, ASP.NET, VM, 가상 머신, 마이그레이션, 마이그레이션
 author: camsoper
 manager: wpickett
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588486"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Azure Virtual Machine으로 ASP.NET 웹 응용 프로그램 마이그레이션
 

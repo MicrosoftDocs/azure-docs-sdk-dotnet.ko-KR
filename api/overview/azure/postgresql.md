@@ -1,7 +1,7 @@
 ---
-title: ".NET용 Azure Database for PostgreSQL 라이브러리"
-description: ".NET용 Azure Database for PostgreSQL 클라이언트 라이브러리에 대한 참조 설명서"
-keywords: "Azure, .NET ODBC, SDK, API, SQL, ADO.NET, 데이터베이스, PostGres, PostgreSQL"
+title: .NET용 Azure Database for PostgreSQL 라이브러리
+description: .NET용 Azure Database for PostgreSQL 클라이언트 라이브러리에 대한 참조 설명서
+keywords: Azure, .NET ODBC, SDK, API, SQL, ADO.NET, 데이터베이스, PostGres, PostgreSQL
 author: camsoper
 ms.author: casoper
 manager: wpickett
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4dba7cd869bddff3dee7315d258522dc4879abce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/23/2017
+ms.locfileid: "25550813"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a><span data-ttu-id="c31d7-104">.NET용 Azure Database for PostgreSQL 라이브러리</span><span class="sxs-lookup"><span data-stu-id="c31d7-104">Azure Database for PostgreSQL libraries for .NET</span></span>
 

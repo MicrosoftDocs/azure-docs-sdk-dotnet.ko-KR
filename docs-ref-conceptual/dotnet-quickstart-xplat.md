@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005880"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a><span data-ttu-id="8592e-104">.NET Core를 사용하여 명령줄에서 Azure에 배포</span><span class="sxs-lookup"><span data-stu-id="8592e-104">Deploy to Azure from the command line with .NET Core</span></span>
 

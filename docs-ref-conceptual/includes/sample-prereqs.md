@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> 필수 구성 요소 및 설치 단계에 대한 [지침](../dotnet-sdk-azure-sample-readme.md)을 읽어야 합니다.
+> <span data-ttu-id="d025f-101">필수 구성 요소 및 설치 단계에 대한 [지침](../dotnet-sdk-azure-sample-readme.md)을 읽어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="d025f-101">Ensure you have read the [instructions](../dotnet-sdk-azure-sample-readme.md) for prerequisites and installation steps.</span></span>

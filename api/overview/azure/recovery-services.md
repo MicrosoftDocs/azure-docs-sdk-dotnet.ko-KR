@@ -1,6 +1,6 @@
 ---
-title: "Azure Recovery Services 및 .NET용백업 라이브러리"
-description: "Azure Recovery Services 및 .NET용백업 라이브러리에 대한 참조"
+title: Azure Recovery Services 및 .NET용백업 라이브러리
+description: Azure Recovery Services 및 .NET용백업 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, Recovery Services, Backup
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566114"
 ---
 # <a name="azure-recovery-services-and-backup-libraries-for-net"></a><span data-ttu-id="58404-104">Azure Recovery Services 및 .NET용백업 라이브러리</span><span class="sxs-lookup"><span data-stu-id="58404-104">Azure Recovery Services and Backup libraries for .NET</span></span>
 

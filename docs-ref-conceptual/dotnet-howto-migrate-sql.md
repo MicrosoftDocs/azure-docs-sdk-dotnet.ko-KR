@@ -1,7 +1,7 @@
 ---
-title: "Azure로 SQL Server 데이터베이스 마이그레이션"
-description: "온-프레미스 SQL Server에서 Azure로 SQL Server 데이터베이스를 마이그레이션하는 방법에 대해 알아보세요."
-keywords: "Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, 마이그레이션, 마이그레이션"
+title: Azure로 SQL Server 데이터베이스 마이그레이션
+description: 온-프레미스 SQL Server에서 Azure로 SQL Server 데이터베이스를 마이그레이션하는 방법에 대해 알아보세요.
+keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, 마이그레이션, 마이그레이션
 author: camsoper
 manager: wpickett
 ms.author: casoper
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728494"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a><span data-ttu-id="2dd1a-104">Azure로 SQL Server 데이터베이스 마이그레이션</span><span class="sxs-lookup"><span data-stu-id="2dd1a-104">Migrate a SQL Server database to Azure</span></span>
 

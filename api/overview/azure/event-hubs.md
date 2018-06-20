@@ -1,6 +1,6 @@
 ---
-title: ".NET용 Azure Event Hubs 라이브러리"
-description: ".NET용 Azure Event Hubs 라이브러리에 대한 참조"
+title: .NET용 Azure Event Hubs 라이브러리
+description: .NET용 Azure Event Hubs 라이브러리에 대한 참조
 keywords: Azure, .NET, SDK, API, Event Hubs
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487296"
 ---
 # <a name="azure-event-hubs-libraries-for-net"></a><span data-ttu-id="b532e-104">.NET용 Azure Event Hubs 라이브러리</span><span class="sxs-lookup"><span data-stu-id="b532e-104">Azure Event Hubs libraries for .NET</span></span>
 
