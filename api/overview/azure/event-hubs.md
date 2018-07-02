@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: event-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2ec234959ffc46d2399d1c763e05f173a311b0d2
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 5502ae24574c7883c34522ae18ca81bb516a33d2
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487296"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065313"
 ---
 # <a name="azure-event-hubs-libraries-for-net"></a>.NET용 Azure Event Hubs 라이브러리
 
@@ -112,7 +110,7 @@ Console.WriteLine("Created Event Hub successfully.");
 
 * [Azure Event Hubs 샘플](https://github.com/Azure/azure-event-hubs/tree/master/samples)
 
-앱에서 사용할 수 있는 [.NET 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)를 추가로 탐색합니다.
+앱에서 사용할 수 있는 [샘플 .NET 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)에 대해 자세히 알아봅니다.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9fe96fcdc94d3d27445f462c5220def9f2966da
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 5f36b826861071b263fac8bc22f8802ebb6505d1
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566374"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065323"
 ---
 # <a name="azure-resource-manager-libraries-for-net"></a>.NET용 Azure Resource Manager 라이브러리
 
@@ -41,7 +39,7 @@ Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 dotnet add package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제는 새 리소스 그룹을 만듭니다.
 

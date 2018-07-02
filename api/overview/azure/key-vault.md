@@ -7,23 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: key-vault
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 037b80f60616a37665eddb0b7b212d15180700ba
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
-ms.locfileid: "23489187"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065453"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>.NET용 Azure Key Vault 라이브러리
 
 ## <a name="overview"></a>개요
 
-Azure 키 자격 증명 모음은 클라우드 응용 프로그램 및 서비스에서 사용되는 암호화 키 및 비밀을 보호하는데 도움이 됩니다.
+Azure Key Vault는 클라우드 응용 프로그램 및 서비스에서 사용되는 암호화 키 및 비밀을 보호하는데 도움이 됩니다.
 
 [Key Vault란 무엇인가요?](/azure/key-vault/key-vault-whatis)를 읽은 후 [Azure Key Vault 시작](/azure/key-vault/key-vault-get-started)을 읽어보거나 [웹앱에서 Key Vault 사용](/azure/key-vault/key-vault-use-from-web-application) 방법에 대해 알아보세요.
 
@@ -43,7 +41,7 @@ Install-Package Microsoft.Azure.KeyVault
 dotnet add package Microsoft.Azure.KeyVault
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 다음 예제에서는 응용 프로그램 설정에서 식별되는 특정 키에 대한 비밀을 검색합니다.
 
@@ -74,7 +72,7 @@ Install-Package Microsoft.Azure.Management.KeyVault.Fluent
 dotnet add package Microsoft.Azure.Management.KeyVault.Fluent
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 다음 예제에서는 지정된 리소스 그룹 및 위치에 대한 새 키 자격 증명 모음을 만드는 방법을 보여 줍니다.
 

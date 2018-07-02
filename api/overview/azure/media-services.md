@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: media-services
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 872ed60363c0c886e9844d0cb0bef07cf41a0242
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: ec6a7ec7f8f0c416d93aad5c91ece4d3b499fd7a
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487446"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065403"
 ---
 # <a name="azure-media-services-libraries-for-net"></a>.NET용 Azure Media Services 라이브러리
 
@@ -43,7 +41,7 @@ Install-Package windowsazure.mediaservices
 
 ### <a name="code-example"></a>코드 예제
 
-다음 코드 예제에서는 미디어 서비스 .NET SDK를 사용하여 다음 작업을 수행합니다.
+다음 코드 예제에서는 Media Services .NET SDK를 사용하여 다음 작업을 수행합니다.
 
 - 인코딩 작업을 만듭니다.
 - 미디어 인코더 표준 인코더에 대한 참조를 가져옵니다.
@@ -100,7 +98,7 @@ job.GetExecutionProgressTask(CancellationToken.None).Wait();
 - [.NET SDK 확장을 사용하여 Azure Media Services 자산에 Blob 복사](https://azure.microsoft.com/resources/samples/media-services-dotnet-copy-blob-into-asset/)
 - [.NET SDK를 사용하여 Azure Media Services로 라이브 스트림 인코딩 및 제공](https://azure.microsoft.com/resources/samples/media-services-dotnet-encode-live-stream-with-ams-clear/)
 
-Azure Media Service 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=media-services)을 봅니다.
+Azure Media Services 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=media-services)을 봅니다.
 
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console

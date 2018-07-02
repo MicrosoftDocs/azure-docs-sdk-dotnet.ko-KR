@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: application-insights
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 081143eafaeea2954703c337609a67fd5a7941c6
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 3cbd4a874edfa6de26d3edf4d151d2c4006ab9c3
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487216"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065843"
 ---
 # <a name="azure-application-insights-libraries-for-net"></a>.NET용 Azure Application Insights 라이브러리
 
@@ -41,7 +39,7 @@ Install-Package Microsoft.ApplicationInsights
 dotnet add package Microsoft.ApplicationInsights 
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 사용자 지정 이벤트를 Application Insights로 추적합니다.
 

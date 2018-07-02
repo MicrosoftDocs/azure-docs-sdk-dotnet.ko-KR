@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: dns
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 34b50defa5f1524ab70c212b091f26016d59e81b
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 0360c4d5a0e276b4adf05d43689896fab6622f51
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487056"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065333"
 ---
 # <a name="azure-dns-libraries-for-net"></a>.NET용 Azure DNS 라이브러리
 
@@ -39,7 +37,7 @@ Install-Package Microsoft.Azure.Management.Dns
 dotnet add package Microsoft.Azure.Management.Dns
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 다음 예제에서는 새 DNS 영역을 만듭니다.
 
@@ -65,7 +63,7 @@ Zone dnsZone =
 
 * [Azure DNS .NET SDK 샘플 프로젝트](https://www.microsoft.com/download/details.aspx?id=47268)
 
-앱에서 사용할 수 있는 [.NET 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)를 추가로 탐색합니다.
+앱에서 사용할 수 있는 [샘플 .NET 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)에 대해 자세히 알아봅니다.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

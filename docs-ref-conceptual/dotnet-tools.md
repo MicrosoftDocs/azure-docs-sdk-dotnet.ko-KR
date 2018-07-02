@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "29752680"
 ---
 # <a name="tools-for-net-azure-developers"></a>Azure .NET 개발자용 도구
@@ -30,7 +30,7 @@ ms.locfileid: "29752680"
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
-Visual Studio 2017에는 기본적으로 제공되는 Azure 개발 지원 기능이 있습니다.
+        Visual Studio 2017에는 기본적으로 제공되는 Azure 개발 지원 기능이 있습니다.
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
-Mac용 Visual Studio에는 Azure 개발에 필요한 모든 것이 있습니다.
+        Mac용 Visual Studio에는 Azure 개발에 필요한 모든 것이 있습니다.
     </td>
   </tr>
 </table>

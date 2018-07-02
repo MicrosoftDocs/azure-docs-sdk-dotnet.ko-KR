@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: f1b014c4835784ed8ecfa1e3b4bfd62a6ebf9562
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588476"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065633"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>.NET용 Azure Data Lake Store 라이브러리
 
@@ -84,7 +82,7 @@ dotnet add package Microsoft.Azure.Management.DataLake.Store
 
 * [Azure Data Lake .NET 클라이언트 예제](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
 
-앱에서 사용할 수 있는 [.NET 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)를 추가로 탐색합니다.
+앱에서 사용할 수 있는 [샘플 .NET 코드](https://azure.microsoft.com/resources/samples/?platform=dotnet)에 대해 자세히 알아봅니다.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

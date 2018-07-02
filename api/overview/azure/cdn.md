@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: cdn
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: afc63f943fcac3afd9afb7d85f6e699079829244
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566334"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065823"
 ---
 # <a name="azure-cdn-libraries-for-net"></a>.NET용 Azure CDN 라이브러리
 
@@ -44,7 +42,7 @@ Install-Package Microsoft.Azure.Management.Cdn.Fluent
 dotnet add package Microsoft.Azure.Management.Cdn.Fluent
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 이 예제에서는 `www.contoso.com`을 가리키는 새 끝점을 사용하여 새 CDN 프로필을 만듭니다.
 
