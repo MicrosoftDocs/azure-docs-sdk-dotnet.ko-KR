@@ -17,11 +17,15 @@ SubscriptionName      : my-subscription
 CurrentStorageAccount : 
 ```
 
-다음과 같이 [PowerShell을 사용하여 서비스 주체를 만듭니다](/powershell/azure/create-azure-service-principal-azureps).
+다음과 같이 [PowerShell을 사용하여 서비스 주체를 만듭니다](/powershell/azure/create-azure-service-principal-azureps). 
+
+> [!NOTE]
+> 아래의 `New-AzureRmADServicePrincipal` cmdlet이 "identifierUris 속성과 값이 동일한 다른 개체가 이미 있습니다."를 반환할 경우, 해당 이름의 서비스 주체가 테넌트에 이미 있는 것입니다. **DisplayName** 매개 변수에 대해 다른 값을 사용합니다. 
 
 ```powershell
 # Create the service principal (use a strong password)
-$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password "password"
+$cred = Get-Credential
+$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password $cred.Password
 
 # Give it the permissions it needs...
 New-AzureRmRoleAssignment -ServicePrincipalName $sp.ApplicationId -RoleDefinitionName Contributor
