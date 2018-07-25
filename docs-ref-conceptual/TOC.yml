@@ -6,16 +6,22 @@
       items:
         - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet'
+          maintainContext: true
         - name: 서버리스 Functions
           href: 'https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio'
+          maintainContext: true
         - name: SQL Database
           href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet'
+          maintainContext: true
         - name: Cosmos DB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet'
+          maintainContext: true
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+          maintainContext: true
         - name: Blob 저장소
           href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
+          maintainContext: true
     - name: .NET 시작
       href: dotnet-sdk-azure-get-started.md
     - name: 도구
@@ -25,25 +31,32 @@
       items:
         - name: Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기
           href: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
+          maintainContext: true
         - name: Cosmos DB를 사용하여 ASP.NET 웹앱 만들기
           href: /azure/documentdb/documentdb-dotnet-application
+          maintainContext: true
         - name: Web API 만들기 및 배포
           href: /azure/app-service-api/app-service-api-dotnet-get-started
+          maintainContext: true
         - name: Kubernetes 및 Windows 컨테이너 시작
           href: /azure/container-service/container-service-kubernetes-windows-walkthrough
+          maintainContext: true
         - name: SQL Database에 연결 및 쿼리
           href: /azure/sql-database/sql-database-connect-query-dotnet
+          maintainContext: true
         - name: PostgreSQL에 연결 및 쿼리
           href: /azure/postgresql/connect-csharp
+          maintainContext: true
         - name: Cosmos DB SQL API 시작
           href: /azure/cosmos-db/sql-api-get-started
+          maintainContext: true
     - name: 방법
       items:
         - name: 마이그레이션
           items:
             - name: 올바른 Azure 호스팅 옵션 선택
               href: dotnet-howto-choose-migration.md
-            - name: Azure App Service로 ASP.NET 앱 마이그레이션
+            - name: .NET 웹 앱 또는 서비스를 Azure App Service로 마이그레이션
               href: dotnet-howto-migrate-app-service.md
             - name: Azure VM으로 ASP.NET 앱 마이그레이션
               href: dotnet-howto-migrate-to-vm.md

@@ -1,26 +1,26 @@
 ---
-title: Azure .NET 개발자용 도구
-description: Windows, Linux 또는 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
+title: Azure .NET 및 .NET Core 개발자용 도구
+description: Windows, Linux 및 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
 keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: 9c9d25e8f065408f81ed8b1fdb25817196f7e053
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752680"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135701"
 ---
-# <a name="tools-for-net-azure-developers"></a>Azure .NET 개발자용 도구
+# <a name="tools-for-net-and-net-core-azure-developers"></a>.NET 및 .NET Core Azure 개발자용 도구
 
-운영 체제에 상관 없이 Azure에서 .NET을 사용하여 개발하는 데 유용한 도구 집합이 있습니다.
+운영 체제에 상관 없이 Azure에서 .NET, .NET Core, ASP.NET 및 ASP.NET Core를 사용하여 개발하는 데 유용한 도구 집합이 있습니다.
 
 ## <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -44,7 +44,6 @@ Visual Studio 2017이 이미 설치되어 있으면 이 단계를 건너뛸 수 
 > [!div class="nextstepaction"]
 > [Visual Studio 2017 다운로드](https://www.visualstudio.com/downloads/)
 
-
 ### <a name="step-2-install-the-two-azure-workloads"></a>2단계: 두 개의 Azure 워크로드 설치
 
 Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 개발 워크로드가 선택되어 있는지 확인합니다.
@@ -53,8 +52,7 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
 
 ### <a name="step-3-develop-with-net-on-azure"></a>3단계: Azure에서 .NET을 사용하여 개발
 
-[Azure에서 첫 번째 .NET 앱을 배포](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)하여 시작합니다.
-
+[Azure App Service에서 첫 ASP.NET Core 웹 앱 배포](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet)로 시작합니다.
 
 ## <a name="macostabmacos"></a>[macOS](#tab/macos)
 <table>
@@ -67,7 +65,6 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
     </td>
   </tr>
 </table>
-
 
 ### <a name="step-1-download-visual-studio-for-mac"></a>1단계: Mac용 Visual Studio 다운로드
 
@@ -82,16 +79,16 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
 
 <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
 
-### <a name="step-1-download-net-core-sdk"></a>1 단계: .NET Core SDK 다운로드
+### <a name="step-1-download-the-net-core-sdk"></a>1 단계: .NET Core SDK 다운로드
 
-.NET 앱용 핵심 SDK 및 명령줄 도구입니다.
+.NET Core 앱용 SDK 및 명령줄 도구입니다.
 
 > [!div class="nextstepaction"]
 > [.NET Core SDK 다운로드](https://www.microsoft.com/net/core)
 
 ### <a name="step-2-visual-studio-code"></a>2단계: Visual Studio Code
 
-모든 OS에서 .NET 앱을 편집하고 디버그합니다.
+모든 운영 체제에서.NET Core 앱 편집 및 디버그: Windows, Mac, Linux
 
 > [!div class="nextstepaction"]
 > [Visual Studio Code 다운로드](https://code.visualstudio.com)

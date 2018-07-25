@@ -1,24 +1,24 @@
 ---
-title: Azure .NET API 시작
-description: Azure 구독을 사용하여 .NET용 Azure 라이브러리의 기본적인 사용을 시작합니다.
-keywords: Azure, .NET, SDK, API, 인증, 시작
+title: Azure .NET 및 .NET Core API 시작
+description: Azure 구독을 사용하여 .NET 및 .NET Core용 Azure 라이브러리의 기본적인 사용을 시작합니다.
+keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, 인증, 시작
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752875"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135781"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a>Azure .NET API 시작
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Azure .NET 및 .NET Core API 시작
 
 이 자습서에서는 [.NET용 Azure API](/dotnet/api/overview/azure/)에 대한 몇 가지 사용 방법을 보여 줍니다.  인증을 설정하고, Azure Storage 계정을 만들어 사용하고, Azure SQL Database를 만들어 사용하고, 일부 가상 머신을 배포하고, GitHub에서 Azure App Service Web App을 배포합니다.
 
@@ -201,11 +201,11 @@ static void Main(string[] args)
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,6 +241,7 @@ static void Main(string[] args)
     Console.ReadLine();
 }
 ```
+
 **F5** 키를 눌러 이전과 같이 코드를 실행합니다.  콘솔 출력에서 서버가 만들어져 예상대로 작동하는지 확인해야 하지만, 원하는 경우 SQL Server Management Studio와 같은 도구를 사용하여 직접 연결할 수 있습니다.
 
 ## <a name="write-a-blob-into-a-new-storage-account"></a>새 저장소 계정에 Blob 쓰기
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,7 +300,7 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
@@ -317,6 +318,7 @@ PowerShell에서 다음을 입력하여 만든 리소스를 모두 삭제합니�
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
+
 ## <a name="explore-more-samples"></a>더 많은 샘플 탐색
 
 .NET용 Azure 라이브러리를 사용하여 리소스를 관리하고 작업을 자동화하는 방법에 대한 자세한 내용은 [가상 머신](dotnet-sdk-azure-virtual-machine-samples.md), [웹앱](dotnet-sdk-azure-web-apps-samples.md) 및 [SQL 데이터베이스](dotnet-sdk-azure-sql-database-samples.md)에 대한 샘플 코드를 참조하세요.
