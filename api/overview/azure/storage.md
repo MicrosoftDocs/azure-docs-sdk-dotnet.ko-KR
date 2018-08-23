@@ -10,18 +10,18 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: storage
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 273e7ffc8794ef531e2bd35858b8ad1299755882
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: e953f38f103631f94b844d803d20a6576e841ed3
+ms.sourcegitcommit: 2a00655810b9b2c78a3edb31c974a9989bff8bc0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065533"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "42623359"
 ---
 # <a name="azure-storage-apis-for-net"></a>.NET용 Azure Storage API
 
 ## <a name="overview"></a>개요
 
-[Azure Storage](https://review.docs.microsoft.com/azure/storage/storage-introduction)를 사용하여 .NET 응용 프로그램의 파일, Blob(개체) 데이터, 키-값 쌍 및 메시지를 읽고 씁니다.
+[Azure Storage](https://docs.microsoft.com/azure/storage/storage-introduction)를 사용하여 .NET 응용 프로그램의 파일, Blob(개체) 데이터, 키-값 쌍 및 메시지를 읽고 씁니다.
 
 Azure Storage를 시작하려면 [.NET을 사용하여 Azure Blob 저장소 시작](/azure/storage/storage-dotnet-how-to-use-blobs)을 참조하세요.
 
