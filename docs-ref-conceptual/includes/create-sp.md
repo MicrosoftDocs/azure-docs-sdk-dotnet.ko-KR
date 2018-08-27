@@ -1,43 +1,52 @@
-<span data-ttu-id="71915-101">.NET 응용 프로그램에는 .NET용 Azure 관리 라이브러리를 사용하기 위해 Azure 구독에서 리소스를 읽고 만들 수 있는 권한이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="71915-102">서비스 주체를 만들고 이 액세스 권한을 부여하기 위해 해당 자격 증명을 사용하여 실행되도록 앱을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="71915-103">서비스 주체는 앱에서 실행하는 데 필요한 권한만 부여하는 ID와 연결되는 비대화형 계정을 만드는 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
+<span data-ttu-id="ceb41-101">.NET 응용 프로그램에는 .NET용 Azure 관리 라이브러리를 사용하기 위해 Azure 구독에서 리소스를 읽고 만들 수 있는 권한이 필요합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="ceb41-102">서비스 주체를 만들고 이 액세스 권한을 부여하기 위해 해당 자격 증명을 사용하여 실행되도록 앱을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="ceb41-103">서비스 주체는 앱에서 실행하는 데 필요한 권한만 부여하는 ID와 연결되는 비대화형 계정을 만드는 방법을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
 
-<span data-ttu-id="71915-104">먼저, Azure PowerShell에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-104">First, login to Azure PowerShell:</span></span>
+<span data-ttu-id="ceb41-104">먼저, [Azure Cloud Shell](https://shell.azure.com/bash)에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-104">First, login to [Azure Cloud Shell](https://shell.azure.com/bash).</span></span> <span data-ttu-id="ceb41-105">서비스 주체를 만들려는 구독을 현재 사용하고 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-105">Verify you are currently using the subscription in which you want the service principal created.</span></span> 
 
-```powershell
-Login-AzureRmAccount
+```azurecli-interactive
+az account show
 ```
 
-<span data-ttu-id="71915-105">테넌트 및 구독에 대해 표시된 정보를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-105">Note the information displayed about your tenant and subscription:</span></span>
+<span data-ttu-id="ceb41-106">구독 정보가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-106">Your subscription information is displayed.</span></span>
 
-```plaintext
-Environment           : AzureCloud
-Account               : jane@contoso.com
-TenantId              : 43413cc1-5886-4711-9804-8cfea3d1c3ee
-SubscriptionId        : 15dbcfa8-4b93-4c9a-881c-6189d39f04d4
-SubscriptionName      : my-subscription
-CurrentStorageAccount : 
+```json
+{
+  "environmentName": "AzureCloud",
+  "id": "15dbcfa8-4b93-4c9a-881c-6189d39f04d4",
+  "isDefault": true,
+  "name": "my-subscription",
+  "state": "Enabled",
+  "tenantId": "43413cc1-5886-4711-9804-8cfea3d1c3ee",
+  "user": {
+    "cloudShellID": true,
+    "name": "jane@contoso.com",
+    "type": "user"
+  }
+}
 ```
 
-<span data-ttu-id="71915-106">다음과 같이 [PowerShell을 사용하여 서비스 주체를 만듭니다](/powershell/azure/create-azure-service-principal-azureps).</span><span class="sxs-lookup"><span data-stu-id="71915-106">[Create a service principal using PowerShell](/powershell/azure/create-azure-service-principal-azureps) as shown below.</span></span> 
+<span data-ttu-id="ceb41-107">올바른 구독에 로그인되지 않은 경우 `az account set -s <name or ID of subscription>`을 입력하여 올바른 구독을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-107">If you're not logged into the correct subscription, select the correct one by typing `az account set -s <name or ID of subscription>`.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="71915-107">아래의 `New-AzureRmADServicePrincipal` cmdlet이 "identifierUris 속성과 값이 동일한 다른 개체가 이미 있습니다."를 반환할 경우, 해당 이름의 서비스 주체가 테넌트에 이미 있는 것입니다.</span><span class="sxs-lookup"><span data-stu-id="71915-107">If the `New-AzureRmADServicePrincipal` cmdlet below returns "Another object with the same value for property identifierUris already exists," there is already a service principal by that name in your tenant.</span></span> <span data-ttu-id="71915-108">**DisplayName** 매개 변수에 대해 다른 값을 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-108">Use a different value for the **DisplayName** parameter.</span></span> 
+<span data-ttu-id="ceb41-108">다음 명령을 사용하여 서비스 주체를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-108">Create the service principal with the following command:</span></span>
 
-```powershell
-# Create the service principal (use a strong password)
-$cred = Get-Credential
-$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password $cred.Password
-
-# Give it the permissions it needs...
-New-AzureRmRoleAssignment -ServicePrincipalName $sp.ApplicationId -RoleDefinitionName Contributor
-
-# Display the Application ID, because we'll need it later.
-$sp | Select DisplayName, ApplicationId
+```azurecli-interactive
+az ad sp create-for-rbac --sdk-auth
 ```
 
-<span data-ttu-id="71915-109">ApplicationId를 메모해 두어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="71915-109">Make sure to note the ApplicationId:</span></span>
+<span data-ttu-id="ceb41-109">서비스 주체 정보는 JSON으로 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-109">The service principal information is displayed as JSON.</span></span>
 
-```plaintext
-DisplayName     ApplicationId
------------     -------------
-AzureDotNetTest a2ab11af-01aa-4759-8345-7803287dbd39
+```json
+{
+  "clientId": "b52dd125-9272-4b21-9862-0be667bdf6dc",
+  "clientSecret": "ebc6e170-72b2-4b6f-9de2-99410964d2d0",
+  "subscriptionId": "ffa52f27-be12-4cad-b1ea-c2c241b6cceb",
+  "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
 ```
+
+<span data-ttu-id="ceb41-110">JSON 출력을 복사하여 나중에 사용할 텍스트 편집기에 붙여넣습니다.</span><span class="sxs-lookup"><span data-stu-id="ceb41-110">Copy and paste the JSON output to a text editor for use later.</span></span>
