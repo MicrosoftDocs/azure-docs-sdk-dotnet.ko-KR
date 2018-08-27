@@ -5,18 +5,18 @@ keywords: Azure, .NET, SDK, API, 인증, Active Directory, 서비스 사용자
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 08/22/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 783b5ebf14abad992c18726df7232e4f3a68b72b
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 019f0047fb141842eb1481ad9b835fa865a9a139
+ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752775"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703046"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a>.NET용 Azure 라이브러리를 사용하여 인증
 
@@ -103,9 +103,7 @@ var credentials = SdkContext.AzureCredentialsFactory
     AzureEnvironment.AzureGlobalCloud);
 ```
 
-- clientId: 서비스 사용자 출력의 *ApplicationId* 값을 사용합니다.
-- clientSecret: `New-AzureRmADServicePrincipal`을 실행할 때 할당한 *-Password* 매개 변수를 사용합니다(따옴표 제외).
-- tenantId: `Login-AzureRmAccount`를 실행할 때의 *TenantId* 값을 사용합니다.
+서비스 주체를 만들 때 JSON 출력에서 *clientId*, *clientSecret*, 및 *tenantId* 값을 사용합니다.
 
 그런 다음 `Azure` 진입점 개체를 만들어 API 작업을 시작합니다.
 
