@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135721"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700955"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>.NET 웹 앱 또는 서비스를 Azure App Service로 마이그레이션 
 
@@ -30,10 +30,10 @@ ms.locfileid: "39135721"
 
 마이그레이션하거나 변경해야 할 수 있으므로 온-프레미스 리소스에 대한 액세스를 확인합니다. 다음은 온-프레미스 리소스에 대한 액세스를 완화하기 위한 옵션입니다.
 
-* [Azure Virtual Network](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet)를 사용하여 App Service를 온-프레미스 리소스에 연결할 VPN을 만듭니다.
-* [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it)를 사용하여 방화벽을 변경하지 않고 온-프레미스 서비스를 클라우드에 안전하게 노출합니다.
+* [Azure Virtual Network](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet)를 사용하여 App Service를 온-프레미스 리소스에 연결할 VPN을 만듭니다.
+* [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it)를 사용하여 방화벽을 변경하지 않고 온-프레미스 서비스를 클라우드에 안전하게 노출합니다.
 * [SQL database](https://go.microsoft.com/fwlink/?linkid=863217)의 Azure에 대한 종속성과 같은 종속성을 마이그레이션합니다.
-* 클라우드의 서비스로서의 플랫폼 기능을 사용하여 종속성을 줄입니다. 예를 들어, 온-프레미스 메일 서버에 연결하는 것보다 [SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email) 사용을 고려해 봅니다. 
+* 클라우드의 서비스로서의 플랫폼 기능을 사용하여 종속성을 줄입니다. 예를 들어, 온-프레미스 메일 서버에 연결하는 것보다 [SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email) 사용을 고려해 봅니다. 
 
 ### <a name="port-bindings"></a>포트 바인딩
 
@@ -64,7 +64,7 @@ Azure App Service는 기본적으로 익명 인증을 지원하며 의도하는 
 기존에는 응용 프로그램에서 applicationHost.config를 통해 구성하던 모든 것을 이제 Azure Portal을 통해 구성할 수 있습니다. 이는 AppPool 비트 수, 웹 소켓 활성화/비활성화, 관리되는 파이프라인 버전, .NET Framework 버전(2.0/4.0) 등에 적용됩니다. [응용 프로그램 설정](https://docs.microsoft.com/azure/app-service/web-sites-configure)을 수정하려면 [Azure Portal](https://portal.azure.com)로 이동하고 웹앱의 블레이드를 연 다음 **응용 프로그램 설정** 탭을 선택합니다.
 
 #### <a name="iis5-compatibility-mode"></a>IIS5 호환 모드
-IIS5 호환 모드는 지원되지 않습니다. Azure App Service에서 각 웹 앱과 그 아래의 모든 응용 프로그램은 특정 [응용 프로그램 풀](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx) 집합으로 동일한 작업자 프로세스에서 실행됩니다.
+IIS5 호환 모드는 지원되지 않습니다. Azure App Service에서 각 웹 앱과 그 아래의 모든 응용 프로그램은 특정 [응용 프로그램 풀](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx) 집합으로 동일한 작업자 프로세스에서 실행됩니다.
 
 #### <a name="iis7-schema-compliance"></a>IIS7+ 스키마 준수  
 Azure App Service IIS 스키마의 일부 요소와 특성이 정의되지 있지 않습니다. 문제가 발생하는 경우 [XDT 변환](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/) 사용을 고려합니다.
