@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: f80b08f77cfb88b2e2148534553cc4c96cac6d76
-ms.sourcegitcommit: 0e64271404ddbb8f84f7e95691b29690de9e41bf
+ms.openlocfilehash: 0f2928212fca7c86defa37068e18e9ff96adb50a
+ms.sourcegitcommit: 319a55d604140fcc0b03a07b634ab9a3b22e657d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616385"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44703794"
 documentType: LandingData
 title: .NET 및.NET Core 개발자용 Azure
 metadata:
@@ -72,21 +72,21 @@ sections:
       title: .NET 서버를 사용하지 않는 함수 만들기
       href: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
-      title: .NET 앱을 Azure SQL Database에 연결
-      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
-    - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
       title: Azure Cosmos DB로 .NET 웹 앱 빌드
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
-        src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
-      title: Service Fabric으로 .NET 마이크로 서비스 앱 만들기
-      href: https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet
+        src: https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg
+      title: Application Insights를 사용하여 ASP.NET 응용 프로그램 모니터링
+      href: https://docs.microsoft.com/azure/application-insights/quick-monitor-portal
     - image:
-        src: https://docs.microsoft.com/azure/media/index/api_textanalytics.svg
-      title: C#과 텍스트 분석 API로 언어 분석
-      href: https://docs.microsoft.com/azure/cognitive-services/text-analytics/quickstarts/csharp
+        src: https://docs.microsoft.com/en-us/azure/media/index/storage.svg
+      title: Azure Storage를 사용하여 개체를 저장하고 검색
+      href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet
+    - image:
+        src: https://docs.microsoft.com/en-us/azure/media/index/sqldatabase.svg
+      title: .NET 앱을 Azure SQL Database에 연결
+      href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
 - title: Azure에서 .NET 시작
   items:
   - type: markdown
@@ -118,9 +118,10 @@ sections:
     style: unordered
     items:
     - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">App Service 및 Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기</a>
-    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">App Service 및 Azure Cosmos DB를 사용하여 ASP.NET 웹앱 만들기</a>
+    - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-dotnet-application">App Service 및 Azure Cosmos DB를 사용하여 ASP.NET 웹앱 만들기</a>
     - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Azure App Service에 Web API 만들기 및 배포</a>
     - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Kubernetes 및 Windows 컨테이너 시작</a>
     - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Azure SQL Database에 연결 및 쿼리</a>
     - html: <a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Azure Database for PostgreSQL에 연결 및 쿼리</a>
     - html: <a href="https://docs.microsoft.com/azure/cosmos-db/sql-api-get-started">NET에서 Azure Cosmos DB SQL API 시작하기</a>
+    - html: <a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet">Service Fabric으로 .NET 마이크로 서비스 앱 만들기</a>
