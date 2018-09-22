@@ -5,18 +5,18 @@ keywords: Azure.NET, ASP.NET, WCF, App Service, Web App, 마이그레이션, 마
 author: camsoper
 manager: wpickett
 ms.author: casoper
-ms.date: 07/16/2018
+ms.date: 08/11/2018
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
-ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
+ms.openlocfilehash: 172ceb6956004dd560175d6662debdb4c898743d
+ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700955"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45567325"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>.NET 웹 앱 또는 서비스를 Azure App Service로 마이그레이션 
 
@@ -117,4 +117,4 @@ AAD는 무료 앱으로 작동하지 않습니다. AAD를 사용하려면 앱 SK
 ## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [Azure App Service로 ASP.NET 웹 응용 프로그램 마이그레이션](https://aka.ms/azure-webapp-migrate)
+> [Visual Studio에서 앱 배포](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)

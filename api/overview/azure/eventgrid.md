@@ -9,12 +9,12 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: event-grid
 ms.custom: devcenter
-ms.openlocfilehash: 922e1a49a2b864d8cd408a8383d7cda27c7f89c2
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
+ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065303"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45750601"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a>.NET용 Azure Event Grid 라이브러리
 
@@ -22,9 +22,9 @@ Azure Event Grid에서 간단한 HTTP 기반 이벤트 처리를 사용하여 Az
 
 Azure Event Grid에 대해 [자세히 알아보고](/azure/event-grid/overview), [Azure Blob 저장소 이벤트 자습서](/azure/storage/blobs/storage-blob-event-quickstart-powershell)를 시작합니다. 
 
-## <a name="publish-sdk"></a>SDK 게시
+## <a name="client-sdk"></a>Client SDK
 
-Azure Event Grid 게시 SDK를 사용하여 이벤트를 만들고, 인증하고, 토픽에 게시합니다.
+Azure Event Grid Client SDK를 사용하여 이벤트를 만들고, 인증하고, 토픽에 게시합니다.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent)를 직접 설치합니다.
 
@@ -40,7 +40,7 @@ Install-Package Microsoft.Azure.EventGrid
 dotnet add package Microsoft.Azure.EventGrid 
 ```
 
-### <a name="sample-usage"></a>샘플 사용
+### <a name="publish-events"></a>이벤트 게시
 
 다음 코드는 Azure로 인증하고 사용자 지정 형식(이 예제에서는 `Contoso.Items.ItemsReceivedEvent`)의 `EventGridEvent` 이벤트 `List`를 토픽에 게시합니다. 샘플에 사용된 토픽 키와 엔드포인트 주소는 Azure PowerShell에서 검색이 가능합니다.
 
@@ -83,36 +83,38 @@ static IList<EventGridEvent> GetEventsList()
 }
 ```
 
-이 코드 조각은 [Azure Storage](/azure/storage/blobs/storage-blob-event-overview)에 새 Blob을 만들 때 게시된 이벤트를 처리합니다.
+### <a name="consume-events"></a>이벤트 사용
+
+이 코드 조각에는 Blob Storage와 같이 다른 Azure 서비스에서 트리거된 이벤트 뿐만 아니라 사용자 지정 이벤트 `Contoso.Items.ItemsReceived`을(를) 비롯한 이벤트가 사용됩니다.
 
 ```csharp
 string response = string.Empty;
-const string SubscriptionValidationEvent = "Microsoft.EventGrid.SubscriptionValidationEvent";
-const string StorageBlobCreatedEvent = "Microsoft.Storage.BlobCreated";
-
 string requestContent = await req.Content.ReadAsStringAsync();
-EventGridEvent[] eventGridEvents = JsonConvert.DeserializeObject<EventGridEvent[]>(requestContent);
 
-foreach (EventGridEvent eventGridEvent in eventGridEvents)
+EventGridSubscriber eventGridSubscriber = new EventGridSubscriber();
+
+// Optionally add one or more custom event type mappings
+eventGridSubscriber.AddOrUpdateCustomEventMapping("Contoso.Items.ItemReceived", typeof(ContosoItemReceivedEventData));
+
+var events = eventGridSubscriber.DeserializeEventGridEvents(requestContent);            
+ 
+foreach (EventGridEvent receivedEvent in events)
 {
-    JObject dataObject = eventGridEvent.Data as JObject;
-
-    // Deserialize the event data into the appropriate type based on event type 
-    if (string.Equals(eventGridEvent.EventType, SubscriptionValidationEvent, StringComparison.OrdinalIgnoreCase))
+    if (receivedEvent.Data is SubscriptionValidationEventData)
     {
-        var eventData = dataObject.ToObject<SubscriptionValidationEventData>();
-        log.Info($"Got SubscriptionValidation event data, validation code: {eventData.ValidationCode}, topic: {eventGridEvent.Topic}");
-
-        // Do any additional validation (as required) and then return back the below response
-        var responseData = new SubscriptionValidationResponseData();
-        responseData.ValidationResponse = eventData.ValidationCode;
-        return req.CreateResponse(HttpStatusCode.OK, responseData);
+        SubscriptionValidationEventData eventData = (SubscriptionValidationEventData)receivedEvent.Data;
+        log.Info($"Got SubscriptionValidation event data, validationCode: {eventData.ValidationCode},  validationUrl: {eventData.ValidationUrl}, topic: {eventGridEvent.Topic}");
+        // Handle subscription validation
     }
-
-    else if (string.Equals(eventGridEvent.EventType, StorageBlobCreatedEvent, StringComparison.OrdinalIgnoreCase))
+    else if (receivedEvent.Data is StorageBlobCreatedEventData)
     {
-        var eventData = dataObject.ToObject<StorageBlobCreatedEventData>();
+        StorageBlobCreatedEventData eventData = (StorageBlobCreatedEventData)receivedEvent.Data;
         log.Info($"Got BlobCreated event data, blob URI {eventData.Url}");
+        // Handle StorageBlobCreatedEventData
+    }
+    else if (receivedEvent.Data is ContosoItemReceivedEventData)
+    {
+        ContosoItemReceivedEventData eventData = (ContosoItemReceivedEventData)receivedEvent.Data;
     }
 }
 ```
