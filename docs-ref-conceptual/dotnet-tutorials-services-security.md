@@ -1,21 +1,13 @@
 ---
 title: Azure 앱 보안에 대 한 .NET 자습서
 description: Azure에서 실행되는 .NET 앱에서 응용 프로그램 보안 및 ID 관리에 대한 자습서입니다.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 88ecfc69fbd57becf1adf1163a063c0d2bb086a8
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 19960efa8faa762f0cde657d702f09a8dcb66e99
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750591"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190646"
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>Azure에서 실행되는 .NET 앱에서 사용자 인증에 대한 자습서
 

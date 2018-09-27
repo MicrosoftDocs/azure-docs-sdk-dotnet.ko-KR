@@ -1,22 +1,15 @@
 ---
 title: 올바른 Azure 호스팅 옵션 선택
 description: 어떤 Azure 마이그레이션 경로가 ASP.NET 웹 응용 프로그램에 적합한지 알아봅니다.
-keywords: Azure.NET, ASP.NET, App Service, VM, 가상 머신, Web App, 마이그레이션, 마이그레이션
 author: CESARDELATORRE
-manager: wpickett
 ms.author: cesardl
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter, casoper
-ms.openlocfilehash: dbf54bb1a6e3d612ef8363a6b30e06b388b4490f
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 7c0d10436efa86c3d4a60f80e2eebd935ee01cee
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588466"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190616"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>올바른 Azure 호스팅 옵션 선택
 

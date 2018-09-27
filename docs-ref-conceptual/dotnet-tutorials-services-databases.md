@@ -1,21 +1,13 @@
 ---
 title: Azure 데이터베이스 사용에 대한 .NET 자습서
 description: .NET 응용 프로그램에서 Azure 데이터베이스를 연결하고 사용하는 자습서입니다.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: f03f1cc7e2d973aa270f99f7ca29c9cb4d6fd720
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: 38dcf7e288e4ec46705b31b9d00efc5477f92a85
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005750"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190626"
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Azure 데이터베이스와 함께 .NET 사용에 대한 자습서
 

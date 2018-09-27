@@ -1,22 +1,14 @@
 ---
 title: Azure .NET 및 .NET Core 개발자용 도구
 description: Windows, Linux 및 Mac 환경에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
-keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 08/11/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter, vs-azure
-ms.openlocfilehash: e67cd101842b8b9e36bbe1867818dcb5467c35ea
-ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
+ms.custom: azure-dotnet-devcenter, azure-dotnet-devcenter-authored, azure-dotnet-devcenter-conceptual, vs-azure
+ms.openlocfilehash: b39d40aa47319abc063fc5c5608700b579a22396
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45567335"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190336"
 ---
 # <a name="tools-for-net-and-net-core-azure-developers"></a>.NET 및 .NET Core Azure 개발자용 도구
 
@@ -27,7 +19,7 @@ ms.locfileid: "45567335"
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
         Visual Studio 2017에는 기본적으로 제공되는 Azure 개발 지원 기능이 있습니다.
@@ -58,7 +50,7 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
         Mac용 Visual Studio에는 Azure 개발에 필요한 모든 것이 있습니다.
@@ -80,7 +72,7 @@ Visual Studio 2017 설치 관리자를 시작한 후에 Azure 및 ASP.NET 웹 �
 <table>
   <tr>
     <td width="50">
-        <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
+        <img src="https://docs.microsoft.com/media/logos/logo_vs-code.svg" width="50" height="50"></img>
     </td>
     <td>
         Visual Studio Code에는 Linux에서 Azure 개발에 필요한 모든 것이 있습니다.

@@ -1,21 +1,13 @@
 ---
 title: Azure에서 .NET을 사용하는 메시지 및 IoT에 대한 자습서 | Microsoft Docs
 description: .NET 및 Azure 서비스를 사용하여 클라우드 응용 프로그램 간 및 장치와 클라우드 간에 메시지를 보냅니다.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: a6c50af1678c785c6a3fcd3f4f3689171069b2ee
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: 92cb78b34706a453630dbf36913d53400962ff25
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752845"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190776"
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>엔터프라이즈 메시지 및 IoT(사물 인터넷)에 대한 .NET 자습서
 
@@ -30,7 +22,7 @@ ms.locfileid: "29752845"
 | [Service Bus 큐를 사용하는 방법][1] | 큐를 만들고, 메시지를 보내고 받고, 큐를 삭제합니다. | 
 | [Service Bus 토픽 및 구독을 사용하는 방법][2] | Service Bus를 통해 통신 모델 게시/구독을 사용하는 방법을 알아봅니다.
 | [AMQP 1.0을 사용하여 .NET에서 Service Bus 사용][3] | Service Bus 응용 프로그램에서 AMQP를 사용하는 방법을 알아봅니다.
-|**IoT 허브**|
+|**IoT Hub**|
 | [IoT Hub에 시뮬레이션된 장치 연결][4] | 장치 ID를 만들고, 메시지를 보내고, IoT Hub에서 원격 분석을 처리합니다. |   
 | [장치-클라우드 메시지 처리][5] | 시뮬레이션된 장치에서 메시지를 보내고 클라우드에서 처리합니다. |
 |**이벤트 허브**|

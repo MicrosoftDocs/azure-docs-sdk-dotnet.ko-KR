@@ -1,21 +1,13 @@
 ---
 title: Azure의 데이터 분석에 대한 .NET 자습서 | Microsoft Docs
 description: Microsoft Azure 서비스를 사용하여 데이터 분석 응용 프로그램을 개발합니다.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: d843e605bf64fb475efe8fc1bba6a112ddca4d96
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: f1f4b4bcd0aac04150b510eb98308800dbdfe93c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752905"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190206"
 ---
 # <a name="data-analytics-tutorials-with-net-on-azure"></a>Azure에서 .NET을 사용한 데이터 분석에 대한 자습서
 

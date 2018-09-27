@@ -1,21 +1,15 @@
 ---
 title: .NET용 Azure Search 라이브러리
 description: .NET용 Azure Search 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, Search
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: search
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 5062d444b859711d7f87a0ecbd65e6b204c04b16
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: cf622ccb59f10a5270c02fa76d7396345fbb1a9b
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065283"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190246"
 ---
 # <a name="azure-search-libraries-for-net"></a>.NET용 Azure Search 라이브러리
 

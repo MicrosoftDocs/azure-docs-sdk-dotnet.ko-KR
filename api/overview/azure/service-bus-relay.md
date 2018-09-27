@@ -1,21 +1,15 @@
 ---
 title: .NET용 Azure Service Bus Relay 라이브러리
 description: .NET용 Azure Service Bus Relay 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, Service Bus Relay
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: service-bus
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e0dd9c9b0a187fe6ca81d764e60afd00cbaab654
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 75c481ab23e461c5194a9eeb0ca668af98f4d2d7
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065953"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189986"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>.NET용 Azure Service Bus Relay 라이브러리
 

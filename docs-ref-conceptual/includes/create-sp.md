@@ -1,3 +1,14 @@
+---
+ms.service: multiple
+ms.date: 9/20/2018
+ms.topic: include
+ms.openlocfilehash: 5c8cb328802cfb94e944e4241852fb9568e8507f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190536"
+---
 .NET 응용 프로그램에는 .NET용 Azure 관리 라이브러리를 사용하기 위해 Azure 구독에서 리소스를 읽고 만들 수 있는 권한이 필요합니다. 서비스 주체를 만들고 이 액세스 권한을 부여하기 위해 해당 자격 증명을 사용하여 실행되도록 앱을 구성합니다. 서비스 주체는 앱에서 실행하는 데 필요한 권한만 부여하는 ID와 연결되는 비대화형 계정을 만드는 방법을 제공합니다.
 
 먼저, [Azure Cloud Shell](https://shell.azure.com/bash)에 로그인합니다. 서비스 주체를 만들려는 구독을 현재 사용하고 있는지 확인합니다. 

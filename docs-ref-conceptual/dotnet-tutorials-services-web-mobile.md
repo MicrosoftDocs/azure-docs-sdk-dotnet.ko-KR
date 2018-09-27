@@ -1,21 +1,13 @@
 ---
 title: Azure에서 웹 및 모바일 .NET 앱 빌드에 대한 자습서
 description: Azure 서비스를 사용하여 웹 및 모바일 .NET 앱에 기능을 빌드하고 추가하는 자습서입니다.
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 1700bcf8a05f067e0f174bff87a7aa743cabc524
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: f80f21246e2dc6c44c80d6a820720aa73a3ffb4b
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005760"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190576"
 ---
 # <a name="tutorials-for-building-web-and-mobile-apps-with-net-in-azure"></a>Azure에서 웹 및 모바일 .NET 앱 빌드에 대한 자습서
 

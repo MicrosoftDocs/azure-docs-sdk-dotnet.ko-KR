@@ -1,21 +1,15 @@
 ---
 title: .NET용 Azure App Service 라이브러리
 description: .NET용 Azure App Service 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, Web Apps, App Service, 모바일, ASP.NET
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: app-service
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 0fee28930dff5075cdd84fe3cb88850e07bc6ccb
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 82f8eccfafd2f7b1cf1df1ce0f40212509ccddd3
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065803"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189996"
 ---
 # <a name="azure-app-service-libraries-for-net"></a>.NET용 Azure App Service 라이브러리
 

@@ -1,21 +1,15 @@
 ---
 title: .NET용 Azure Cosmos DB 라이브러리
 description: .NET용 Azure Cosmos DB 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, Cosmos DB
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 08/31/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: cosmos-db
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4928c1dfdb7a5bb50ca4f5023cbfec71e05e9061
-ms.sourcegitcommit: 299aa7bdbb9cec1b56e42e25550999e53e23de2c
+ms.openlocfilehash: 21a2f2168259528a0d27103783e34aa532d7e17a
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43839499"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190801"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>.NET용 Azure Cosmos DB 라이브러리
 

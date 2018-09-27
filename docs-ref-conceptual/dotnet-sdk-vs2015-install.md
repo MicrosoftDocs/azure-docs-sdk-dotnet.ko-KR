@@ -1,22 +1,13 @@
 ---
 title: Azure Tools for Visual Studio 2015
 description: Visual Studio 2015에서 Azure .NET 라이브러리를 사용하여 시작하는 도구를 가져옵니다.
-keywords: Azure .NET SDK, VS2015, Visual Studio 2015
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 5046781a16b5b330b95c4ad36e8a8187126fef4e
-ms.sourcegitcommit: 1c2e1fd031ad012d6888fcde3cd325f7e8e49e0f
+ms.openlocfilehash: b574841d17ba60e8ab52a4c06831f0b1cc8cc8aa
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "29752815"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190406"
 ---
 # <a name="azure-tools-for-visual-studio-2015"></a>Azure Tools for Visual Studio 2015
 
@@ -40,7 +31,7 @@ ms.locfileid: "29752815"
 
 2. 표시된 목록에는 **Microsoft Azure App Service 도구**, **Microsoft Azure Storage 연결 서비스** 및 **Service Fabric 도구**와 같은 여러 Azure 도구가 포함되어 있습니다.
 
-    ![확장 및 업데이트](media\dotnet-sdk-vs2015-install\ext-tools.png)
+    ![확장 및 업데이트](media/dotnet-sdk-vs2015-install/ext-tools.png)
 
 ## <a name="next-steps"></a>다음 단계
 

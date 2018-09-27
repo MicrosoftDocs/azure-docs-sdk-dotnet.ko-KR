@@ -1,21 +1,15 @@
 ---
 title: .NET용 Power BI Embedded 라이브러리
 description: .NET용 Power BI Embedded 라이브러리에 대한 참조
-keywords: Azure, .NET, SDK, API, Power BI Embedded
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: multiple
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3e28525f61ca8b4f8347b7a7e8994f9e479749ea
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: acb327b56e89522142e51016a6a9b279f995a674
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065963"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190376"
 ---
 # <a name="power-bi-embedded-libraries-for-net"></a>.NET용 Power BI Embedded 라이브러리
 

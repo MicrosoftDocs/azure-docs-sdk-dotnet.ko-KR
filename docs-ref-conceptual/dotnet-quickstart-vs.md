@@ -1,21 +1,13 @@
 ---
 title: Visual Studio에서 Azure에 배포
 description: 이 자습서에서는 Visual Studio 및 .NET을 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.
-keywords: Azure .NET, SDK, Azure .NET API 참조, Azure .NET 클래스 라이브러리
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 87f65d8b8b1b1a5184b9d71770c08be472c7e498
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a4ddaa0dbf1cd71a0de031cc89b299baa381992c
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005890"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190427"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Visual Studio에서 Azure에 배포
 
@@ -50,7 +42,7 @@ printf "\n\nauthKey: $cosmosAuthKey\nendpoint: $cosmosEndpoint\n\n"
 
 ```
 
-표시된 **authKey** 및 **끝점**을 적어둡니다. 
+표시된 **authKey** 및 **엔드포인트**를 적어둡니다. 
 
 ## <a name="downloading-and-running-the-application"></a>응용 프로그램 다운로드 및 실행
 
