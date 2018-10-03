@@ -1,20 +1,15 @@
 ---
 title: .NET용 Azure Event Grid 라이브러리
 description: .NET용 Azure Event Grid 라이브러리에 대한 참조
-author: rloutlaw
-ms.author: routlaw
-manager: angerobe
 ms.date: 04/16/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: event-grid
-ms.custom: devcenter
-ms.openlocfilehash: 894b8a5beaf0507ab50e8eed6a5ab20d10a71ba6
-ms.sourcegitcommit: 61638b504b6c4d96b357894835c80c2680a99fe6
+ms.openlocfilehash: 5b19f8aa8b28b3e4aef528da051b6e7d177f1a2f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45750601"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190396"
 ---
 # <a name="azure-event-grid-libraries-for-net"></a>.NET용 Azure Event Grid 라이브러리
 
@@ -120,7 +115,7 @@ foreach (EventGridEvent receivedEvent in events)
 ```
 
 > [!div class="nextstepaction"]
-> [클라이언트 API 탐색](/dotnet/api/overview/azure/eventgrid/client)
+> [게시 API 탐색](/dotnet/api/overview/azure/eventgrid/publish)
 
 ## <a name="management-sdk"></a>관리 SDK
 
