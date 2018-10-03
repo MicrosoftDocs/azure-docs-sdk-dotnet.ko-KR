@@ -1,329 +1,78 @@
 ---
-title: Azure .NET 및 .NET Core API 시작
-description: Azure 구독을 사용하여 .NET 및 .NET Core용 Azure 라이브러리의 기본적인 사용을 시작합니다.
-keywords: Azure, .NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, 인증, 시작
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Azure 및 .NET 시작
+description: Azure 및.NET에 대해 알아야 할 기본 사항을 알아봅니다.
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703056"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190596"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="116d3-104">Azure .NET 및 .NET Core API 시작</span><span class="sxs-lookup"><span data-stu-id="116d3-104">Get started with the Azure .NET and .NET Core APIs</span></span>
+# <a name="get-started-with-azure-and-net"></a><span data-ttu-id="c35cf-103">Azure 및 .NET 시작</span><span class="sxs-lookup"><span data-stu-id="c35cf-103">Get started with Azure and .NET</span></span>
 
-<span data-ttu-id="116d3-105">이 자습서에서는 [.NET용 Azure API](/dotnet/api/overview/azure/)에 대한 몇 가지 사용 방법을 보여 줍니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="116d3-106">인증을 설정하고, Azure Storage 계정을 만들어 사용하고, Azure SQL Database를 만들어 사용하고, 일부 가상 머신을 배포하고, GitHub에서 Azure App Service Web App을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="c35cf-104">이 문서는 .NET 개발자가 Azure 서비스를 사용하여 응용 프로그램을 개발하기 위해 숙지해야 할 핵심 개념과 서비스에 대한 개요를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-104">This document provides an overview of key concepts and services .NET developers should be familar with to get started developing apps using Azure services.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="116d3-107">필수 조건</span><span class="sxs-lookup"><span data-stu-id="116d3-107">Prerequisites</span></span>
+## <a name="key-concepts"></a><span data-ttu-id="c35cf-105">주요 개념</span><span class="sxs-lookup"><span data-stu-id="c35cf-105">Key Concepts</span></span>
 
-- <span data-ttu-id="116d3-108">Azure 계정.</span><span class="sxs-lookup"><span data-stu-id="116d3-108">An Azure account.</span></span> <span data-ttu-id="116d3-109">계정이 없으면 [체험 계정을 얻습니다](https://azure.microsoft.com/free/).</span><span class="sxs-lookup"><span data-stu-id="116d3-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+<span data-ttu-id="c35cf-106">**Azure 계정**: Azure 계정은 [Azure 포털](https://portal.azure.com) 또는 [Cloud Shell](https://shell.azure.com)과 같은 Azure 서비스에 로그인하는 데 사용하는 자격 증명입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-106">**Azure account**: Your Azure account is the credential you use to sign into Azure services, such as the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).</span></span> <span data-ttu-id="c35cf-107">Azure 계정이 없으면 [무료 계정을 만들](https://azure.microsoft.com/free/dotnet/) 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-107">If you don't have an Azure account, you can [create one for free](https://azure.microsoft.com/free/dotnet/).</span></span>
 
-## <a name="set-up-authentication"></a><span data-ttu-id="116d3-110">인증 설정</span><span class="sxs-lookup"><span data-stu-id="116d3-110">Set up authentication</span></span>
+<span data-ttu-id="c35cf-108">**Azure 구독**: 구독은 Azure 리소스가 생성되는 청구 플랜입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-108">**Azure subscription**: A subscription is the billing plan within which Azure resources are created.</span></span> <span data-ttu-id="c35cf-109">구독은 개별 구독 또는 회사에서 관리하는 엔터프라이즈 구독일 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-109">Subscriptions can be individual subscriptions or enterprise subscriptions managed by your company.</span></span> <span data-ttu-id="c35cf-110">Azure 계정에 여러 구독을 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-110">Your Azure account can be associated with multiple subscriptions.</span></span> <span data-ttu-id="c35cf-111">이 경우 리소스를 만들 때 올바른 구독을 선택하고 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-111">In this case, make sure you're selecting the correct subscription when creating resources.</span></span> <span data-ttu-id="c35cf-112">자세한 내용은 [계정, 구독 및 청구 이해](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-112">For more information, see [Understanding accounts, subscriptions and billing](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).</span></span>
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> <span data-ttu-id="c35cf-113">Visual Studio 구독이 있다면 [활성화를 대기하고 있는 월간 Azure 크레딧](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-113">If you have a Visual Studio subscription, [you have monthly Azure credits waiting to be activated](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).</span></span>
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+<span data-ttu-id="c35cf-114">**리소스 그룹**:리소스 그룹은 Azure 리소스를 관리용 그룹으로 조직하는 방법입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-114">**Resource group**: Resource groups are a way to organize your Azure resources into groups for management.</span></span> <span data-ttu-id="c35cf-115">Azure에서 생성된 리소스는 컴퓨터의 폴더에 파일을 저장하는 것과 마찬가지로 리소스 그룹에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-115">Resources created in Azure will be stored in a resource group, similar to saving a file in a folder on a computer.</span></span>
 
-## <a name="create-a-new-project"></a><span data-ttu-id="116d3-111">새 프로젝트 만들기</span><span class="sxs-lookup"><span data-stu-id="116d3-111">Create a new project</span></span> 
+<span data-ttu-id="c35cf-116">**호스팅**: Azure에서 코드를 실행하려면 사용자 제공 코드 실행을 지원하는 서비스에서 호스팅되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-116">**Hosting**: To run code in Azure, it needs to be hosted in a service that supports executing user-provided code.</span></span>
 
-<span data-ttu-id="116d3-112">새 콘솔 응용 프로그램 프로젝트를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-112">Create a new console application project.</span></span>  <span data-ttu-id="116d3-113">이렇게 하려면 Visual Studio에서 **파일**, **새로 만들기**, **프로젝트...** 를 차례로 클릭합니다.  Visual C# 템플릿 아래에서 **콘솔 앱(.NET Core)** 을 선택하고, 프로젝트 이름을 지정한 다음, **확인**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-113">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="c35cf-117">**관리되는 서비스**: Azure는 Azure에 데이터 또는 정보를 제공하는 일부 서비스를 제공하며 Azure의 구현은 적절한 동작을 취합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-117">**Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action.</span></span> <span data-ttu-id="c35cf-118">한 가지 예는 Azure Blob Storage로서, 파일을 제공하고 Azure가 파일의 읽기, 쓰기 및 지속을 처리합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-118">One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.</span></span>
 
-![새 프로젝트 대화 상자](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a><span data-ttu-id="c35cf-119">호스팅 옵션 선택</span><span class="sxs-lookup"><span data-stu-id="c35cf-119">Choosing a hosting option</span></span>
 
-<span data-ttu-id="116d3-115">새 콘솔 앱이 만들어지면 **도구**, **NuGet 패키지 관리자**, **패키지 관리자 콘솔**을 차례로 클릭하여 [패키지 관리자 콘솔]을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-115">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="116d3-116">콘솔에서 다음 세 가지 명령을 실행하여 필요한 패키지를 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-116">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="c35cf-120">Azure 내 호스팅은 세 가지 범주로 나눌 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-120">Hosting in Azure can be divided into three categories.</span></span>
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* <span data-ttu-id="c35cf-121">**IaaS(서비스 제공 인프라)** 를 사용하여 연결된 네트워크 및 저장소 구성 요소와 함께 필요한 가상 머신을 프로비전합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-121">**Infrastructure-as-a-Service (IaaS)**: With IaaS, you provision the virtual machines you need along with associated network and storage components.</span></span> <span data-ttu-id="c35cf-122">그런 다음 해당 VM에 배치하려는 모든 소프트웨어 및 응용 프로그램을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-122">You then deploy whatever software and applications you want onto those VMs.</span></span> <span data-ttu-id="c35cf-123">이 모델은 Microsoft에서 인프라를 관리한다는 점을 제외하고는 기존 온-프레미스 환경과 가장 가깝습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-123">This model is the closest to a traditional on-premises environment except that Microsoft manages the infrastructure.</span></span> <span data-ttu-id="c35cf-124">운영 체제, 사용자 지정 소프트웨어 및 보안 업데이트를 포함하여 개별 VM을 여전히 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-124">You still manage the individual VMs, including the operating system, custom software, and security updates.</span></span>
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* <span data-ttu-id="c35cf-125">**PaaS(서비스 제공 플랫폼)** 는 VM 또는 네트워킹 리소스를 관리할 필요 없이 응용 프로그램을 배포할 수 있는 관리되는 호스팅 환경을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-125">**Platform-as-a-Service (PaaS)**: PaaS provides a managed hosting environment where you deploy your application without needing to manage VMs or networking resources.</span></span> <span data-ttu-id="c35cf-126">예를 들어, 개별 VM을 만드는 대신, 인스턴스 수를 지정하기만 하면 서비스가 필요한 리소스를 프로비전, 구성 및 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-126">For example, instead of creating individual VMs, you specify an instance count, and the service will provision, configure, and manage the necessary resources.</span></span> <span data-ttu-id="c35cf-127">Azure App Service는 PaaS 서비스의 예제입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-127">Azure App Service is an example of a PaaS service.</span></span>
+  
+* <span data-ttu-id="c35cf-128">**FaaS(서비스 제공 함수)**: 일반적으로 서버리스 컴퓨팅이라고 불리는 FaaS는 PaaS보다 호스팅 환경에 대한 관심을 추상화합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-128">**Functions-as-a-Service (FaaS)**: Commonly referred to as serverless computing, FaaS goes even further than PaaS in abstracting the concerns of the hosting environment.</span></span> <span data-ttu-id="c35cf-129">계산 인스턴스를 만들고 해당 인스턴스에 코드를 배포하는 대신, 사용자가 코드를 배포하면 서비스가 코드를 자동으로 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-129">Instead of creating compute instances and then deploying code to those instances, you deploy your code and the service automatically runs it.</span></span> <span data-ttu-id="c35cf-130">계산 리소스를 관리할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-130">You don't need to administer the compute resources.</span></span> <span data-ttu-id="c35cf-131">플랫폼은 트래픽을 처리하는 데 필요한 수준까지 코드를 원활하게 확장하거나 축소할 수 있으며 코드가 실행 중일 때만 비용을 지불합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-131">The platform seamlessly scales your code up or down to whatever level necessary to handle the traffic, and you pay only when your code is running.</span></span> <span data-ttu-id="c35cf-132">Azure Function은 FaaS 서비스입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-132">Azure Functions is a FaaS service.</span></span>
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+<span data-ttu-id="c35cf-133">일반적으로 응용 프로그램이 FaaS 및 PaaS 모델을 선호할수록 클라우드에서 실행하면 더 많은 이점을 얻을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-133">Generally, the more your application favors FaaS and PaaS models, the more benefits you'll see from running in the cloud.</span></span> <span data-ttu-id="c35cf-134">다음은 Azure 내에서 선택하는 일반적인 세 가지 호스팅 옵션의 요약 및 선택 기준입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-134">Below is a summary of three common hosting choices in Azure and when to choose them.</span></span>
 
-## <a name="directives"></a><span data-ttu-id="116d3-117">지시문</span><span class="sxs-lookup"><span data-stu-id="116d3-117">Directives</span></span>
-
-<span data-ttu-id="116d3-118">응용 프로그램의 `Program.cs` 파일을 편집합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-118">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="116d3-119">위에 있는 `using` 지시문을 다음 예제로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-119">Replace the `using` directives at the top with the following:</span></span>
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* <span data-ttu-id="c35cf-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): 웹 응용 프로그램 또는 서비스를 호스트하려는 경우 우선 App Service를 고려합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): If you're looking to host a web application or service, look at App Service first.</span></span> <span data-ttu-id="c35cf-136">App Service 및 ASP.NET, WCF 및 ASP.NET Core 앱을 시작하려면 [Azure 에서 ASP.NET Core 웹 앱 만들기](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-136">To get started with App Service and ASP.NET, WCF, and ASP.NET Core apps, see [Create an ASP.NET Core web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).</span></span>
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="116d3-120">가상 머신 만들기</span><span class="sxs-lookup"><span data-stu-id="116d3-120">Create a virtual machine</span></span>
+* <span data-ttu-id="c35cf-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions는 이벤트 구동 워크플로에 적합합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions is great for event-driven workflows.</span></span> <span data-ttu-id="c35cf-138">웹 후크에 대한 응답, 큐 또는 BLOB 저장소의 항목 처리, 타이머 등의 예가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-138">Examples include responding to webhooks, processing items in queues or blob storage, and timers.</span></span> <span data-ttu-id="c35cf-139">Azure Functions를 사용하려면 [Visual Studio를 사용하여 첫 번째 함수 만들기](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-139">To get started with Azure Functions, see [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).</span></span>
 
-<span data-ttu-id="116d3-121">이 예제에서는 가상 머신을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-121">This example deploys a virtual machine.</span></span> 
+* <span data-ttu-id="c35cf-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): App Service가 특정 종속성으로 인해 기존 응용 프로그램을 호스팅해야하는 필요성을 충족시키지 못하는 경우, 가상 머신이 가장 쉽게 시작할 수 있는 곳입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): If App Service doesn't meet your needs for hosting an existing application due to specific dependencies, Virtual Machines will be the easiest place to start.</span></span> <span data-ttu-id="c35cf-141">가상 머신과 ASP.NET 또는 WCF를 시작하려면 [Azure 가상 머신에 ASP.NET 앱 배포](https://tutorials.visualstudio.com/aspnet-vm/intro)를 참조하십시오.</span><span class="sxs-lookup"><span data-stu-id="c35cf-141">To get started with Virtual Machines and ASP.NET or WCF, see [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro).</span></span>
 
-<span data-ttu-id="116d3-122">`Main` 메서드를 다음 예제로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-122">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="116d3-123">가상 컴퓨터에 실제 `username` 및 `password`를 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-123">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+> [!TIP]
+> <span data-ttu-id="c35cf-142">Azure 서비스의 자세한 목록은 [Azure 계산 옵션 개요](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-142">For a more complete list of Azure services, see [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options).</span></span> <span data-ttu-id="c35cf-143">서비스 선택에 대한 자세한 내용은 [Azure 계산 서비스에 대한 의사 결정 트리](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-143">For more information on choosing a service, see [Decision tree for Azure compute services](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).</span></span>
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="116d3-124">**F5** 키를 눌러 샘플을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-124">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="116d3-125">몇 분 후에 프로그램이 완료되면 Enter 키를 누르라는 메시지가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-125">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="116d3-126">Enter 키를 누른 후에 Cloud Shell을 사용하여 구독 중인 가상 머신을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-126">After pressing enter, verify the virtual machine in your subscription with the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="116d3-127">GitHub 리포지토리에서 웹앱 배포</span><span class="sxs-lookup"><span data-stu-id="116d3-127">Deploy a web app from a GitHub repo</span></span>
-
-<span data-ttu-id="116d3-128">이제 코드를 수정하여 기존 GitHub 리포지토리에서 새 웹앱을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-128">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="116d3-129">`Main` 메서드를 다음 코드로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-129">Replace the `Main` method with the following code:</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="116d3-130">**F5** 키를 눌러 이전과 같이 코드를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-130">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="116d3-131">브라우저를 열고 콘솔에 표시된 URL로 이동하여 배포를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-131">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
-
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="116d3-132">SQL 데이터베이스에 연결</span><span class="sxs-lookup"><span data-stu-id="116d3-132">Connect to a SQL database</span></span>
-
-<span data-ttu-id="116d3-133">이 예제에서는 새 Azure SQL Database를 만들고 몇 가지 SQL 작업을 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-133">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
-
-<span data-ttu-id="116d3-134">`Main` 메서드를 다음 예제로 바꾸고 `dbPassword`에 강력한 암호를 지정합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-134">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="116d3-135">**F5** 키를 눌러 이전과 같이 코드를 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-135">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="116d3-136">콘솔 출력에서 서버가 만들어져 예상대로 작동하는지 확인해야 하지만, 원하는 경우 SQL Server Management Studio와 같은 도구를 사용하여 직접 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-136">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
-
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="116d3-137">새 저장소 계정에 Blob 쓰기</span><span class="sxs-lookup"><span data-stu-id="116d3-137">Write a blob into a new storage account</span></span>
-
-<span data-ttu-id="116d3-138">이 예제에서는 저장소 계정을 만들고 Blob을 업로드합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-138">This example creates a storage account and upload a blob.</span></span>  
-
-<span data-ttu-id="116d3-139">`Main` 메서드를 다음 예제로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-139">Replace the `Main` method with the following.</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="116d3-140">**F5** 키를 눌러 샘플을 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-140">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="116d3-141">몇 분 후에 프로그램이 완료됩니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-141">After several minutes, the program finishes.</span></span> <span data-ttu-id="116d3-142">콘솔에 표시된 URL을 이동하여 Blob이 업로드되었는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-142">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="116d3-143">브라우저에서 "Hello, Azure!" 텍스트가</span><span class="sxs-lookup"><span data-stu-id="116d3-143">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="116d3-144">표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-144">in your browser.</span></span>
-
-## <a name="clean-up"></a><span data-ttu-id="116d3-145">정리</span><span class="sxs-lookup"><span data-stu-id="116d3-145">Clean up</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="116d3-146">이 자습서에서 리소스를 정리하지 않으면 요금이 계속 청구됩니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-146">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="116d3-147">따라서 이 단계는 반드시 수행해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-147">Be sure to do this step.</span></span>
-
-<span data-ttu-id="116d3-148">Cloud Shell에서 다음을 입력하여 만든 리소스를 모두 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-148">Delete all the resources you created by entering the following in the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a><span data-ttu-id="116d3-149">더 많은 샘플 탐색</span><span class="sxs-lookup"><span data-stu-id="116d3-149">Explore more samples</span></span>
-
-<span data-ttu-id="116d3-150">.NET용 Azure 라이브러리를 사용하여 리소스를 관리하고 작업을 자동화하는 방법에 대한 자세한 내용은 [가상 머신](dotnet-sdk-azure-virtual-machine-samples.md), [웹앱](dotnet-sdk-azure-web-apps-samples.md) 및 [SQL 데이터베이스](dotnet-sdk-azure-sql-database-samples.md)에 대한 샘플 코드를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="116d3-150">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
-
-## <a name="reference"></a><span data-ttu-id="116d3-151">참고 자료</span><span class="sxs-lookup"><span data-stu-id="116d3-151">Reference</span></span>
-
-<span data-ttu-id="116d3-152">[참조](http://docs.microsoft.com/dotnet/api)는 모든 패키지에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="116d3-152">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a><span data-ttu-id="c35cf-144">데이터 저장소 서비스 선택</span><span class="sxs-lookup"><span data-stu-id="c35cf-144">Choosing a data storage service</span></span>
+
+<span data-ttu-id="c35cf-145">Azure는 필요에 따라 데이터를 저장하기 위한 몇 가지 서비스를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-145">Azure offers several services for storing your data depending on your needs.</span></span> <span data-ttu-id="c35cf-146">.NET 개발자를 위한 가장 일반적인 데이터 서비스는 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-146">The most common data services for .NET developers are:</span></span>
+
+* <span data-ttu-id="c35cf-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): 이미 SQL Server를 사용하는 응용 프로그램을 클라우드로 마이그레이션하려는 경우 Azure SQL 데이터베이스를 자연스럽게 시작할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): If you're looking to migrate an application that is already using SQL Server to the cloud, Azure SQL Database is a natural place to start.</span></span> <span data-ttu-id="c35cf-148">시작하려면 [자습서: SQL Database를 사용하여 Azure에서 ASP.NET 앱 빌드](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-148">To get started, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).</span></span>
+
+* <span data-ttu-id="c35cf-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB는 클라우드를 위해 설계된 최신 데이터베이스입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB is a modern database designed for the cloud.</span></span> <span data-ttu-id="c35cf-150">아직 특정 데이터베이스 종속성이 없는 새 응용 프로그램을 시작할 때는 Azure Cosmos DB를 고려해 보세요.</span><span class="sxs-lookup"><span data-stu-id="c35cf-150">When starting a new application that doesn't yet have a specific database dependency, you should look at Azure Cosmos DB.</span></span> <span data-ttu-id="c35cf-151">Cosmos DB는 자동 크기 조정, 예측 가능한 성능, 빠른 응답 시간, 스키마 제약 없는 데이터에 대한 쿼리 기능 등이 중요한 경우 새로운 웹, 모바일, 게임 및 IoT 응용 프로그램에 적합한 솔루션입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-151">Cosmos DB is a good choice for new web, mobile, gaming, and IoT applications where automatic scale, predictable performance, fast response times, and the ability to query schema-free data are important.</span></span> <span data-ttu-id="c35cf-152">시작하려면 [빠른 시작: SQL API 및 Azure Portal을 사용하여 Azure Cosmos DB가 있는 .NET 웹앱 빌드](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-152">To get started, see [Quickstart: Build a .NET web app with Azure Cosmos DB using the SQL API and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).</span></span>
+
+* <span data-ttu-id="c35cf-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage는 이미지, 파일 및 스트림을 같은 큰 이진 개체를 저장하고 검색하는 데 최적화되었습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage is optimized for storing and retrieving large binary objects, such as images, files, and streams.</span></span> <span data-ttu-id="c35cf-154">개체 저장소를 사용하면 매우 많은 양의 구조화되지 않은 데이터를 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-154">Object stores enable the management of extremely large amounts of unstructured data.</span></span> <span data-ttu-id="c35cf-155">시작하려면 [빠른 시작: .NET을 사용하여 개체 저장소에 blob 만들기](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-155">To get started, see [Quickstart: Use .NET to create a blob in object storage](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="c35cf-156">자세한 내용은 [올바른 데이터 저장소 선택](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="c35cf-156">For more information, see [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).</span></span>
+
+## <a name="diagnosing-problems-in-the-cloud"></a><span data-ttu-id="c35cf-157">클라우드에서 문제 진단</span><span class="sxs-lookup"><span data-stu-id="c35cf-157">Diagnosing problems in the Cloud</span></span>
+
+<span data-ttu-id="c35cf-158">응용 프로그램을 Azure에 배포하면, 개발 중에 작동하지만 Azure에서는 실행되지 않는 경우가 있을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-158">Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure.</span></span> <span data-ttu-id="c35cf-159">다음과 같은 문제 진단 시작에 적절한 두 지점이 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-159">Below are two good places to start when diagnosing issues:</span></span>
+
+* <span data-ttu-id="c35cf-160">**Visual Studio에서 원격 디버그**: Azure 계산 서비스(이 문서에서 설명하는 서비스 포함)의 대부분은 Visual Studio로 원격 디버깅을 지원하고 로그를 수집합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-160">**Remote debug from Visual Studio**: Most Azure compute services (including the services discussed in this document) support remote debugging with Visual Studio and acquiring logs.</span></span> <span data-ttu-id="c35cf-161">응용 프로그램에서 Visual Studio의 기능을 탐색하려면 Visual Studio의 빠른 실행 도구 모음(오른쪽 위 모서리에 있음)에 '클라우드 탐색기'를 입력하여 클라우드 탐색기 도구 창을 연 다음 트리에서 응용 프로그램을 찾습니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-161">To explore Visual Studio's capabilities with your application, open the Cloud Explorer tool window by typing 'Cloud Explorer' into Visual Studio's quick launch toolbar (in the upper-right corner), and then locate your application in the tree.</span></span> <span data-ttu-id="c35cf-162">자세한 내용은 [Visual Studio를 사용하여 Azure App Service에서 웹앱 문제 해결](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)을 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-162">For details, see [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).</span></span>
+
+* <span data-ttu-id="c35cf-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/)는 응용 프로그램의 진단 데이터, 원격 분석 및 성능 데이터를 자동으로 캡처하는 완벽한 응용 프로그램 성능 모니터링(APM) 솔루션입니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) is a complete application performance monitoring (APM) solution that captures diagnostic data, telemetry, and performance data from applications automatically.</span></span> <span data-ttu-id="c35cf-164">앱에 대한 진단 데이터 수집을 시작 하려면 [ASP.NET 웹 응용 프로그램 모니터링 시작](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal)을 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-164">To get started collecting diagnostic data for your app, see [Start monitoring your ASP.NET Web Application](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="c35cf-165">다음 단계</span><span class="sxs-lookup"><span data-stu-id="c35cf-165">Next steps</span></span>
+
+* [<span data-ttu-id="c35cf-166">Azure에 ASP.NET Core 첫 웹앱 배포</span><span class="sxs-lookup"><span data-stu-id="c35cf-166">Deploy your first ASP.NET Core web app to Azure</span></span>](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [<span data-ttu-id="c35cf-167">.NET 용 Azure API에서 인증하기에 대해 알아봅니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-167">Learn about authentication in Azure APIs for .NET</span></span>](dotnet-sdk-azure-authenticate.md)
+* [<span data-ttu-id="c35cf-168">클라우드 앱에서 오류를 진단합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-168">Diagnose errors in your cloud apps</span></span>](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)
+* <span data-ttu-id="c35cf-169">[.NET 개발자용 Azure 빠른 시작 가이드](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook) 무료 전자책을 다운로드합니다.</span><span class="sxs-lookup"><span data-stu-id="c35cf-169">Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)</span></span>
