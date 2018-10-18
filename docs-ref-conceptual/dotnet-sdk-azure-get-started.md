@@ -2,12 +2,12 @@
 title: Azure 및 .NET 시작
 description: Azure 및.NET에 대해 알아야 할 기본 사항을 알아봅니다.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190596"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348145"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure 및 .NET 시작
 
@@ -63,7 +63,6 @@ Azure는 필요에 따라 데이터를 저장하기 위한 몇 가지 서비스�
 > 자세한 내용은 [올바른 데이터 저장소 선택](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)을 참조하세요.
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>클라우드에서 문제 진단
-
 응용 프로그램을 Azure에 배포하면, 개발 중에 작동하지만 Azure에서는 실행되지 않는 경우가 있을 수 있습니다. 다음과 같은 문제 진단 시작에 적절한 두 지점이 있습니다.
 
 * **Visual Studio에서 원격 디버그**: Azure 계산 서비스(이 문서에서 설명하는 서비스 포함)의 대부분은 Visual Studio로 원격 디버깅을 지원하고 로그를 수집합니다. 응용 프로그램에서 Visual Studio의 기능을 탐색하려면 Visual Studio의 빠른 실행 도구 모음(오른쪽 위 모서리에 있음)에 '클라우드 탐색기'를 입력하여 클라우드 탐색기 도구 창을 연 다음 트리에서 응용 프로그램을 찾습니다. 자세한 내용은 [Visual Studio를 사용하여 Azure App Service에서 웹앱 문제 해결](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug)을 참조합니다.

@@ -3,13 +3,13 @@ title: .NET용 Azure Service Bus 라이브러리
 description: .NET용 Azure Service Bus 라이브러리에 대한 참조
 ms.date: 10/19/2017
 ms.topic: reference
-ms.service: service-bus
-ms.openlocfilehash: 506be9a669a2418f2437271d128a963e351442e7
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: service-bus-messaging
+ms.openlocfilehash: a7a42b8ec788b944cb519218b0e5b201e5d6ac4f
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190876"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348045"
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>.NET용 Azure Service Bus 라이브러리
 
