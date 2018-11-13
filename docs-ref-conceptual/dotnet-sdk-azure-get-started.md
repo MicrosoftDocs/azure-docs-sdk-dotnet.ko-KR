@@ -2,12 +2,12 @@
 title: Azure 및 .NET 시작
 description: Azure 및.NET에 대해 알아야 할 기본 사항을 알아봅니다.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 63587d7d5ccb79eee47185ff1f3ccb9cbd09c0ea
+ms.sourcegitcommit: 0de939648fa01698016fed633200f8eb07c96eb7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348145"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276583"
 ---
 # <a name="get-started-with-azure-and-net"></a>Azure 및 .NET 시작
 
@@ -61,6 +61,10 @@ Azure는 필요에 따라 데이터를 저장하기 위한 몇 가지 서비스�
 
 > [!TIP]
 > 자세한 내용은 [올바른 데이터 저장소 선택](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)을 참조하세요.
+
+## <a name="connecting-to-azure-services"></a>Azure 서비스에 연결
+
+Visual Studio를 사용한다면 프로젝트에 특정 Azure 서비스에 대한 지원을 추가할 수 있습니다.  Visual Studio의 **연결된 서비스** 대화에서 프로젝트에 필요한 참조, 연결 코드 및 구성 설정을 쉽게 추가하는 방법을 제공합니다.  다음과 같은 일부 자주 사용되는 Azure 서비스는 기본적으로 지원됩니다. [Storage](/azure/vs-azure-tools-connected-services-storage), [Azure Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) 인증, [Azure Key Vault](/azure/key-vault/vs-key-vault-add-connected-service) 및 [Computer Vision](/azure/cognitive-services/computer-vision/vs-computer-vision-connected-service)과 같은 [Cognitive Services](/azure/cognitive-services/)  타사 서비스를 비롯한 더 많은 서비스는 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=connected%20service&target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Relevance)에서 확장으로 이용할 수 있습니다.
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>클라우드에서 문제 진단
 응용 프로그램을 Azure에 배포하면, 개발 중에 작동하지만 Azure에서는 실행되지 않는 경우가 있을 수 있습니다. 다음과 같은 문제 진단 시작에 적절한 두 지점이 있습니다.
