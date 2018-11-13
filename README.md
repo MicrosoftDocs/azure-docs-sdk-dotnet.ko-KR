@@ -1,4 +1,10 @@
-## Microsoft Open Source Code of Conduct
+## <a name="documentation-for-azure-net-sdk-apis"></a><span data-ttu-id="7b22b-101">Azure .Net SDK API에 대한 설명서</span><span class="sxs-lookup"><span data-stu-id="7b22b-101">Documentation for Azure .NET SDK APIs</span></span>
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+### <a name="overview"></a><span data-ttu-id="7b22b-102">개요</span><span class="sxs-lookup"><span data-stu-id="7b22b-102">Overview</span></span>
+
+<span data-ttu-id="7b22b-103">이 리포지토리는 Azure .NET SDK API 설명서에 대한 원시 콘텐츠를 저장하고 있으며 [docs.microsoft.com에서 호스팅](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet)됩니다.</span><span class="sxs-lookup"><span data-stu-id="7b22b-103">This repository houses raw content for the Azure .NET SDK API documentation, [hosted on docs.microsoft.com](https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet).</span></span> <span data-ttu-id="7b22b-104">여기에 제공된 콘텐츠는 Azure 서비스와 상호 작용하고 관리하는 도구를 제공하는 다양한 NuGet 패키지에서 생성됩니다.</span><span class="sxs-lookup"><span data-stu-id="7b22b-104">Content provided here is generated from various NuGet packages that provide tooling to interact and manage Azure services.</span></span>
+
+### <a name="code-of-conduct"></a><span data-ttu-id="7b22b-105">준수 사항</span><span class="sxs-lookup"><span data-stu-id="7b22b-105">Code of Conduct</span></span>
+
+<span data-ttu-id="7b22b-106">이 프로젝트에는 [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)(Microsoft 오픈 소스 준수 사항)이 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="7b22b-106">This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).</span></span>
+<span data-ttu-id="7b22b-107">자세한 내용은 [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/)(준수 사항 FAQ)를 참조하거나 [opencode@microsoft.com](mailto:opencode@microsoft.com)에 추가 질문 또는 의견을 알려주세요.</span><span class="sxs-lookup"><span data-stu-id="7b22b-107">For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.</span></span>
