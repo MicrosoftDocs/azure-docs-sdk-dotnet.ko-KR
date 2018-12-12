@@ -31,7 +31,7 @@ Install-Package Microsoft.PowerBI.Api
 
 ### <a name="example"></a>예
 
-다음 예제에서는 데이터 집합 및 보고서의 목록을 검색하고 표시합니다.
+다음 예제에서는 데이터 세트 및 보고서의 목록을 검색하고 표시합니다.
 
 ```csharp
 /* Include these'using' directive:
