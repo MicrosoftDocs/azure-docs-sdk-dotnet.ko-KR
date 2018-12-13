@@ -15,7 +15,7 @@ ms.locfileid: "47190456"
 
 ## <a name="overview"></a>개요
 
-[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction)는 스트리밍 데이터에 대한 실시간 분석 계산 작업을 설정할 수 있는 완전히 관리되는 이벤트 처리 엔진입니다. 데이터는 장치, 센서, 웹 사이트, 소셜 미디어 피드, 응용 프로그램, 인프라 시스템 등에서 가져올 수 있습니다. 
+[Azure Stream Analytics](/azure/stream-analytics/stream-analytics-introduction)는 스트리밍 데이터에 대한 실시간 분석 계산 작업을 설정할 수 있는 완전히 관리되는 이벤트 처리 엔진입니다. 데이터는 디바이스, 센서, 웹 사이트, 소셜 미디어 피드, 응용 프로그램, 인프라 시스템 등에서 가져올 수 있습니다. 
 
 Azure Stream Analytics에 대한 자세한 내용은 [Azure Stream Analytics 실시간 사기 감지 시작](/azure/stream-analytics/stream-analytics-real-time-fraud-detection)을 참조하세요.
 
