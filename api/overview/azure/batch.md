@@ -74,7 +74,7 @@ using (BatchClient batchClient = await BatchClient.OpenAsync(credentials))
 
 ## <a name="management-library"></a>관리 라이브러리
 
-관리 라이브러리를 사용하여 Batch 계정, 할당량 및 응용 프로그램 패키지를 프로그래밍 방식으로 관리합니다.
+관리 라이브러리를 사용하여 Batch 계정, 할당량 및 애플리케이션 패키지를 프로그래밍 방식으로 관리합니다.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch)를 직접 설치합니다.
 

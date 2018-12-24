@@ -15,7 +15,7 @@ ms.locfileid: "47190842"
 
 ## <a name="overview"></a>개요
 
-Application Insights는 웹 개발자를 위해 강력한 임시 분석 기능을 갖춘 확장 가능한 모니터링 및 진단 서비스입니다. Application Insights 네임스페이스의 클래스를 사용하여 원격 분석 수집을 구성하고, 모니터링하려는 응용 프로그램에서 모든 사용자 지정 원격 분석을 보낼 수 있습니다.
+Application Insights는 웹 개발자를 위해 강력한 임시 분석 기능을 갖춘 확장 가능한 모니터링 및 진단 서비스입니다. Application Insights 네임스페이스의 클래스를 사용하여 원격 분석 수집을 구성하고, 모니터링하려는 애플리케이션에서 모든 사용자 지정 원격 분석을 보낼 수 있습니다.
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 

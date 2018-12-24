@@ -36,8 +36,8 @@ dotnet add package Microsoft.Azure.DataLake.Store
 ```
 ### <a name="authentication"></a>인증
 
-* 응용 프로그램에 대한 최종 사용자 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 최종 사용자 인증](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)을 참조하세요.
-* 응용 프로그램에 대한 서비스 간 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 서비스 간 인증](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)을 참조하세요.
+* 애플리케이션에 대한 최종 사용자 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 최종 사용자 인증](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk)을 참조하세요.
+* 애플리케이션에 대한 서비스 간 인증의 경우 [.NET SDK를 사용한 Data Lake Store의 서비스 간 인증](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk)을 참조하세요.
 
 ### <a name="code-example"></a>코드 예제
 

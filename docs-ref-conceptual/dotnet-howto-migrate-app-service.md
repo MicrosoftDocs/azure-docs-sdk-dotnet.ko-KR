@@ -53,7 +53,7 @@ Azure App Service는 기본적으로 익명 인증을 지원하며 의도하는 
 지원되지 않습니다. 필요한 어셈블리를 앱의 `\bin` 폴더에 복사하는 것이 좋습니다. 서버에 설치된 사용자 지정 .MSI(예: PDF 생성기 등)는 사용할 수 없습니다.  
 
 ### <a name="iis-settings"></a>IIS 설정
-기존에는 응용 프로그램에서 applicationHost.config를 통해 구성하던 모든 것을 이제 Azure Portal을 통해 구성할 수 있습니다. 이는 AppPool 비트 수, 웹 소켓 활성화/비활성화, 관리되는 파이프라인 버전, .NET Framework 버전(2.0/4.0) 등에 적용됩니다. [응용 프로그램 설정](https://docs.microsoft.com/azure/app-service/web-sites-configure)을 수정하려면 [Azure Portal](https://portal.azure.com)로 이동하고 웹앱의 블레이드를 연 다음 **응용 프로그램 설정** 탭을 선택합니다.
+기존에는 애플리케이션에서 applicationHost.config를 통해 구성하던 모든 것을 이제 Azure Portal을 통해 구성할 수 있습니다. 이는 AppPool 비트 수, 웹 소켓 활성화/비활성화, 관리되는 파이프라인 버전, .NET Framework 버전(2.0/4.0) 등에 적용됩니다. [응용 프로그램 설정](https://docs.microsoft.com/azure/app-service/web-sites-configure)을 수정하려면 [Azure Portal](https://portal.azure.com)로 이동하고 웹앱의 블레이드를 연 다음 **응용 프로그램 설정** 탭을 선택합니다.
 
 #### <a name="iis5-compatibility-mode"></a>IIS5 호환 모드
 IIS5 호환 모드는 지원되지 않습니다. Azure App Service에서 각 웹 앱과 그 아래의 모든 응용 프로그램은 특정 [응용 프로그램 풀](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx) 집합으로 동일한 작업자 프로세스에서 실행됩니다.
@@ -95,7 +95,7 @@ AAD는 무료 앱으로 작동하지 않습니다. AAD를 사용하려면 앱 SK
 응용 프로그램에서 사용되는 중요한 정보를 안전하게 저장하는 서비스인 [Azure KeyVault](https://docs.microsoft.com/azure/key-vault/)를 사용하는 것이 좋습니다. 또는 이 데이터를 App Service 설정으로 저장할 수 있습니다.
 
 ### <a name="dns"></a>DNS
-응용 프로그램의 요구 사항에 따라 DNS 구성을 업데이트해야 할 수도 있습니다. 이러한 DNS 설정은 App Service [사용자 지정 도메인 설정](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)에서 구성할 수 있습니다. 
+애플리케이션의 요구 사항에 따라 DNS 구성을 업데이트해야 할 수도 있습니다. 이러한 DNS 설정은 App Service [사용자 지정 도메인 설정](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-custom-domain)에서 구성할 수 있습니다. 
 
 ## <a name="azure-app-service-with-windows-containers"></a>Windows 컨테이너를 사용하는 Azure App Service
 앱을 App Service로 직접 마이그레이션할 수 없는 경우 GAC, COM 구성 요소, MSI, .NET FX API, DirectX 등의 사용을 활성화하는 Windows 컨테이너를 사용하는 App Service를 사용하는 것이 좋습니다.

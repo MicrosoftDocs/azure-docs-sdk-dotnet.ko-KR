@@ -19,7 +19,7 @@ ms.locfileid: "47190246"
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 
-Azure Search 클라이언트 라이브러리를 사용하여 검색 서비스, 인덱스, 문서 또는 기타 개체에 대한 인덱싱 및 검색 작업에 액세스하고 실행합니다. 단계별 소개는 [.NET 응용 프로그램에서 Azure Search를 사용하는 방법](https://docs.microsoft.com/azure/search/search-howto-dotnet-sdk)을 참조하세요.
+Azure Search 클라이언트 라이브러리를 사용하여 검색 서비스, 인덱스, 문서 또는 기타 개체에 대한 인덱싱 및 검색 작업에 액세스하고 실행합니다. 단계별 소개는 [.NET 애플리케이션에서 Azure Search를 사용하는 방법](https://docs.microsoft.com/azure/search/search-howto-dotnet-sdk)을 참조하세요.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Search)를 직접 설치합니다.
 
@@ -59,7 +59,7 @@ ISearchIndexClient indexClient = serviceClient.Indexes.GetClient("hotels");
 
 ## <a name="management-library"></a>관리 라이브러리
 
-Azure Search 관리 라이브러리를 사용하여 서비스를 프로비전하고 api-keys를 관리하며 리소스를 조정합니다. 서비스 관리는 구독자 및 테넌트 식별을 위해 Azure Resource Manager에 대한 종속성을 갖습니다. 일반적으로 워크플로를 지원하기 위해서는 Azure Active Directory에 인증 및 응용 프로그램 등록도 필요합니다. Azure Search 서비스 프로비전에 대한 소개는 [관리 REST API를 사용하는 방법](https://docs.microsoft.com/rest/api/searchmanagement/search-howto-management-rest-api)을 참조하세요.
+Azure Search 관리 라이브러리를 사용하여 서비스를 프로비전하고 api-keys를 관리하며 리소스를 조정합니다. 서비스 관리는 구독자 및 테넌트 식별을 위해 Azure Resource Manager에 대한 종속성을 갖습니다. 일반적으로 워크플로를 지원하기 위해서는 Azure Active Directory에 인증 및 애플리케이션 등록도 필요합니다. Azure Search 서비스 프로비전에 대한 소개는 [관리 REST API를 사용하는 방법](https://docs.microsoft.com/rest/api/searchmanagement/search-howto-management-rest-api)을 참조하세요.
 
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.Search)를 직접 설치합니다.
 

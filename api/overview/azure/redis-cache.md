@@ -15,7 +15,7 @@ ms.locfileid: "47190526"
 
 ## <a name="overview"></a>개요
 
-Azure Redis Cache는 응용 프로그램의 데이터에 대한 많은 처리량을 짧은 대기 시간 동안 처리할 수 있도록 하는 보안 데이터 캐시 및 메시징 broker입니다.  자세한 내용은 [Redis Cache 사용 방법](https://docs.microsoft.com/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache)을 참조하세요.
+Azure Redis Cache는 애플리케이션의 데이터에 대한 많은 처리량을 짧은 대기 시간 동안 처리할 수 있도록 하는 보안 데이터 캐시 및 메시징 broker입니다.  자세한 내용은 [Redis Cache 사용 방법](https://docs.microsoft.com/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache)을 참조하세요.
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 

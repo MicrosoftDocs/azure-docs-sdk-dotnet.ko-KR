@@ -1,6 +1,6 @@
 ---
 title: .NET Core를 사용하여 명령줄에서 Azure에 배포
-description: 이 문서에서는 명령줄 도구를 사용하여 Azure App Service에 ASP.NET Core 응용 프로그램을 배포하는 방법을 설명합니다.
+description: 이 문서에서는 명령줄 도구를 사용하여 Azure App Service에 ASP.NET Core 애플리케이션을 배포하는 방법을 설명합니다.
 ms.date: 06/20/2017
 ms.openlocfilehash: a29f5474dcfedc6f8d044f09ad4d54c5be6a371f
 ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60

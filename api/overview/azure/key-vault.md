@@ -37,7 +37,7 @@ dotnet add package Microsoft.Azure.KeyVault
 
 ### <a name="example"></a>예
 
-다음 예제에서는 응용 프로그램 설정에서 식별되는 특정 키에 대한 비밀을 검색합니다.
+다음 예제에서는 애플리케이션 설정에서 식별되는 특정 키에 대한 비밀을 검색합니다.
 
 ```csharp
 KeyVaultClient kv = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(securityToken));
