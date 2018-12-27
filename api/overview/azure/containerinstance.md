@@ -57,7 +57,7 @@ SDK 클라이언트를 인증하는 가장 쉬운 방법 중 하나는 [파일 �
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
 
-샘플 응용 프로그램의 이 메서드는 초기화된 [IAzure][iazure] 인스턴스를 반환하고, 이 인스턴스는 샘플에 있는 다른 모든 메서드에 첫 번째 매개변수로 전달됩니다.
+샘플 애플리케이션의 이 메서드는 초기화된 [IAzure][iazure] 인스턴스를 반환하고, 이 인스턴스는 샘플에 있는 다른 모든 메서드에 첫 번째 매개변수로 전달됩니다.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
 
