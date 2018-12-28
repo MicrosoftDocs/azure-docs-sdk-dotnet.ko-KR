@@ -42,7 +42,7 @@ ms.locfileid: "47190676"
   <tr>
     <td>네트워킹</td>
     <td>가상 네트워크<br>네트워크 인터페이스<br>IP 주소<br>Routing Table<br>네트워크 보안 그룹<br>DNS<br>Traffic Manager</td>
-    <td valign="top">부하 분산 장치<br>응용 프로그램 게이트웨이</td>
+    <td valign="top">부하 분산 장치<br>애플리케이션 게이트웨이</td>
     <td valign="top"></td>
   </tr>
   <tr>
