@@ -11,11 +11,11 @@ ms.locfileid: "47190136"
 ---
 # <a name="azure-net-apis"></a>Azure .NET API
 
-Azure .NET API를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다. API는 .NET 프로젝트에서 사용할 [NuGet 패키지](/dotnet/api/overview/azure/)로 사용할 수 있습니다. 
+Azure .NET API를 사용하면 Azure 서비스를 사용하고 애플리케이션 코드에서 Azure 리소스를 관리할 수 있습니다. API는 .NET 프로젝트에서 사용할 [NuGet 패키지](/dotnet/api/overview/azure/)로 사용할 수 있습니다. 
 
 ## <a name="manage-azure-resources"></a>Azure 리소스 관리
 
-.NET용 Azure 라이브러리를 사용하면 .NET 응용 프로그램에서 Azure 리소스를 만들고 관리할 수 있습니다.
+.NET용 Azure 라이브러리를 사용하면 .NET 애플리케이션에서 Azure 리소스를 만들고 관리할 수 있습니다.
 
 Azure 리소스를 관리하는 많은 패키지에는 사양에 맞게 리소스를 정확히 구성하는 [흐름](dotnet-sdk-azure-concepts.md) 인터페이스가 있습니다. 예를 들어 Linux VM을 만들려면 다음 코드를 작성합니다.
 
@@ -37,7 +37,7 @@ var windowsVM = azure.VirtualMachines.Define(windowsVmName)
 
 ## <a name="consume-azure-services"></a>Azure 서비스 사용
 
-.NET API를 사용하여 Azure 내에서 리소스를 만들고 프로그래밍 방식으로 관리하는 것 외에도 .NET API를 사용하여 응용 프로그램을 이러한 리소스에 연결하고 런타임에 사용할 수 있습니다.  예를 들어 SQL Database에 연결하거나 Azure Storage에 데이터를 저장할 수 있습니다.  [서비스 API의 전체 목록](/dotnet/api/overview/azure/)을 검색하여 특정 Azure 서비스에 사용할 NuGet 패키지를 식별할 수 있습니다.  
+.NET API를 사용하여 Azure 내에서 리소스를 만들고 프로그래밍 방식으로 관리하는 것 외에도 .NET API를 사용하여 애플리케이션을 이러한 리소스에 연결하고 런타임에 사용할 수 있습니다.  예를 들어 SQL Database에 연결하거나 Azure Storage에 데이터를 저장할 수 있습니다.  [서비스 API의 전체 목록](/dotnet/api/overview/azure/)을 검색하여 특정 Azure 서비스에 사용할 NuGet 패키지를 식별할 수 있습니다.  
 
 ## <a name="samples"></a>샘플
 

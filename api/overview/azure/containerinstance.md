@@ -71,7 +71,7 @@ Azure용 .NET 관리 라이브러리에 사용 가능한 인증 방법에 대한
 
 ## <a name="create-container-group---multiple-containers"></a>컨테이너 그룹 만들기 - 여러 컨테이너
 
-이 예에서는 응용 프로그램 컨테이너와 사이드카 컨테이너라는 두 개의 컨테이너로 컨테이너 그룹을 만듭니다.
+이 예에서는 애플리케이션 컨테이너와 사이드카 컨테이너라는 두 개의 컨테이너로 컨테이너 그룹을 만듭니다.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
 

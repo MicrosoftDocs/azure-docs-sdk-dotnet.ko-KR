@@ -11,7 +11,7 @@ ms.locfileid: "47190756"
 ---
 # <a name="azure-ai-and-cognitive-service-tutorials-using-net"></a>.NET을 사용하는 Azure AI 및 Cognitive Services 자습서
 
-다음 표에서는 .NET 응용 프로그램에서 Azure AI 및 Cognitive Services API를 사용하는 자세한 자습서로 연결됩니다. 
+다음 표에서는 .NET 애플리케이션에서 Azure AI 및 Cognitive Services API를 사용하는 자세한 자습서로 연결됩니다. 
 
 샘플 소스 코드는 [Azure 서비스 샘플](https://azure.microsoft.com/resources/samples/?platform=dotnet) 목록을 참조하세요.
 

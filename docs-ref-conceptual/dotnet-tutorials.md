@@ -18,7 +18,7 @@ ms.locfileid: "47189546"
 | | |
 |---|---|
 | **Web Apps**||
-| [Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기][1] | Azure SQL Database에 데이터를 저장하는 간단한 웹 응용 프로그램을 만듭니다. |
+| [Azure SQL Database를 사용하여 ASP.NET 웹앱 만들기][1] | Azure SQL Database에 데이터를 저장하는 간단한 웹 애플리케이션을 만듭니다. |
 | **API Apps**||
 | [Web API 만들기 및 배포][3] | Swagger를 사용하여 .NET Web API를 만들고 배포합니다. | 
 | **Azure Container Service** ||
@@ -28,8 +28,8 @@ ms.locfileid: "47189546"
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][6] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. |
 | **Azure Cosmos DB** ||
-| [Azure Cosmos DB SQL API 시작하기][7] | Azure Cosmos DB SQL API를 사용하여 간단한 콘솔 응용 프로그램을 만듭니다. |
-| [Azure Cosmos DB SQL API를 사용하여 ASP.NET 웹앱 만들기][8] | Azure Cosmos DB SQL API와 웹 응용 프로그램을 만듭니다. |
+| [Azure Cosmos DB SQL API 시작하기][7] | Azure Cosmos DB SQL API를 사용하여 간단한 콘솔 애플리케이션을 만듭니다. |
+| [Azure Cosmos DB SQL API를 사용하여 ASP.NET 웹앱 만들기][8] | Azure Cosmos DB SQL API와 웹 애플리케이션을 만듭니다. |
 
 [1]: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
 [2]: /azure/cosmos-db/sql-api-dotnet-application

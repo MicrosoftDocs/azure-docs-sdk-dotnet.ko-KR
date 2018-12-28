@@ -11,7 +11,7 @@ ms.locfileid: "47190496"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>.NET Core를 사용하여 명령줄에서 Azure에 배포
 
-이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 응용 프로그램을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 응용 프로그램이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure Cosmos DB를 사용하여 데이터를 저장합니다.
+이 자습서에서는 .NET Core를 사용하여 Microsoft Azure 애플리케이션을 빌드하고 배포하는 과정을 안내합니다.  완료되면 웹 기반 할 일 애플리케이션이 ASP.NET MVC Core로 빌드되고, Azure 웹앱으로 호스팅되고, Azure Cosmos DB를 사용하여 데이터를 저장합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -43,9 +43,9 @@ cosmosAuthKey=$(az cosmosdb list-keys -n $cosmosdbname -g DotNetAzureTutorial --
 
 ```
 
-## <a name="download-and-configure-the-application"></a>응용 프로그램 다운로드 및 구성
+## <a name="download-and-configure-the-application"></a>애플리케이션 다운로드 및 구성
 
-배포하려는 응용 프로그램은 Azure Cosmos DB 클라이언트 라이브러리를 사용하는 ASP.NET MVC Core를 사용하여 작성된 [간단한 할 일 앱(영문)](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)입니다.  이제 이 자습서의 코드를 가져오고 Azure Cosmos DB 정보로 이 코드를 구성합니다.
+배포하려는 애플리케이션은 Azure Cosmos DB 클라이언트 라이브러리를 사용하는 ASP.NET MVC Core를 사용하여 작성된 [간단한 할 일 앱(영문)](https://github.com/Azure-Samples/dotnet-cosmosdb-quickstart/)입니다.  이제 이 자습서의 코드를 가져오고 Azure Cosmos DB 정보로 이 코드를 구성합니다.
 
 ```azurecli-interactive
 # Get the code from GitHub
@@ -66,7 +66,7 @@ git commit -a -m "Modified settings"
 > [!NOTE]
 > 이전에 이 환경에서 `git commit`을 실행한 적이 없으면 ID를 설정하라는 메시지가 표시될 수 있습니다. 이 경우 화면의 지침에 따라 `git commit` 명령을 다시 실행하세요.
 
-NuGet 패키지를 복원하고 응용 프로그램을 빌드합니다.
+NuGet 패키지를 복원하고 애플리케이션을 빌드합니다.
 
 ```azurecli-interactive
 dotnet restore
@@ -74,11 +74,11 @@ dotnet build
 ```
 
 > [!TIP]
-> 자신의 컴퓨터에서 도구를 사용하는 경우 `dotnet run`을 실행하고 표시된 `localhost` 주소로 이동하여 응용 프로그램을 테스트할 수 있습니다.  그러나 Cloud Shell에서는 이 주소로 이동할 수 없습니다.  
+> 자신의 머신에서 도구를 사용하는 경우 `dotnet run`을 실행하고 표시된 `localhost` 주소로 이동하여 애플리케이션을 테스트할 수 있습니다.  그러나 Cloud Shell에서는 이 주소로 이동할 수 없습니다.  
 
 ## <a name="configure-azure-app-service-and-deploy-the-web-app"></a>Azure App Service를 구성하고 웹앱을 배포합니다.
 
-웹 응용 프로그램을 성공적으로 다운로드하고 빌드했고, Azure Web App으로 배포할 준비가 되었습니다.  이제 Web App 리소스를 만들어 보겠습니다.
+웹 애플리케이션을 성공적으로 다운로드하고 빌드했고, Azure Web App으로 배포할 준비가 되었습니다.  이제 Web App 리소스를 만들어 보겠습니다.
 
 ```azurecli-interactive
 # Generate a unique Web App name
@@ -99,7 +99,7 @@ az webapp create --name $webappname --resource-group DotNetAzureTutorial --plan 
 az webapp deployment user set --user-name <desired user name> --password <desired password>
 ```
 
-마지막으로 Azure에 응용 프로그램을 배포합니다.  위에서 만든 암호를 입력하라는 메시지가 표시됩니다.
+마지막으로 Azure에 애플리케이션을 배포합니다.  위에서 만든 암호를 입력하라는 메시지가 표시됩니다.
 
 ```azurecli-interactive
 # Get the Git deployment URL
@@ -112,7 +112,7 @@ git remote add azure $giturl
 git push azure master
 ```
 
-응용 프로그램이 원격으로 빌드되어 배포됩니다.  `https://<web app name>.azurewebsites.net`으로 이동하여 응용 프로그램을 테스트합니다.  콘솔에 주소를 표시하려면 다음 예제를 사용합니다.
+애플리케이션이 원격으로 빌드되어 배포됩니다.  `https://<web app name>.azurewebsites.net`으로 이동하여 응용 프로그램을 테스트합니다.  콘솔에 주소를 표시하려면 다음 예제를 사용합니다.
 
 ```azurecli-interactive
 az webapp show -n $webappname -g DotNetAzureTutorial --query defaultHostName -o tsv

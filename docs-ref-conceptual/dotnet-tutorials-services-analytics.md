@@ -1,6 +1,6 @@
 ---
 title: Azure의 데이터 분석에 대한 .NET 자습서 | Microsoft Docs
-description: Microsoft Azure 서비스를 사용하여 데이터 분석 응용 프로그램을 개발합니다.
+description: Microsoft Azure 서비스를 사용하여 데이터 분석 애플리케이션을 개발합니다.
 ms.date: 10/19/2017
 ms.openlocfilehash: f1f4b4bcd0aac04150b510eb98308800dbdfe93c
 ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
@@ -20,7 +20,7 @@ ms.locfileid: "47190206"
 | **HDInsight** | |
 | [Apache Storm 토폴로지 만들기][1] | 샘플 앱을 구현하는 토폴로지를 정의한 다음 프로젝트를 빌드하고 실행합니다. | 
 | [HDInsight의 Storm으로 Azure Event Hubs에서 이벤트 처리][2] | HDInsight의 Apache Storm에서 Event Hub Spout를 사용하여 웹 사이트, 앱 및 디바이스의 데이터를 처리합니다.
-| [MapReduce 앱 개발 및 HDInsight Hadoop 클러스터에서 실행][3] | 간단한 MapReduce 응용 프로그램을 만들어 단어 수를 계산하고, Linux에서 실행되는 HDInsight Hadoop 클러스터에 배포합니다. |
+| [MapReduce 앱 개발 및 HDInsight Hadoop 클러스터에서 실행][3] | 간단한 MapReduce 애플리케이션을 만들어 단어 수를 계산하고, Linux에서 실행되는 HDInsight Hadoop 클러스터에 배포합니다. |
 | **Data Lake Analytics** | |
 | [Data Lake Analytics 시작][4] | Azure .NET SDK를 사용하여 U-SQL로 작성된 작업을 Data Lake Analytics에 제출하는 방법을 알아봅니다.|
 
