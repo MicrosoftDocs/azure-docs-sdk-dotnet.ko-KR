@@ -39,7 +39,7 @@ dotnet add package Microsoft.ServiceFabric
 
 ### <a name="code-examples"></a>코드 예제
 
-다음 예제에서는 Service Fabric **클라이언트** API를 사용하여 응용 프로그램 패키지를 이미지 저장소에 복사하고 응용 프로그램 형식을 프로비전하며 응용 프로그램 인스턴스를 만듭니다.
+다음 예제에서는 Service Fabric **클라이언트** API를 사용하여 애플리케이션 패키지를 이미지 저장소에 복사하고 애플리케이션 형식을 프로비전하며 애플리케이션 인스턴스를 만듭니다.
 
 ```csharp
 /* Include these dependencies

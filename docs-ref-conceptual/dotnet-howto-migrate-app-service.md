@@ -91,7 +91,7 @@ AAD는 무료 앱으로 작동하지 않습니다. AAD를 사용하려면 앱 SK
 ### <a name="monitoring-and-diagnostics"></a>모니터링 및 진단
 모니터링 및 진단을 위해 현재 온-프레미스 솔루션은 클라우드에서 작동하지 않을 수 있습니다. 그러나 Azure는 앱의 문제를 식별하고 디버깅할 수 있도록 로깅, 모니터링 및 진단을 위한 도구를 제공합니다. 구성에서 웹앱에 대해 쉽게 진단하고 Azure Application Insights에 기록된 로그를 볼 수 있습니다. [웹앱에 대한 진단 로깅을 사용하는 방법에 대해 자세히 알아보세요](https://docs.microsoft.com/azure/app-service/web-sites-enable-diagnostic-log).
 
-### <a name="connection-strings-and-application-settings"></a>연결 문자열 및 응용 프로그램 설정
+### <a name="connection-strings-and-application-settings"></a>연결 문자열 및 애플리케이션 설정
 애플리케이션에서 사용되는 중요한 정보를 안전하게 저장하는 서비스인 [Azure KeyVault](https://docs.microsoft.com/azure/key-vault/)를 사용하는 것이 좋습니다. 또는 이 데이터를 App Service 설정으로 저장할 수 있습니다.
 
 ### <a name="dns"></a>DNS
