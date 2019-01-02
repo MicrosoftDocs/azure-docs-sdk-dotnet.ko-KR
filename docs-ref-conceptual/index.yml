@@ -71,7 +71,7 @@ sections:
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/applicationinsights.svg
-      title: Application Insights를 사용하여 ASP.NET 응용 프로그램 모니터링
+      title: Application Insights를 사용하여 ASP.NET 애플리케이션 모니터링
       href: https://docs.microsoft.com/azure/application-insights/quick-monitor-portal
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/storage.svg
@@ -103,7 +103,7 @@ sections:
     - href: https://www.microsoft.com/net/learn/architecture
       image:
         src: https://docs.microsoft.com/en-us/media/logos/logo_NET.svg
-      title: .NET 응용 프로그램 아키텍처 지침
+      title: .NET 애플리케이션 아키텍처 지침
 - title: 단계별 자습서
   items:
   - type: paragraph
