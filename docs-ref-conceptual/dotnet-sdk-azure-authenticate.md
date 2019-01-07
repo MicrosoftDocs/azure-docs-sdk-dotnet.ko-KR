@@ -32,7 +32,7 @@ using (var conn = new SqlConnection(builder.ConnectionString))
 }
 ```
 
-Azure Storage에서는 저장소 키를 사용합니다.
+Azure Storage에서는 스토리지 키를 사용합니다.
 
 ```csharp
 string storageConnectionString = "DefaultEndpointsProtocol=https;"

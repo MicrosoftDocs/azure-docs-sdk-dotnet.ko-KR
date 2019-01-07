@@ -17,7 +17,7 @@ ms.locfileid: "47189976"
 
 [Azure Storage](https://docs.microsoft.com/azure/storage/storage-introduction)를 사용하여 .NET 응용 프로그램의 파일, Blob(개체) 데이터, 키-값 쌍 및 메시지를 읽고 씁니다.
 
-Azure Storage를 시작하려면 [.NET을 사용하여 Azure Blob 저장소 시작](/azure/storage/storage-dotnet-how-to-use-blobs)을 참조하세요.
+Azure Storage를 시작하려면 [.NET을 사용하여 Azure Blob 스토리지 시작](/azure/storage/storage-dotnet-how-to-use-blobs)을 참조하세요.
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 
