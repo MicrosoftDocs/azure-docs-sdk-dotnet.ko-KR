@@ -4,12 +4,12 @@ description: .NET용 Azure Cosmos DB 라이브러리에 대한 참조
 ms.date: 08/31/2018
 ms.topic: reference
 ms.service: cosmos-db
-ms.openlocfilehash: 8ff565f1cd72eec2f574b45d04ceac526b8c5eb0
-ms.sourcegitcommit: 01ec3adba39a6f946015552c28da0a9a6bb57180
+ms.openlocfilehash: 95fcd8468c3d472cfcadeaae3b56ae789c3b1e7a
+ms.sourcegitcommit: 55ee51501678d1575e5159f0ac0e475b5bf9daf3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112021"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54453997"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a>.NET용 Azure Cosmos DB 라이브러리
 
@@ -56,7 +56,7 @@ dotnet add package Microsoft.Azure.Cosmos
 
 ### <a name="code-example"></a>코드 예제
 
-이 예제에서는 기존 Azure Cosmos DB SQL API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `Item` 개체로 deserialize합니다. 이 예제에서는 .NET SDK의 2.x 버전을 사용합니다.   
+이 예제에서는 기존 Azure Cosmos DB SQL API 데이터베이스에 연결하고 컬렉션에서 문서를 읽고 `TodoItem` 개체로 deserialize합니다. 이 예제에서는 .NET SDK의 2.x 버전을 사용합니다.   
 
 ```csharp
 /* Include this "using" directive...
@@ -65,7 +65,7 @@ using Microsoft.Azure.Documents.Client;
 
 DocumentClient client = new DocumentClient(endpointUri, authKeyString);
 Uri documentUri = UriFactory.CreateDocumentUri("MyDatabaseName", "MyCollectionName", "DocumentId");
-SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString();
+var todoItem = client.ReadDocumentAsync<TodoItem>(documentUri);
 ```
 
 이 예제는 기존 Azure Cosmos DB SQL API 데이터베이스에 연결하고, 새 데이터베이스와 컨테이너를 만들고, 컨테이너에서 항목을 읽고, `TodoItem` 객체로 deserialize합니다. 이 예제에서는 .NET SDK의 3.x 버전을 사용합니다.   

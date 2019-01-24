@@ -4,12 +4,12 @@ description: .NET용 Azure Container Instances 라이브러리에 대한 참조
 ms.date: 06/11/2018
 ms.topic: reference
 ms.service: container-instances
-ms.openlocfilehash: 8642fc654546edde81aeaa520f52b2aff9720e55
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 552746b316f1ba80adce5f55bb22412749fd93bc
+ms.sourcegitcommit: 4f7bc5c5cd333e41446a3ebe5639a211d8ac9b90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348105"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841280"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>.NET용 Azure Container Instances 라이브러리
 
@@ -45,7 +45,7 @@ SDK 클라이언트를 인증하는 가장 쉬운 방법 중 하나는 [파일 �
 
    `az ad sp create-for-rbac --sdk-auth > my.azureauth`
 
-   [Cloud Shell](https://shell.azure.com/)을 사용하여 자격 증명 파일을 생성하려면 해당 내용을 .NET 응용 프로그램이 액세스할 수 있는 로컬 파일에 복사합니다.
+   [Cloud Shell](https://shell.azure.com/)을 사용하여 자격 증명 파일을 생성하려면 해당 내용을 .NET 애플리케이션이 액세스할 수 있는 로컬 파일에 복사합니다.
 
 2. `AZURE_AUTH_LOCATION` 환경 변수를 생성된 자격 증명 파일의 전체 경로로 설정합니다. 예(Bash 셸):
 
@@ -55,11 +55,13 @@ SDK 클라이언트를 인증하는 가장 쉬운 방법 중 하나는 [파일 �
 
 자격 증명 파일을 만들고 `AZURE_AUTH_LOCATION` 환경 변수를 입력한 다음에는 [Azure.Authenticate][iazure-authenticate] 메서드를 사용하여 [IAzure][iazure] 클라이언트 개체를 초기화합니다. 예제 프로젝트는 먼저 `AZURE_AUTH_LOCATION` 값을 가져온 후 초기화된 `IAzure` 클라이언트 개체를 반환하는 메서드를 호출합니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
 
 샘플 애플리케이션의 이 메서드는 초기화된 [IAzure][iazure] 인스턴스를 반환하고, 이 인스턴스는 샘플에 있는 다른 모든 메서드에 첫 번째 매개변수로 전달됩니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
 
 Azure용 .NET 관리 라이브러리에 사용 가능한 인증 방법에 대한 자세한 내용은 [.NET용 Azure 관리 라이브러리의 인증][sdk-auth]을 참조합니다.
 
@@ -67,19 +69,22 @@ Azure용 .NET 관리 라이브러리에 사용 가능한 인증 방법에 대한
 
 이 예에서는 단일 컨테이너로 컨테이너 그룹을 만듭니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
 
 ## <a name="create-container-group---multiple-containers"></a>컨테이너 그룹 만들기 - 여러 컨테이너
 
 이 예에서는 애플리케이션 컨테이너와 사이드카 컨테이너라는 두 개의 컨테이너로 컨테이너 그룹을 만듭니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
 
 ## <a name="asynchronous-container-create-with-polling"></a>폴링을 사용하여 비동기 컨테이너 만들기
 
 이 예에서는 비동기 만들기 메서드를 사용하여 단일 컨테이너로 컨테이너 그룹을 만듭니다. 그런 다음 컨테이너 그룹에 대해 Azure를 폴링하고 상태가 "실행 중"이 될 때까지 컨테이너 그룹의 상태를 출력합니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
 
 ## <a name="create-task-based-container-group"></a>작업 기반 컨테이너 그룹 만들기
 
@@ -93,25 +98,29 @@ Azure용 .NET 관리 라이브러리에 사용 가능한 인증 방법에 대한
 
 `WithStartingCommandLines("/bin/sh", "-c", "echo FOO BAR && tail -f /dev/null")`
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
 
 ## <a name="list-container-groups"></a>컨테이너 그룹 나열
 
 이 예는 리소스 그룹의 컨테이너 그룹을 나열합니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
 
 ## <a name="get-an-existing-container-group"></a>기존 컨테이너 그룹 가져오기
 
 이 예에서는 리소스 그룹에 있는 특정 컨테이너 그룹을 가져와서 몇 가지 속성과 그 값을 인쇄합니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
 
 ## <a name="delete-a-container-group"></a>컨테이너 그룹 삭제
 
 이 예에서는 리소스 그룹에서 컨테이너 그룹을 삭제합니다.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
 
 ## <a name="api-reference"></a>API 참조
 
