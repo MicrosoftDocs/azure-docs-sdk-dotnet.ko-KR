@@ -4,12 +4,12 @@ description: .NET용 Azure Notification Hubs 라이브러리에 대한 참조
 ms.date: 10/19/2017
 ms.topic: reference
 ms.service: notification-hubs
-ms.openlocfilehash: 197ca22527a475b43b45149a40e96e5a027739ad
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 750a51e8dfa7323f6afb54735b4bfc517f9ec15f
+ms.sourcegitcommit: 4b68c73652cb7e44cf4db36f70cb33a17dd863ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190266"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58085840"
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>.NET용 Azure Notification Hubs 라이브러리
 
@@ -20,7 +20,7 @@ Azure Notification Hubs는 사용하기 쉬운 다중 플랫폼의 확장된 푸
 Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs)를 직접 설치합니다.
 
 > [!NOTE]
-> [NuGet 패키지의 새 미리 보기 버전](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1)은 .NET Standard를 지원하며 Notifications Hubs의 백 엔드 용도로 .NET Core를 사용할 수 있습니다.
+> 이제 [Azure Notification Hubs NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs) 가 .NET Standard를 지원합니다. 따라서 Notifications Hubs의 백 엔드 사용에 .NET core를 활용할 수 있습니다.
 
 #### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
 
@@ -45,7 +45,6 @@ await hub.SendWindowsNativeNotificationAsync(toast);
 
 > [!div class="nextstepaction"]
 > [클라이언트 API 탐색](/dotnet/api/overview/azure/notificationhubs/client)
-
 
 ## <a name="management-library"></a>관리 라이브러리
 
