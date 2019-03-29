@@ -90,7 +90,7 @@ Azure용 .NET 관리 라이브러리에 사용 가능한 인증 방법에 대한
 
 이 예에서는 단일 작업 기반 컨테이너로 컨테이너 그룹을 만듭니다. 컨테이너는 "Never"의 [재시작 정책](/azure/container-instances/container-instances-restart-policy)과 [명령줄 사용자 정의](/azure/container-instances/container-instances-restart-policy#command-line-override)로 구성됩니다.
 
-`echo FOO BAR`과 같이 여러 명령줄 인수를 사용하여 단일 명령을 실행하려면 이들 인수를 문자열 배열로서 `WithStartingCommandLines` 메서드에 제공해야 합니다. 예: 
+`echo FOO BAR`과 같이 여러 명령줄 인수를 사용하여 단일 명령을 실행하려면 이들 인수를 문자열 배열로서 `WithStartingCommandLines` 메서드에 제공해야 합니다. 예를 들면 다음과 같습니다.
 
 `WithStartingCommandLines("echo", "FOO", "BAR")`
 

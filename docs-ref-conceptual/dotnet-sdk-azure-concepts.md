@@ -72,7 +72,7 @@ foreach(var vm in vmList)
 >[!NOTE]
 > `Define()` 및 `Update()`는 동사이지만 `Create()` 또는 `Apply()`가 뒤에 나오지 않으면 차단하지 않습니다.
  
-일부 리소스 개체에는 Azure에서 리소스의 상태를 변경하는 동사가 있습니다. 예: 
+일부 리소스 개체에는 Azure에서 리소스의 상태를 변경하는 동사가 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 var vmToRestart = azure.VirtualMachines.GetById(id);
