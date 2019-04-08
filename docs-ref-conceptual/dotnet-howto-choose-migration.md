@@ -24,7 +24,7 @@ ms.locfileid: "49348225"
 
 ## <a name="compute-choices"></a>계산 선택 항목
 
-기존 .NET Framework 애플리케이션을 Azure로 마이그레이션하는 경우 여러 가지 선택 사항이 있습니다.  그러나 .NET Framework는 Windows에 따라 다르기 때문에 다음 선택 사항은 Windows 기반 계산 서비스로 제한됩니다.
+기존 .NET Framework 애플리케이션을 Azure로 마이그레이션하는 경우 여러 가지 선택 사항이 있습니다.  그러나 .NET Framework는 Windows에 따라 다르기 때문에 다음 선택 사항은 Windows 기반 컴퓨팅 서비스로 제한됩니다.
 
 다음 표는 기존 .NET 애플리케이션에 적합한 컴퓨팅 마이그레이션 경로를 선택하는 데 도움이 되는 몇 가지 비교 및 권장 사항을 보여줍니다.
 

@@ -36,7 +36,7 @@ Azure 내 호스팅은 세 가지 범주로 나눌 수 있습니다.
 
 * **PaaS(서비스 제공 플랫폼)** 는 VM 또는 네트워킹 리소스를 관리할 필요 없이 응용 프로그램을 배포할 수 있는 관리되는 호스팅 환경을 제공합니다. 예를 들어, 개별 VM을 만드는 대신, 인스턴스 수를 지정하기만 하면 서비스가 필요한 리소스를 프로비전, 구성 및 관리합니다. Azure App Service는 PaaS 서비스의 예제입니다.
   
-* **FaaS(서비스 제공 함수)**: 일반적으로 서버리스 컴퓨팅이라고 불리는 FaaS는 PaaS보다 호스팅 환경에 대한 관심을 추상화합니다. 계산 인스턴스를 만들고 해당 인스턴스에 코드를 배포하는 대신, 사용자가 코드를 배포하면 서비스가 코드를 자동으로 실행합니다. 계산 리소스를 관리할 필요가 없습니다. 플랫폼은 트래픽을 처리하는 데 필요한 수준까지 코드를 원활하게 확장하거나 축소할 수 있으며 코드가 실행 중일 때만 비용을 지불합니다. Azure Function은 FaaS 서비스입니다.
+* **FaaS(서비스 제공 함수)**: 일반적으로 서버리스 컴퓨팅이라고 불리는 FaaS는 PaaS보다 호스팅 환경에 대한 관심을 추상화합니다. 컴퓨팅 인스턴스를 만들고 해당 인스턴스에 코드를 배포하는 대신, 사용자가 코드를 배포하면 서비스가 코드를 자동으로 실행합니다. 계산 리소스를 관리할 필요가 없습니다. 플랫폼은 트래픽을 처리하는 데 필요한 수준까지 코드를 원활하게 확장하거나 축소할 수 있으며 코드가 실행 중일 때만 비용을 지불합니다. Azure Function은 FaaS 서비스입니다.
 
 일반적으로 애플리케이션이 FaaS 및 PaaS 모델을 선호할수록 클라우드에서 실행하면 더 많은 이점을 얻을 수 있습니다. 다음은 Azure 내에서 선택하는 일반적인 세 가지 호스팅 옵션의 요약 및 선택 기준입니다.
 
@@ -47,7 +47,7 @@ Azure 내 호스팅은 세 가지 범주로 나눌 수 있습니다.
 * [Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): App Service가 특정 종속성으로 인해 기존 응용 프로그램을 호스팅해야하는 필요성을 충족시키지 못하는 경우, 가상 머신이 가장 쉽게 시작할 수 있는 곳입니다. 가상 머신과 ASP.NET 또는 WCF를 시작하려면 [Azure 가상 머신에 ASP.NET 앱 배포](https://tutorials.visualstudio.com/aspnet-vm/intro)를 참조하십시오.
 
 > [!TIP]
-> Azure 서비스의 자세한 목록은 [Azure 계산 옵션 개요](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)를 참조합니다. 서비스 선택에 대한 자세한 내용은 [Azure 계산 서비스에 대한 의사 결정 트리](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)를 참조합니다.
+> Azure 서비스의 자세한 목록은 [Azure 계산 옵션 개요](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options)를 참조합니다. 서비스 선택에 대한 자세한 내용은 [Azure 컴퓨팅 서비스에 대한 의사 결정 트리](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)를 참조합니다.
 
 ## <a name="choosing-a-data-storage-service"></a>데이터 저장소 서비스 선택
 
