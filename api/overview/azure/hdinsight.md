@@ -1,128 +1,23 @@
 ---
-title: Azure HDInsight .NET SDK
-description: Azure HDInsight .NET SDK 참조
-ms.date: 9/19/2018
+title: .NET용 Azure HDInsight SDK
+description: .NET용 Azure HDInsight SDK에 대한 참조입니다.
+ms.date: 04/10/2019
 ms.topic: reference
 ms.service: hdinsight
-ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 2282a302b269a52c71ed88c26e021344cdca4382
+ms.sourcegitcommit: 4328168172ac1b1a448e16988f75199262bc5c2d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348205"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59700261"
 ---
-# <a name="azure-hdinsight-net-sdk"></a>Azure HDInsight .NET SDK
+# <a name="azure-hdinsight-sdk-for-net"></a>.NET용 Azure HDInsight SDK
 
-## <a name="azure-hdinsight-libraries-for-net-2x"></a>.NET 2.X용 Azure HDInsight 라이브러리
+Azure HDInsight는 HDInsight 클러스터를 관리하고 Hadoop 작업을 제출 및 모니터링할 수 있는 클래스를 제공하는 .NET용 관리 및 작업 SDK를 제공합니다.
 
-## <a name="overview"></a>개요
+## <a name="management"></a>관리
 
-HDInsight Service .NET SDK는 Azure HDInsight Service에서 관리하는 Hadoop 작업의 생성, 구성, 전송 및 모니터링과 관련된 클래스를 제공합니다. 또한 HDInsight Service를 사용하여 Azure 구독을 관리하고, Azure 구독에서 관리하는 HDInsight 클러스터와 관련된 기타 자산, 저장소 계정 및 클러스터를 구성하는 클래스도 제공합니다.
-
-## <a name="management-libraries"></a>관리 라이브러리
-
-### <a name="jobs"></a>교육
-
-Azure HDInsight 클라이언트 SDK를 사용하여 Hadoop 클러스터에서 작업을 만들고 관리하며 모니터링합니다. 
-
-Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job)를 직접 설치합니다.
-
-#### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight.Job
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight.Job
-```
-
-#### <a name="code-example"></a>코드 예제
-
-이 예제는 Hadoop 클러스터에서 Hive 작업을 실행합니다.
-
-```csharp
-HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
-
-Dictionary<string, string> defines = new Dictionary<string, string> {
-    { "hive.execution.engine", "tez" },
-    { "hive.exec.reducers.max", "1" }
-};
-List<string> arguments = new List<string> { { "argA" }, { "argB" } };
-HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
-{
-    Query = "SHOW TABLES",
-    Defines = defines,
-    Arguments = arguments
-};
-
-JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
-```
-
-### <a name="hdinsight"></a>HDInsight
-
-Azure HDInsight 관리 SDK를 사용하여 Hadoop 클러스터를 만들고, 관리하며, 시작 및 중지하고 크기를 조정합니다.
-
-Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight)를 직접 설치합니다.
-
-#### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
-
-```powershell
-Install-Package Microsoft.Azure.Management.HDInsight
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.HDInsight
-```
-
-#### <a name="code-example"></a>코드 예제
-
-이 예에서는 기존 Azure Blob Storage와 함께 HDInsight 2노드 Linux Hadoop 클러스터를 만듭니다.
-
-```csharp
-HDInsightManagementClient managementClient = new HDInsightManagementClient(authToken);
-// Set parameters for the new cluster
-ClusterCreateParameters parameters = new ClusterCreateParameters
-{
-    ClusterSizeInNodes = 2,
-    UserName = "admin",
-    Password = "<Enter HTTP User Password>",
-    ClusterType = "Hadoop",
-    OSType = OSType.Linux,
-    Version = "3.5",
-    // Use an Azure storage account as the default storage
-    DefaultStorageInfo = new AzureStorageInfo("<StorageAccount>", "<StorageKey>", "<BlobContainerName>"),
-    Location = "EAST US 2",
-    SshUserName = "sshuser",
-    SshPassword = "<Enter SSH User Password>",
-};
-
-// Create the cluster
-managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName>", parameters);
-```
-
-> [!div class="nextstepaction"]
-> [관리 API 탐색](/dotnet/api/overview/azure/hdinsights/management)
-
-
-## <a name="samples"></a>샘플
-
-- [클러스터 만들기](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-dotnet-sdk)
-- [클러스터 관리](https://docs.microsoft.com/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)
-- [Hive 작업 실행](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
-- [Pig 작업 실행](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
-- [더 많은 작업](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
-
-Azure SQL Database 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=hdinsight)을 봅니다.
-
-[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
-
-## <a name="hdinsight-net-management-sdk-3x-preview"></a>HDInsight .NET 관리 SDK 3.X 미리 보기
-
-## <a name="overview"></a>개요
-
-HDInsight .NET SDK는 HDInsight 클러스터 관리를 위한 클래스 및 메서드를 제공합니다. 여기에는 HDInsight 클러스터의 속성 만들기, 삭제, 업데이트, 나열, 크기 조정, 스크립트 작업 실행, 모니터링, 가져오기 작업을 포함합니다.
+.NET용 HDInsight 관리 SDK는 HDInsight 클러스터를 관리할 수 있는 클래스와 메서드를 제공합니다. 여기에는 HDInsight 클러스터의 속성 만들기, 삭제, 업데이트, 나열, 크기 조정, 스크립트 작업 실행, 모니터링, 가져오기 작업을 포함합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -136,17 +31,17 @@ Visual Studio 프로젝트에서 **도구**, **NuGet 패키지 관리자**를 �
 패키지 관리자 콘솔에서 다음 명령을 실행합니다.
 
 ```
-  Install-Package Microsoft.Azure.Management.HDInsight -Version 3.1.0-preview
+  Install-Package Microsoft.Azure.Management.HDInsight
   Install-Package Microsoft.Azure.Management.Fluent
   Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 
-## <a name="authentication"></a>인증
+## <a name="authentication"></a>Authentication
 
 Azure 구독을 사용해서 SDK를 먼저 인증해야 합니다.  아래 예제에 따라 서비스 주체를 만들고 이를 인증에 사용합니다. 완료되었으면 관리 작업 수행을 위해 사용할 수 있는 여러 메서드(아래 섹션 참조)가 포함된 `HDInsightManagementClient` 인스턴스가 준비됩니다.
 
 > [!NOTE]
-> 아래 설명된 예제 외에도 사용자 요구에 더 적합할 수 있는 다른 인증 방법이 있습니다. 모든 메서드는 여기에 설명됩니다. [.NET용 Azure 라이브러리로 인증](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)
+> 아래 설명된 예제 외에도 사용자 요구에 더 적합할 수 있는 다른 인증 방법이 있습니다. 모든 메서드는 여기에 설명되어 있습니다. [.NET용 Azure 라이브러리를 사용하여 인증](https://docs.microsoft.com/en-us/dotnet/azure/dotnet-sdk-azure-authenticate?view=azure-dotnet)
 
 ### <a name="authentication-example-using-a-service-principal"></a>서비스 주체를 사용한 인증 예제
 
@@ -243,7 +138,6 @@ namespace HDI_SDK_Test
 }
 ```
 
-
 ## <a name="cluster-management"></a>클러스터 관리
 
 > [!NOTE]
@@ -251,7 +145,11 @@ namespace HDI_SDK_Test
 
 ### <a name="create-a-cluster"></a>클러스터 만들기
 
-`client.Clusters.Create()`을(를) 호출하여 새 클러스터를 만들 수 있습니다. 
+`client.Clusters.Create()`을(를) 호출하여 새 클러스터를 만들 수 있습니다.
+
+#### <a name="samples"></a>샘플
+
+몇 가지 일반적인 유형의 HDInsight 클러스터를 만드는 [HDInsight .NET 샘플](https://github.com/Azure-Samples/hdinsight-dotnet-sdk-samples)과 같은 코드 샘플을 사용할 수 있습니다.
 
 #### <a name="example"></a>예
 
@@ -478,7 +376,7 @@ client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker
 ### <a name="enable-oms-monitoring"></a>OMS 모니터링 사용
 
 > [!NOTE]
-> OMS 모니터링을 사용하려면 기존 Log Analytics 작업 영역이 있어야 합니다. 아직 만들지 않았으면 [Azure Portal에서 Log Analytics 작업 영역 만들기](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace)에서 이를 수행하는 방법을 확인할 수 있습니다.
+> OMS 모니터링을 사용하려면 기존 Log Analytics 작업 영역이 있어야 합니다. 아직 작업 영역을 만들지 않은 경우 다음에서 작업 영역을 만드는 방법을 알아볼 수 있습니다. [Azure Portal에서 Log Analytics 작업 영역 만들기](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 클러스터에서 OMS 모니터링을 사용하려면:
 
@@ -506,7 +404,7 @@ client.Extension.DisableMonitoring("<Resource Group Name>", "<Cluster Name>");
 
 HDInsight는 클러스터 사용자 지정을 위해 사용자 지정 스크립트를 호출하는 스크립트 작업이라고 부르는 구성 메서드를 제공합니다.
 > [!NOTE]
-> 스크립트 작업 사용 방법에 대한 자세한 내용은 [스크립트 작업을 사용하여 Linux 기반 HDInsight 클러스터 사용자 지정](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)에서 확인할 수 있습니다.
+> 스크립트 작업을 사용하는 방법에 대한 자세한 내용은 다음에서 찾을 수 있습니다. [스크립트 작업을 사용하여 Linux 기반 HDInsight 클러스터 사용자 지정](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 ### <a name="execute-script-actions"></a>스크립트 작업 실행
 
@@ -582,3 +480,49 @@ while (true)
     scriptExecutionsPaged = client.ScriptExecutionHistory.ListNext(scriptExecutionsPaged.NextPageLink);
 }
 ```
+
+## <a name="jobs"></a>교육
+
+.NET용 Azure HDInsight 작업 SDK를 사용하여 Hadoop 클러스터에서 작업을 만들고 관리하며 모니터링합니다.
+
+### <a name="sdk-installation"></a>SDK 설치
+
+Visual Studio [패키지 관리자 콘솔][PackageManager] 또는 [.NET Core CLI][DotNetCLI]를 사용하여 [NuGet 패키지](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job)를 직접 설치합니다.
+
+#### <a name="visual-studio-package-manager"></a>Visual Studio 패키지 관리자
+
+```powershell
+Install-Package Microsoft.Azure.Management.HDInsight.Job
+```
+
+```bash
+dotnet add package Microsoft.Azure.Management.HDInsight.Job
+```
+
+### <a name="code-example"></a>코드 예제
+
+이 예제는 Hadoop 클러스터에서 Hive 작업을 실행합니다.
+
+```csharp
+HDInsightJobManagementClient managementClient = new HDInsightJobManagementClient(clusterUri, credentials);
+
+Dictionary<string, string> defines = new Dictionary<string, string> {
+    { "hive.execution.engine", "tez" },
+    { "hive.exec.reducers.max", "1" }
+};
+List<string> arguments = new List<string> { { "argA" }, { "argB" } };
+HiveJobSubmissionParameters parameters = new HiveJobSubmissionParameters
+{
+    Query = "SHOW TABLES",
+    Defines = defines,
+    Arguments = arguments
+};
+
+JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob(parameters);
+```
+
+### <a name="samples"></a>샘플
+
+- [Hive 작업 실행](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-hive-dotnet-sdk)
+- [Pig 작업 실행](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-use-pig-dotnet-sdk)
+- [더 많은 작업](https://docs.microsoft.com/azure/hdinsight/hdinsight-submit-hadoop-jobs-programmatically)
