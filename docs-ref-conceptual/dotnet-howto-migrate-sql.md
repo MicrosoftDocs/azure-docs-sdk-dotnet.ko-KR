@@ -72,7 +72,7 @@ Azure에는 프로덕션 SQL Server 데이터베이스의 마이그레이션을 
 
 * **Azure VM 또는 Azure SQL Database에서 SQL Server와 함께 SQL Server Management Studio 및 SQL Server Reporting Services(SSRS)와 같은 도구를 계속 사용할 수 있습니까?**
 
-    예! 모든 Microsoft SQL 도구는 두 서비스 모두에서 작동합니다. SSRS는 Azure SQL Database의 일부가 아니기 때문에 Azure VM에서 실행한 다음 데이터베이스 인스턴스를 가리키도록 하는 것이 좋습니다.
+    예! 모든 Microsoft SQL 도구는 두 서비스 모두에서 작동합니다. SSRS는 Azure SQL Database의 일부가 아니기 때문에 Azure VM에서 실행한 다음, 데이터베이스 인스턴스를 가리키도록 하는 것이 좋습니다.
     
 * **PaaS로 전환하고 싶지만 데이터베이스가 호환될지 확실하지 않습니다. 유용한 도구가 있습니까?**
 

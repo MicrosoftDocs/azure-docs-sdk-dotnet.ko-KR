@@ -17,7 +17,7 @@ ms.locfileid: "47190636"
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)는 관계형, JSON, 공간 및 XML 데이터를 지원하는 Microsoft SQL Server 엔진을 사용하는 데이터베이스 서비스입니다. 
 
-.NET에서 SQL Database를 사용하는 방법에 대한 자세한 내용은 [Visual Studio에서 .NET을 사용하여 Azure SQL Database 연결 및 쿼리](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)를 참조하세요.
+.NET에서 SQL Database를 사용하는 방법에 대한 자세한 내용은 [Visual Studio에서 .NET을 사용하여 Azure SQL 데이터베이스 연결 및 쿼리](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio)를 참조하세요.
 
 ## <a name="client-library"></a>클라이언트 라이브러리
 

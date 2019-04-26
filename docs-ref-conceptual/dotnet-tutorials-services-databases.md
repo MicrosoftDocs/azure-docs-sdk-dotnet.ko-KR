@@ -18,7 +18,7 @@ ms.locfileid: "47190626"
 | | |
 |---|---|
 | **SQL Database** ||
-| [.NET을 사용하여 데이터 연결 및 쿼리][1] | ADO.NET을 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
+| [.NET을 사용하여 데이터 연결 및 쿼리][1] | ADO.NET을 사용하여 Azure SQL 데이터베이스에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][2] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Cosmos DB** ||

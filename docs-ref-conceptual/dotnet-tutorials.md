@@ -24,7 +24,7 @@ ms.locfileid: "47189546"
 | **Azure Container Service** ||
 | [Kubernetes 및 Windows 컨테이너 시작][4] | IIS 컨테이너를 사용하여 Azure Container Service에서 Kubernetes 클러스터를 만듭니다.
 | **SQL Database** ||
-| [.NET을 사용하여 데이터 연결 및 쿼리][5] | ADO.NET을 사용하여 Azure SQL Database에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
+| [.NET을 사용하여 데이터 연결 및 쿼리][5] | ADO.NET을 사용하여 Azure SQL 데이터베이스에 연결한 다음, Transact-SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. | 
 | **Azure Database for PostgreSQL** ||
 | [.NET을 사용하여 데이터 연결 및 쿼리][6] | SQL 문을 사용하여 데이터베이스의 데이터를 쿼리, 삽입, 업데이트 및 삭제합니다. |
 | **Azure Cosmos DB** ||
